@@ -25,6 +25,7 @@ html {
 }
 
 body {
+    margin: 0px 86px;
     min-height: 100vh;
     
     background:

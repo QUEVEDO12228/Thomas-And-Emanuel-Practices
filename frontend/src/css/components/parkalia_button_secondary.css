@@ -1,0 +1,34 @@
+.parkalia-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background:none;
+    border:
+        1px solid rgba(255,255,255,.10); 
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size:var(--fs-xxxxs);
+    font-weight: 500;
+}
+.parkalia-btn-secondary:hover {
+    transform: translateY(-2px);
+
+    border:1px solid var(--secondary-400)
+
+}
+.parkalia-btn-secondary:active {
+    transform: translateY(0);
+}
+.parkalia-btn-secondary__icon{
+  height: 12px;
+  width: 12px;
+}
+
+.vista-home-client__btn-secondary{
+  margin-top: 2.4rem;
+}

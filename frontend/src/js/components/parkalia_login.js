@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("/frontend/src/html/components/parkalia_login.html")
         .then(res => res.text())
         .then(html => {
-            formContainer.innerHTML = html;
+            formLoginContainer.innerHTML = html;
             initLogin();
         })
         .catch(err => console.error(err));

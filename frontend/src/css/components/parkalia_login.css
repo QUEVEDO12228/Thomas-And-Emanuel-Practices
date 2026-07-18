@@ -1,4 +1,4 @@
-.bankfleet-login-page {
+.parkalia-login-page {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
     font-family: var(--font-primary);
 }
-.bankfleet-login-page__glow {
+.parkalia-login-page__glow {
     position: absolute;
     width: 400px;
     height: 400px;
@@ -15,17 +15,17 @@
     opacity: 0.12;
     pointer-events: none;
 }
-.bankfleet-login-page__glow--left {
+.parkalia-login-page__glow--left {
     top: -120px;
     left: -120px;
     background: var(--secondary-500);
 }
-.bankfleet-login-page__glow--right {
+.parkalia-login-page__glow--right {
     right: -120px;
     bottom: -120px;
     background: var(--primary-500);
 }
-.bankfleet-login-layout {
+.parkalia-login-layout {
     position: relative;
     z-index: 2;
     width: 100%;
@@ -33,7 +33,7 @@
     min-height: 100vh;
     display: flex;
 }
-.bankfleet-login {
+.parkalia-login {
     position: relative;
     width: 42%;
     display: flex;
@@ -41,7 +41,7 @@
     align-items: center;
     box-sizing: border-box;
 }
-.bankfleet-login__link {
+.parkalia-login__link {
     position: relative;
 
     width: fit-content;
@@ -55,7 +55,7 @@
     margin-left: 12rem;
 }
 
-.bankfleet-login__link::after {
+.parkalia-login__link::after {
     content: '';
 
     position: absolute;
@@ -71,11 +71,11 @@
     transition: var(--transition-normal);
 }
 
-.bankfleet-login__link:hover {
+.parkalia-login__link:hover {
     color: var(--white);
 }
 
-.bankfleet-login__link:hover::after {
+.parkalia-login__link:hover::after {
     width: 100%;
 }
 
@@ -90,7 +90,7 @@ TOPBAR
 CARD
 ========================================================= */
 
-.bankfleet-login__card {
+.parkalia-login__card {
     width: 100%;
     max-width: 432px;
 
@@ -107,26 +107,26 @@ CARD
     transition: .3s;
 }
 
-.bankfleet-login__card:hover{
+.parkalia-login__card:hover{
     transform: translateY(-2px);
 
     border-color:
         rgba(139,92,246,.35);
 
 }
-.bankfleet-login__topbar {
+.parkalia-login__topbar {
     position: absolute;
     top: 8px;
     left: 12px;
     z-index: 9999;
 }
-.bankfleet-login__brand {
+.parkalia-login__brand {
     display: flex;
     align-items: center;
     gap: var(--gap-md);
     margin-bottom: var(--gap-lg);
 }
-.bankfleet-login__brand-icon {
+.parkalia-login__brand-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,63 +139,63 @@ CARD
     font-family: var(--font-primary-bold);
     box-shadow: 0 12px 30px rgba(139,92,246,0.3);
 }
-.bankfleet-login__brand-title {
+.parkalia-login__brand-title {
     margin: 0;
     color: var(--white);
     font-size: 16px;
     letter-spacing: 2px;
 }
-.bankfleet-login__brand-subtitle {
+.parkalia-login__brand-subtitle {
     color: var(--secondary-300);
     font-size: 10px;
     letter-spacing: 1px;
 }
-.bankfleet-login__header {
+.parkalia-login__header {
     margin-bottom: var(--gap-sm);
     text-align: center;
 }
-.bankfleet-login__title {
+.parkalia-login__title {
     margin-bottom: var(--gap-xs);
     color: var(--white);
     font-size: 1.6rem;
     font-family: var(--font-primary-bold);
 }
-.bankfleet-login__subtitle {
+.parkalia-login__subtitle {
     color: var(--gray-300);
     line-height: 1.8;
     font-size: var(--fs-xxxs);
 }
-.bankfleet-login__highlight {
+.parkalia-login__highlight {
     color: var(--secondary-300);
 }
-.bankfleet-login__form {
+.parkalia-login__form {
     display: flex;
     flex-direction: column;
     gap: var(--gap-lg);
 }
-.bankfleet-login__field {
+.parkalia-login__field {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
-.bankfleet-login__label-row {
+.parkalia-login__label-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.bankfleet-login__label {
+.parkalia-login__label {
     color: var(--white);
     font-size: var(--fs-xxxxs);
 }
-.bankfleet-login__forgot-link {
+.parkalia-login__forgot-link {
     color: var(--secondary-300);
     text-decoration: none;
     font-size: var(--fs-xxxxs);
 }
-.bankfleet-login__input-wrapper {
+.parkalia-login__input-wrapper {
     position: relative;
 }
-.bankfleet-login__input-icon {
+.parkalia-login__input-icon {
     position: absolute;
     left: 18px;
     top: 50%;
@@ -204,7 +204,7 @@ CARD
     height: 20px;
     z-index: 2;
 }
-.bankfleet-login__input {
+.parkalia-login__input {
     width: 100%;
     height: 48px;
     padding:0 48px;
@@ -218,15 +218,15 @@ CARD
     transition: var(--transition-normal);
     box-sizing: border-box;
 }
-.bankfleet-login__input::placeholder {
+.parkalia-login__input::placeholder {
     color: var(--gray-500);
 }
-.bankfleet-login__input:focus {
+.parkalia-login__input:focus {
     border-color:rgba(139,92,246,.45);
     background:rgba(255,255,255,.06);
     box-shadow:0 0 0 4px rgba(139,92,246,.15);
 }
-.bankfleet-login__toggle-password {
+.parkalia-login__toggle-password {
     position: absolute;
     right: 18px;
     top: 50%;
@@ -235,21 +235,21 @@ CARD
     background: transparent;
     cursor: pointer;
 }
-.bankfleet-login__options {
+.parkalia-login__options {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.bankfleet-login__checkbox {
+.parkalia-login__checkbox {
     display: flex;
     align-items: center;
     gap: var(--gap-xs);
     cursor: pointer;
 }
-.bankfleet-login__checkbox input {
+.parkalia-login__checkbox input {
     display: none;
 }
-.bankfleet-login__checkbox-custom {
+.parkalia-login__checkbox-custom {
     width: 18px;
     height: 18px;
 
@@ -261,22 +261,22 @@ CARD
     background:
         rgba(255,255,255,0.03);
 }
-.bankfleet-login__checkbox-custom:focus{
+.parkalia-login__checkbox-custom:focus{
     background: var(--secondary-400);
 }
-.bankfleet-login__checkbox {
+.parkalia-login__checkbox {
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
     position: relative;
 }
-.bankfleet-login__checkbox input {
+.parkalia-login__checkbox input {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
-.bankfleet-login__checkbox-custom {
+.parkalia-login__checkbox-custom {
     width: 18px;
     height: 18px;
     border: 2px solid var(--secondary-400);
@@ -285,11 +285,11 @@ CARD
     transition: all .25s ease;
     flex-shrink: 0;
 }
-.bankfleet-login__checkbox input:checked + .bankfleet-login__checkbox-custom {
+.parkalia-login__checkbox input:checked + .parkalia-login__checkbox-custom {
     background: var(--secondary-600);
     border-color: var(--secondary-600);
 }
-.bankfleet-login__checkbox input:checked + .bankfleet-login__checkbox-custom::after {
+.parkalia-login__checkbox input:checked + .parkalia-login__checkbox-custom::after {
     content: "";
     display: block;
     width: 4px;
@@ -299,20 +299,20 @@ CARD
     transform: rotate(45deg);
     margin: 2px 0 0 5px;
 }
-.bankfleet-login__checkbox-text {
+.parkalia-login__checkbox-text {
     color: var(--gray-300);
     font-size: var(--fs-xxxxs);
 }
-.bankfleet-login__button-primary {
+.parkalia-login__button-primary {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bankfleet-login__divider {
+.parkalia-login__divider {
     position: relative;
     text-align: center;
 }
-.bankfleet-login__divider::before {
+.parkalia-login__divider::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -321,18 +321,18 @@ CARD
     height: 1px;
     background: rgba(255,255,255,0.08);
 }
-.bankfleet-login__divider span {
+.parkalia-login__divider span {
     position: relative;
     padding:0 14px;
     background: #0B1020;
     color: var(--gray-400);
     font-size: var(--fs-xxxxs);
 }
-.bankfleet-login__socials {
+.parkalia-login__socials {
     display: flex;
     gap: var(--gap-lg);
 }
-.bankfleet-login__social-button {
+.parkalia-login__social-button {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -346,28 +346,28 @@ CARD
     cursor: pointer;
     transition: var(--transition-normal);
 }
-.bankfleet-btn__icon-social-media{
+.parkalia-btn__icon-social-media{
     height: 18px;
     width: 18px;
 }
-.bankfleet-login__social-button:hover {
+.parkalia-login__social-button:hover {
     transform: translateY(-3px);
     border-color: rgba(139,92,246,0.35);
     background:  rgba(139,92,246,0.06);
 }
-.bankfleet-login__login {
+.parkalia-login__login {
     text-align: center;
 }
-.bankfleet-login__login-text {
+.parkalia-login__login-text {
     color: var(--gray-400);
     font-size: var(--fs-xxxxs);
 }
-.bankfleet-login__footer-text{
+.parkalia-login__footer-text{
     font-size: var(--fs-xxxs);
     color: var(--white);
     text-align: center;
 }
-.bankfleet-login__register-link{
+.parkalia-login__register-link{
     position: relative;
     width: fit-content;
     font-size: var(--fs-xxxs);
@@ -375,7 +375,7 @@ CARD
     text-decoration: none;
     transition: var(--transition-normal);
 }
-.bankfleet-login__register-link::after {
+.parkalia-login__register-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -385,34 +385,34 @@ CARD
     background: var(--secondary-400);
     transition: var(--transition-normal);
 }
-.bankfleet-login__register-link:hover {
+.parkalia-login__register-link:hover {
     color: var(--white);
 }
-.bankfleet-login__register-link:hover::after {
+.parkalia-login__register-link:hover::after {
     width: 100%;
 }
-.bankfleet-login-banner {
+.parkalia-login-banner {
     position: relative;
     width: 58%;
     overflow: hidden;
 }
-.bankfleet-login-banner__image {
+.parkalia-login-banner__image {
     width: 100%;
     height: 100%;
     max-height: 578px;
     object-fit: cover;
     transition: transform 1.2s ease;
 }
-.bankfleet-login-banner:hover
-.bankfleet-login-banner__image {
+.parkalia-login-banner:hover
+.parkalia-login-banner__image {
     transform: scale(1.05);
 }
-.bankfleet-login-banner__overlay {
+.parkalia-login-banner__overlay {
     position: absolute;
     inset: 0;
     background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7));
 }
-.bankfleet-login-banner__card {
+.parkalia-login-banner__card {
     position: absolute;
     left: 60px;
     bottom: 60px;
@@ -424,7 +424,7 @@ CARD
     background:  rgba(255,255,255,0.06);
     backdrop-filter: blur(20px);
 }
-.bankfleet-login-banner__badge {
+.parkalia-login-banner__badge {
     display: inline-flex;
     margin-bottom: var(--gap-md);
     padding: 8px  14px;
@@ -434,75 +434,75 @@ CARD
     font-size: 10px;
     letter-spacing: 1px;
 }
-.bankfleet-login-banner__title {
+.parkalia-login-banner__title {
     margin-bottom: var(--gap-md);
     color: var(--white);
     font-size: 4rem;
     line-height: 1.1;
     font-family: var(--font-primary-bold);
 }
-.bankfleet-login-banner__text {
+.parkalia-login-banner__text {
     color: var(--gray-200);
     line-height: 1.8;
     font-size: var(--fs-xxs);
 }
 @media (max-width: 1200px) {
-    .bankfleet-login {
+    .parkalia-login {
         width: 50%;
     }
-    .bankfleet-login-banner {
+    .parkalia-login-banner {
         width: 50%;
     }
 }
 @media (max-width: 980px) {
-    .bankfleet-login-layout {
+    .parkalia-login-layout {
         flex-direction: column;
     }
-    .bankfleet-login,
-    .bankfleet-login-banner {
+    .parkalia-login,
+    .parkalia-login-banner {
         width: 100%;
     }
-    .bankfleet-login-banner {
+    .parkalia-login-banner {
         min-height: 420px;
     }
 }
 @media (max-width: 768px) {
-    .bankfleet-login {
+    .parkalia-login {
         padding: 120px var(--gap-lg) var(--gap-xl);
     }
-    .bankfleet-login__card {
+    .parkalia-login__card {
         padding: 32px;
     }
-    .bankfleet-login-banner__card {
+    .parkalia-login-banner__card {
         left: 24px;
         right: 24px;
         bottom: 24px;
         padding: 28px;
     }
-    .bankfleet-login-banner__title {
+    .parkalia-login-banner__title {
         font-size: 3rem;
     }
 }
 @media (max-width: 480px) {
-    .bankfleet-login-banner {
+    .parkalia-login-banner {
         display: none;
     }
-    .bankfleet-login {
+    .parkalia-login {
         width: 100%;
     }
-    .bankfleet-login__card {
+    .parkalia-login__card {
         padding: 24px;
         border-radius: 24px;
     }
-    .bankfleet-login__title {
+    .parkalia-login__title {
         font-size: 2.6rem;
     }
-    .bankfleet-login__socials {
+    .parkalia-login__socials {
         flex-direction: column;
     }
 }
 @media (width > 1280px) {
-    .bankfleet-login-banner__image {
+    .parkalia-login-banner__image {
         width: 100%;
         height: 100%;
         max-height: 100vh;
