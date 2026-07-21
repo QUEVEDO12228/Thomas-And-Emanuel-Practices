@@ -1,0 +1,167 @@
+[
+    {
+        "badge": "MÁS POPULAR",
+        "icon": "🚗",
+        "title": "Parqueo + Lavado",
+        "description": "Deja tu vehículo seguro y recíbelo completamente limpio al finalizar tu reserva.",
+        "features": [
+            "Lavado exterior incluido",
+            "Vigilancia 24/7",
+            "Reserva online inmediata"
+        ],
+        "oldPrice": "$40.000",
+        "price": "$29.900",
+        "button": "Reservar",
+        "featured": true
+    },
+    {
+        "badge": "40% OFF",
+        "icon": "🎟️",
+        "title": "Paquetes Prepago",
+        "description": "Compra varios pases de parqueo y obtén descuentos exclusivos para futuros ingresos.",
+        "features": [
+            "Hasta 10 ingresos",
+            "Ahorra hasta el 40%",
+            "Sin fecha inmediata de uso"
+        ],
+        "oldPrice": "$100.000",
+        "price": "$69.900",
+        "button": "Comprar",
+        "featured": false
+    },
+    {
+        "badge": "LARGA ESTADÍA",
+        "icon": "⏳",
+        "title": "24 Horas o Más",
+        "description": "Tarifas especiales para vehículos que permanecerán estacionados durante varios días.",
+        "features": [
+            "Desde 24 horas",
+            "Ideal para viajes",
+            "Menor costo diario"
+        ],
+        "oldPrice": "$65.000",
+        "price": "$45.000",
+        "button": "Reservar",
+        "featured": false
+    },
+    {
+        "badge": "PLAN MENSUAL",
+        "icon": "📅",
+        "title": "Mensualidad Digital",
+        "description": "Un solo pago mensual para ingresar y salir de manera ilimitada según tu plan.",
+        "features": [
+            "Acceso prioritario",
+            "Pago automático",
+            "Sin filas"
+        ],
+        "oldPrice": "$420.000",
+        "price": "$349.900",
+        "button": "Suscribirme",
+        "featured": false
+    },
+    {
+        "badge": "ANTICIPADO",
+        "icon": "📲",
+        "title": "Reserva Anticipada",
+        "description": "Reserva con varios días de anticipación y obtén una tarifa exclusiva.",
+        "features": [
+            "Cupo garantizado",
+            "Mejor precio",
+            "Confirmación inmediata"
+        ],
+        "oldPrice": "$30.000",
+        "price": "$21.900",
+        "button": "Reservar",
+        "featured": false
+    },
+    {
+        "badge": "EVENTOS",
+        "icon": "🎫",
+        "title": "Convenios Especiales",
+        "description": "Tarifas preferenciales para conciertos, partidos y eventos cercanos.",
+        "features": [
+            "Cupo asegurado",
+            "Entrada rápida",
+            "Precio fijo"
+        ],
+        "oldPrice": "$35.000",
+        "price": "$24.900",
+        "button": "Ver oferta",
+        "featured": false
+    },
+    {
+        "badge": "COMERCIOS",
+        "icon": "🛍️",
+        "title": "Horas Gratis",
+        "description": "Compra en comercios aliados y obtén horas de parqueo totalmente gratuitas.",
+        "features": [
+            "Restaurantes",
+            "Cines",
+            "Tiendas afiliadas"
+        ],
+        "oldPrice": "$20.000",
+        "price": "Gratis",
+        "button": "Conocer",
+        "featured": false
+    },
+    {
+        "badge": "ELÉCTRICO",
+        "icon": "⚡",
+        "title": "Parqueo + Recarga",
+        "description": "Mientras tu vehículo permanece estacionado, recargamos su batería.",
+        "features": [
+            "Carga rápida",
+            "Cupos exclusivos",
+            "Pago online"
+        ],
+        "oldPrice": "$50.000",
+        "price": "$39.900",
+        "button": "Reservar",
+        "featured": false
+    },
+    {
+        "badge": "NUEVOS",
+        "icon": "🎉",
+        "title": "Primera Hora Gratis",
+        "description": "Regístrate por primera vez y disfruta una hora de parqueo completamente gratis.",
+        "features": [
+            "Solo nuevos usuarios",
+            "Registro en segundos",
+            "Activación inmediata"
+        ],
+        "oldPrice": "$10.000",
+        "price": "Gratis",
+        "button": "Registrarme",
+        "featured": false
+    },
+    {
+        "badge": "QR PAY",
+        "icon": "💳",
+        "title": "Pago Digital",
+        "description": "Cancela mediante código QR y recibe un descuento automático en tu factura.",
+        "features": [
+            "Sin efectivo",
+            "Salida más rápida",
+            "Descuento inmediato"
+        ],
+        "oldPrice": "$18.000",
+        "price": "$14.900",
+        "button": "Pagar",
+        "featured": false
+    },
+    {
+        "badge": "VIP",
+        "icon": "⭐",
+        "title": "Programa de Puntos",
+        "description": "Acumula puntos por cada reserva y canjéalos por horas de parqueo gratuitas.",
+        "features": [
+            "Beneficios exclusivos",
+            "Horas gratis",
+            "Promociones VIP"
+        ],
+        "oldPrice": "---",
+        "price": "+ Puntos",
+        "button": "Unirme",
+        "featured": false
+    }
+]

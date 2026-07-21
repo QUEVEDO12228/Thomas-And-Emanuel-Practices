@@ -21,7 +21,12 @@
 .parkalia-btn--primary{
     color: var(--white);
     background:
-    linear-gradient(160deg, transparent, var(--secondary-500), transparent);
+
+    linear-gradient(
+        135deg,
+        var(--secondary-500),
+        var(--info-color)
+    );
     backdrop-filter:blur(22px);
     overflow:hidden;
     cursor:pointer;
@@ -33,12 +38,15 @@
 .parkalia-btn--primary:hover{
     color: var(--white);
     background:
-    linear-gradient(160deg, transparent, var(--secondary-500), transparent);
+
+    linear-gradient(
+        135deg,
+        var(--secondary-500),
+        var(--info-color)
+    );
     backdrop-filter:blur(22px);
     overflow:hidden;
     cursor:pointer;
-    border-left: 3px solid var(--secondary-600);
-    border-right: 3px solid var(--secondary-600);
 }
 .parkalia-btn--primary:active{ 
     transform: translateY(0);
@@ -58,43 +66,4 @@
     width:16px;
     height:16px;
     flex-shrink:0;
-}
-.parkalia-btn--expand{
-    transition:
-        width .35s ease,
-        padding .35s ease,
-        transform .35s ease;
-}
-.parkalia-btn__text{
-
-    max-width:0;
-
-    overflow:hidden;
-
-    white-space:nowrap;
-
-    opacity:0;
-
-    margin-right:0; 
-    opacity:0;
-    transition: width .65s cubic-bezier(.22,1,.36,1);
-    
-}
-.parkalia-btn--expand:hover{
-
-    width:fit-content;
-    
-    transition:
-        opacity .5s ease .20s,
-        max-width .6s cubic-bezier(.22,1,.36,1);
-    transform: translateY(-2px);
-}
-.parkalia-btn--expand:hover
-.parkalia-btn__text{
-
-    max-width:160px;
-
-    opacity:1;
-
-    margin-right:6px;
 }
