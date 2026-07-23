@@ -1,0 +1,133 @@
+.parkalia-menu-overlay {
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(18px);
+    opacity:0;
+    visibility:hidden;
+    transition:var(--transition-normal);
+    z-index:999;
+}
+
+.parkalia-menu-overlay--active{
+    opacity:1;
+    visibility:visible;
+}
+.parkalia-menu-drawer {
+    position:fixed;
+    top:0;
+    right:0;
+    width:360px;
+    max-width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    background: var(--primary-950);
+    border-left:1px solid rgba(255,255,255,.08);
+    box-shadow:-12px 0 40px rgba(0,0,0,.45);
+    transform:translateX(100%);
+    transition:var(--transition-normal);
+    z-index:1000;
+}
+.parkalia-menu-overlay--active {
+    transform:translateX(0);
+}
+.parkalia-menu-drawer--active {
+    transform: translateX(0);
+}
+.parkalia-menu-drawer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+    border-bottom: 1px solid rgba(255,255,255,.80);
+}
+.parkalia-menu-drawer__profile {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-md);
+}
+.parkalia-menu-drawer__avatar {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background:linear-gradient(135deg, var(--secondary-500), var(--secondary-700));
+    color: var(--white);
+    font-family: var(--font-primary-bold);
+    font-size: var(--fs-xs);
+    box-shadow: var(--shadow-secondary);
+}
+.parkalia-menu-drawer__user {
+    display: flex;
+    flex-direction: column;
+}
+.parkalia-menu-drawer__name {
+    margin: 0;
+    color: var(--white);
+    font-size: var(--fs-xxs);
+    font-family: var(--font-primary-semibold);
+}
+.parkalia-menu-drawer__role {
+    color: var(--gray-300);
+    font-size: var(--fs-xxxs);
+}
+.parkalia-menu-drawer__close {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,.05);
+    color: var(--white);
+    cursor: pointer;
+    transition: var(--transition-normal);
+}
+.parkalia-menu-drawer__close:hover {
+    background: rgba(255,255,255,.08);
+    border-bottom:  2px solid var(--secondary-400);
+}
+.parkalia-menu-drawer__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 8px;
+}
+.parkalia-menu-drawer__text-item{
+    font-size: var(--fs-xxxs);
+}
+.parkalia-menu-drawer__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--gray-200);
+    transition: var(--transition-normal);
+}
+.parkalia-menu-drawer__item:hover {
+    background: var(--gray-600);
+    color: var(--white);
+    border-left: 6px solid var(--secondary-500);
+    border-right: 6px solid var(--secondary-500);   
+}
+.parkalia-menu-drawer__icon {
+    width: 18px;
+    height: 18px;
+}
+.parkalia-menu-drawer__footer {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    border-top:  1px solid rgba(255,255,255,.80);
+}
+.parkalia-menu-drawer__body::-webkit-scrollbar {
+    width: 6px;
+}
+.parkalia-menu-drawer__body::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.15);
+    border-radius: 999px;
+}

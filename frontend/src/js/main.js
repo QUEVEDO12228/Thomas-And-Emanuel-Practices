@@ -6,3 +6,6 @@ import '/frontend/src/js/components/parkalia_login.js';
 import '/frontend/src/js/components/parkalia_register.js';
 import '/frontend/src/js/components/parkalia_reset_password.js';
 import '/frontend/src/js/components/parkalia_top_offers.js';
+import '/frontend/src/js/components/parkalia_navbar_global.js';
+import '/frontend/src/js/components/parkalia_sidebar_principal.js';
+import '/frontend/src/js/components/parkalia_drop-down_menu.js';

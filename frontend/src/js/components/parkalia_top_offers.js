@@ -101,12 +101,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
                     <div class="parkalia-section-card-top-offer__prices">
 
-                        <span class="parkalia-section-card-top-offer__old-price">
-
-                            ${offer.oldPrice}
-
-                        </span>
-
                         <h2 class="parkalia-section-card-top-offer__price">
 
                             ${offer.price}
@@ -114,27 +108,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                         </h2>
 
                     </div>
-
-                    <a
-                        class="
-                            parkalia-btn
-                            parkalia-btn--primary
-                            parkalia-btn--expand
-                            parkalia-section-card-top-offer__button
-                        ">
-
-                        <span class="parkalia-btn__text">
-
-                            ${offer.button}
-
-                        </span>
-
-                        <img
-                            src="/frontend/public/assets/icons/icon_next-white.svg"
-                            class="parkalia-btn__icon"
-                            alt=""
-                        >
-
+                    <a class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary">
+                        <span class="parkalia-btn__text">Reservar</span>
+                        <img src="/frontend/public/assets/icons/icon_dollar_white.svg" alt="" class="parkalia-btn__icon">
                     </a>
 
                 </div>

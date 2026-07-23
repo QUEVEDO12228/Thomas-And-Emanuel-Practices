@@ -4,8 +4,10 @@
 
 .parkalia-section-card-top-offer__title {
     color: var(--white);
-    font-size: var(--fs-sm);
-    margin-bottom: 2.4rem;
+    font-size: var(--fs-xs);
+    margin-bottom: 12px;
+    padding-top: 12px;  
+
 }
 
 /* ==========================================================
@@ -21,14 +23,11 @@ SLIDER
 ==========================================================*/
 
 .parkalia-section-card-top-offer__slider{
-
-    position:relative;
-
+    position: relative;
     width:100%;
 
-    display:flex;
-
     align-items:center;
+    padding-bottom: 12px;
 
 }
 
@@ -50,13 +49,15 @@ SLIDER
 
     will-change:transform;
 
+    width: 100%;
+
 }
 /* ==========================================================
    CARD
 ========================================================== */
 .parkalia-section-card-top-offer__offer-card{
 
-    flex:0 0 calc((100% - 120px)/6);
+    flex:0 0 calc((100% - 10px)/6);
 
     min-width:0;
 
@@ -80,77 +81,23 @@ SLIDER
         0 8px 30px rgba(0,0,0,.12);
 
 }
-.parkalia-section-card-top-offer__offer-card:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:
-        0 18px 40px rgba(0,0,0,.22);
-
-}
 /*==========================================================
 ARROWS
 ==========================================================*/
 
 .parkalia-section-card-top-offer__arrow{
-
     position:absolute;
-
     top:50%;
-
     transform:translateY(-50%);
-
-    width:52px;
-
-    height:52px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:white;
-
-    cursor:pointer;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    box-shadow:
-        0 8px 30px rgba(0,0,0,.18);
-
-    transition:.25s;
-
-    z-index:50;
-
-}
-
-.parkalia-section-card-top-offer__arrow:hover{
-
-    transform:
-        translateY(-50%)
-        scale(1.08);
-
+    z-index:20;
 }
 
 .parkalia-section-card-top-offer__arrow--left{
-
-    left:-26px;
-
+    left:12px;
 }
 
 .parkalia-section-card-top-offer__arrow--right{
-
-    right:-26px;
-
-}
-
-.parkalia-section-card-top-offer__arrow-icon{
-
-    width:18px;
-
+    right:12px;
 }
 /* 
 .parkalia-section-card-top-offer__offer-card::before {
@@ -225,7 +172,7 @@ ARROWS
 
     color: var(--white);
 
-    font-size: 8px;
+    font-size: 10px;
     background: 
     linear-gradient(
         135deg,
@@ -338,6 +285,16 @@ ARROWS
     gap: 2rem;
 
 }
+.parkalia-section-card-top-offer__content-button{
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 2rem;
+}
 
 /* ==========================================================
    PRICES
@@ -379,14 +336,6 @@ ARROWS
    BUTTON
 ========================================================== */
 
-.parkalia-section-card-top-offer__button:hover {
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 20px 35px rgba(109, 40, 217, .45);
-
-}
 
 .parkalia-section-card-top-offer__button:active {
 

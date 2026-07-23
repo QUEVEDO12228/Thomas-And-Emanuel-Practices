@@ -2,77 +2,76 @@
 
     /* =========================================================
        PRIMARY COLORS
-       CORPORATE / TRUST / ENTERPRISE BLUE
+       BLACK / PREMIUM / TECHNOLOGY
     ========================================================= */
 
-    --primary-950: #050816;
-    --primary-900: #0B1023;
-    --primary-800: #11182E;
-    --primary-700: #16203C;
-    --primary-600: #1D2B52;
-    --primary-500: #27406D;
-    --primary-400: #3A5A8C;
-    --primary-300: #5E7DB0;
-    --primary-200: #8EA7CB;
-    --primary-100: #C7D5E8;
-    --primary-50:  #EEF3FA;
+    --primary-950: #000000;
+    --primary-900: #080808;
+    --primary-800: #121212;
+    --primary-700: #1C1C1C;
+    --primary-600: #2A2A2A;
+    --primary-500: #3A3A3A;
+    --primary-400: #555555;
+    --primary-300: #7A7A7A;
+    --primary-200: #A6A6A6;
+    --primary-100: #D6D6D6;
+    --primary-50:  #F5F5F5;
 
 
     /* =========================================================
        SECONDARY COLORS
-       BANKFLEET BRAND / FUTURISTIC PURPLE
+       PARKING YELLOW / WARNING
     ========================================================= */
 
-    --secondary-950: #14051F;
-    --secondary-900: #1E0830;
-    --secondary-800: #2A0D45;
-    --secondary-700: #3B1461;
-    --secondary-600: #52208A;
-    --secondary-500: #6D28D9;
-    --secondary-400: #8B5CF6;
-    --secondary-300: #A78BFA;
-    --secondary-200: #C4B5FD;
-    --secondary-100: #E9DDFF;
-    --secondary-50:  #F5F0FF;
+    --secondary-950: #3B2800;
+    --secondary-900: #5A3B00;
+    --secondary-800: #7A5100;
+    --secondary-700: #996700;
+    --secondary-600: #B87C00;
+    --secondary-500: #F4B400;
+    --secondary-400: #FFC107;
+    --secondary-300: #FFD54F;
+    --secondary-200: #FFE082;
+    --secondary-100: #FFF3C4;
+    --secondary-50:  #FFFBEA;
 
 
     /* =========================================================
        TERTIARY COLORS
-       SUCCESS / SECURITY / VERIFIED
+       PARKING GREEN / AVAILABLE
     ========================================================= */
 
-    --tertiary-950: #04140D;
-    --tertiary-900: #072018;
-    --tertiary-800: #0B3023;
-    --tertiary-700: #104232;
-    --tertiary-600: #145A44;
-    --tertiary-500: #1A7A5C;
-    --tertiary-400: #22A06B;
-    --tertiary-300: #4CC38A;
-    --tertiary-200: #8FE0B7;
-    --tertiary-100: #C9F3DD;
-    --tertiary-50:  #EDFFF5;
+    --tertiary-950: #04210F;
+    --tertiary-900: #063118;
+    --tertiary-800: #094524;
+    --tertiary-700: #0C5A2E;
+    --tertiary-600: #0F733B;
+    --tertiary-500: #16A34A;
+    --tertiary-400: #22C55E;
+    --tertiary-300: #4ADE80;
+    --tertiary-200: #86EFAC;
+    --tertiary-100: #DCFCE7;
+    --tertiary-50:  #F0FDF4;
 
 
     /* =========================================================
        NEUTRAL COLORS
-       PREMIUM DARK SCALE
     ========================================================= */
 
     --white: #FFFFFF;
     --black: #000000;
 
     --gray-950: #050505;
-    --gray-900: #0F1115;
-    --gray-800: #181B20;
-    --gray-700: #23262D;
-    --gray-600: #31353F;
-    --gray-500: #4B5260;
-    --gray-400: #6B7280;
-    --gray-300: #9AA0AE;
-    --gray-200: #C7CCD6;
-    --gray-100: #E5E7EB;
-    --gray-50:  #F5F7FA;
+    --gray-900: #111111;
+    --gray-800: #1F1F1F;
+    --gray-700: #2E2E2E;
+    --gray-600: #454545;
+    --gray-500: #666666;
+    --gray-400: #8A8A8A;
+    --gray-300: #B5B5B5;
+    --gray-200: #D9D9D9;
+    --gray-100: #EFEFEF;
+    --gray-50:  #F8F8F8;
 
 
     /* =========================================================
@@ -80,18 +79,18 @@
     ========================================================= */
 
     --success-color: #22C55E;
-    --warning-color: #F59E0B;
+    --warning-color: #FFC107;
     --danger-color: #EF4444;
-    --info-color: #3B82F6;
+    --info-color: #2563EB;
 
-    --glass-color: rgba(255, 255, 255, 0.04);
-    --border-color: rgba(255, 255, 255, 0.08);
+    --glass-color: rgba(255,255,255,.05);
+    --border-color: rgba(255,255,255,.08);
 
     --shadow-primary:
-        0px 10px 30px rgba(0, 0, 0, 0.35);
+        0 10px 30px rgba(0,0,0,.35);
 
     --shadow-secondary:
-        0px 0px 25px rgba(139, 92, 246, 0.25);
+        0 0 25px rgba(255,193,7,.30);
 
 
     /* =========================================================
