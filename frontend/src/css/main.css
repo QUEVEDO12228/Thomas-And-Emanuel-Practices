@@ -3,7 +3,6 @@
 @import url('./variables.css');
 @import url('./components/parkalia_login.css');
 @import url('./components/parkalia_code_verify.css');
-@import url('./components/parkalia_register.css');
 @import url('./components/parkalia_reset_password.css');
 @import url('./components/parkalia_forgot_password.css');
 @import url('./components/parkalia_button_primary.css');
@@ -12,3 +11,6 @@
 @import url('./components/parkalia_navbar_global.css');
 @import url('./components/parkalia_drop-down_menu.css');
 @import url('./components/parkalia_sidebar_principal.css');
+
+
+@import url('./components/registers/parkalia_register.css');
