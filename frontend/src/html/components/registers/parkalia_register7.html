@@ -1,175 +1,492 @@
 <section class="parkalia-register-step1-page">
-  <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--left"></div>
-  <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--right"></div>
-  <div class="parkalia-register-step1-layout">
-    <section class="parkalia-register-step1">
-      <div class="parkalia-register-step1__card">
-        <div class="parkalia-register-step1__topbar">
-            <a href="javascript:history.back()" alt="Volver" class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">
-                <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
-            </a>
-        </div>
-        <header class="parkalia-register-step1__header">
-          <h1 class="parkalia-register-step1__title">Completa tu registro</h1>
-          <p class="parkalia-register-step1__subtitle">Último paso para crear tu cuenta en<strong class="parkalia-register-step1__highlight">parkalia</strong></p>
-        </header>
-        <form class="parkalia-register-step1__form">
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Descripción de los servicios</label>
-            <textarea class="parkalia-register-step1__textarea" rows="5"></textarea>
-          </div>
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Número de cámaras</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Número de vigilantes por turno</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
-          <!-- ===================================================== -->
-          <!-- RESERVAS -->
-          <!-- ===================================================== -->
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">¿Acepta reservas?</label>
-            <select class="parkalia-register-step1__select">
-              <option>Sí</option>
-              <option>No</option>
-            </select>
-          </div>
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Reserva automática</label>
-            <select class="parkalia-register-step1__select">
-              <option>Sí</option>
-              <option>No</option>
-            </select>
-          </div>
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Tiempo máximo para reservar (horas)</label>
-            <input type="number" class="parkalia-register-step1__input">
-          </div>
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Tiempo mínimo antes del ingreso (minutos)</label>
-            <input type="number" class="parkalia-register-step1__input">
-          </div>
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Tiempo de gracia (minutos)</label>
-            <input type="number" class="parkalia-register-step1__input">
-          </div>
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">¿Permite cancelación gratuita?</label>
-            <select class="parkalia-register-step1__select">
-              <option>Sí</option>
-              <option>No</option>
-            </select>
-          </div>
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Horas antes para cancelar</label>
-            <input type="number" class="parkalia-register-step1__input">
-          </div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Política de reservas</label>
-            <textarea class="parkalia-register-step1__textarea"></textarea>
-          </div>
-          <!-- ===================================================== -->
-          <!-- SERVICIOS -->
-          <!-- ===================================================== -->
+    <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--left"></div>
+    <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--right"></div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Servicios disponibles</label>
-            <label><input type="checkbox"> Lavado de vehículos</label>
-            <label><input type="checkbox"> Aspirado</label>
-            <label><input type="checkbox"> Encerado</label>
-            <label><input type="checkbox"> Cambio de aceite</label>
-            <label><input type="checkbox"> Mecánica rápida</label>
-            <label><input type="checkbox"> Montallantas</label>
-            <label><input type="checkbox"> Inflado de llantas</label>
-            <label><input type="checkbox"> Carga para vehículos eléctricos</label>
-            <label><input type="checkbox"> Carga para motos eléctricas</label>
-            <label><input type="checkbox"> Baños</label>
-            <label><input type="checkbox"> Sala de espera</label>
-            <label><input type="checkbox"> WiFi gratuito</label>
-            <label><input type="checkbox"> Cafetería</label>
-            <label><input type="checkbox"> Tienda</label>
-            <label><input type="checkbox"> Venta de accesorios</label>
-            <label><input type="checkbox"> Aire comprimido</label>
-            <label><input type="checkbox"> Valet Parking</label>
-            <label><input type="checkbox"> Facturación electrónica</label>
-            <label><input type="checkbox"> Recepción de paquetes</label>
-            <label><input type="checkbox"> Zona de descanso</label>
-          </div>
-          <!-- ===================================================== -->
-          <!-- SEGURIDAD -->
-          <!-- ===================================================== -->
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Medidas de seguridad</label>
+    <div class="parkalia-register-step1-layout">
 
-            <label><input type="checkbox"> Vigilancia 24 horas</label>
-            <label><input type="checkbox"> CCTV</label>
-            <label><input type="checkbox"> Cámaras con grabación</label>
-            <label><input type="checkbox"> Cerco eléctrico</label>
-            <label><input type="checkbox"> Alarma</label>
-            <label><input type="checkbox"> Detector de incendios</label>
-            <label><input type="checkbox"> Extintores</label>
-            <label><input type="checkbox"> Personal de seguridad</label>
-            <label><input type="checkbox"> Lector de placas</label>
-            <label><input type="checkbox"> Acceso QR</label>
-            <label><input type="checkbox"> Barrera automática</label>
-            <label><input type="checkbox"> Iluminación LED</label>
-            <label><input type="checkbox"> Seguro para vehículos</label>
-            <label><input type="checkbox"> Botón de pánico</label>
-          </div>
-        
-          <!-- ===================================================== -->
-          <!-- MÉTODOS DE PAGO -->
-          <!-- ===================================================== -->
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Métodos de pago aceptados</label>
+        <!-- =====================================================
+        BANNER IZQUIERDO
+        ====================================================== -->
 
-            <label><input type="checkbox"> Efectivo</label>
-            <label><input type="checkbox"> Tarjeta Débito</label>
-            <label><input type="checkbox"> Tarjeta Crédito</label>
-            <label><input type="checkbox"> PSE</label>
-            <label><input type="checkbox"> Transferencia bancaria</label>
-            <label><input type="checkbox"> Nequi</label>
-            <label><input type="checkbox"> Daviplata</label>
-            <label><input type="checkbox"> QR Bancario</label>
-            <label><input type="checkbox"> Apple Pay</label>
-            <label><input type="checkbox"> Google Pay</label>
-          </div>
-          <!-- ===================================================== -->
-          <!-- ACCESIBILIDAD -->
-          <!-- ===================================================== -->
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Accesibilidad</label>
+        <aside class="parkalia-register-step1-banner">
 
-            <label><input type="checkbox"> Rampas</label>
-            <label><input type="checkbox"> Ascensor</label>
-            <label><input type="checkbox"> Espacios para discapacidad</label>
-            <label><input type="checkbox"> Baños accesibles</label>
-            <label><input type="checkbox"> Señalización</label>
-            <label><input type="checkbox"> Personal de apoyo</label>
-            <label><input type="checkbox"> Piso táctil</label>
-          </div>
-        </form>
-        <div class="parkalia-register__button-primary">
-          <a href="/frontend/src/html/pages/registers/view_parkalia_register8.html" class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
-              <span class="parkalia-btn__text">Siguiente</span>
-              <img src="/frontend/public/assets/icons/icon_next-white.svg" alt="" class="parkalia-btn__icon">
-          </a>
-        </div>
-      </div>
-    </section>
-    <aside class="parkalia-register-step1-banner">
-      <img src="/frontend/public/assets/images/img_banking7.webp" alt="parkalia" class="parkalia-register-step1-banner__image">
-      <div class="parkalia-register-step1-banner__overlay"></div>
-      <div class="parkalia-register-step1-banner__card">
-        <span class="parkalia-register-step1-banner__badge">parkalia SECURITY</span>
-        <h1 class="parkalia-register-step1-banner__title">Seguridad avanzada</h1>
-        <p class="parkalia-register-step1-banner__text">Protegemos tu cuenta con tecnología de última generación.</p>
-      </div>
-    </aside>
-  </div>
+
+            <img 
+            src="/frontend/public/assets/images/img_banking7.webp"
+            alt="parkalia"
+            class="parkalia-register-step1-banner__image">
+
+
+            <div class="parkalia-register-step1-banner__overlay"></div>
+
+
+
+            <div class="parkalia-register-step1__topbar">
+
+                <a href="javascript:history.back()"
+                class="parkalia-btn-secondary">
+
+                    <img 
+                    src="/frontend/public/assets/icons/icon_back.svg"
+                    alt=""
+                    class="parkalia-btn-secondary__icon">
+
+                </a>
+
+            </div>
+
+
+
+            <header class="parkalia-register-step1__header">
+
+
+                <h1 class="parkalia-register-step1__title">
+                    Completa tu registro
+                </h1>
+
+
+                <p class="parkalia-register-step1__subtitle">
+
+                    Último paso para crear tu cuenta en
+
+                    <strong class="parkalia-register-step1__highlight">
+                        parkalia
+                    </strong>
+
+                </p>
+
+
+            </header>
+
+
+
+
+            <div class="parkalia-register-step1-banner__card">
+
+
+                <span class="parkalia-register-step1-banner__badge">
+                    PARKALIA SECURITY
+                </span>
+
+
+                <h2 class="parkalia-register-step1-banner__title">
+                    Seguridad avanzada
+                </h2>
+
+
+                <p class="parkalia-register-step1-banner__text">
+                    Protegemos tu cuenta con tecnología de última generación.
+                </p>
+
+
+            </div>
+
+
+
+        </aside>
+
+
+
+
+
+        <!-- =====================================================
+        FORMULARIO DERECHO
+        ====================================================== -->
+
+
+        <section class="parkalia-register-step1">
+
+
+            <div class="parkalia-register-step1__card">
+
+
+
+                <header class="parkalia-register-step1__header">
+
+
+                    <h1 class="parkalia-register-step1__title">
+                        Servicios y configuración
+                    </h1>
+
+
+                    <p class="parkalia-register-step1__subtitle">
+                        Configura las características operativas de tu parqueadero.
+                    </p>
+
+
+                </header>
+
+
+
+
+
+                <form class="parkalia-register-step1__form">
+
+
+
+                    <!-- ==============================
+                    INFORMACIÓN GENERAL
+                    =============================== -->
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Descripción de los servicios
+                        </label>
+
+
+                        <textarea 
+                        class="parkalia-register-step1__textarea"
+                        rows="5"></textarea>
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Número de cámaras
+                        </label>
+
+
+                        <input 
+                        type="number"
+                        class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Número de vigilantes por turno
+                        </label>
+
+
+                        <input 
+                        type="number"
+                        class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+
+
+                    <!-- ==============================
+                    RESERVAS
+                    =============================== -->
+  
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            ¿Acepta reservas?
+                        </label>
+
+
+                        <select class="parkalia-register-step1__select">
+
+                            <option>Sí</option>
+                            <option>No</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Reserva automática
+                        </label>
+
+
+                        <select class="parkalia-register-step1__select">
+
+                            <option>Sí</option>
+                            <option>No</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Tiempo máximo para reservar (horas)
+                        </label>
+
+
+                        <input 
+                        type="number"
+                        class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Tiempo mínimo antes del ingreso (minutos)
+                        </label>
+
+
+                        <input 
+                        type="number"
+                        class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Tiempo de gracia (minutos)
+                        </label>
+
+
+                        <input 
+                        type="number"
+                        class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            ¿Permite cancelación gratuita?
+                        </label>
+
+
+                        <select class="parkalia-register-step1__select">
+
+                            <option>Sí</option>
+                            <option>No</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Horas antes para cancelar
+                        </label>
+
+
+                        <input 
+                        type="number"
+                        class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Política de reservas
+                        </label>
+
+
+                        <textarea 
+                        class="parkalia-register-step1__textarea"></textarea>
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <!-- ==============================
+                    SERVICIOS
+                    =============================== -->
+                    <div class="parkalia-register-step1__field">
+
+
+                        <label class="parkalia-register-step1__label">
+                            Servicios disponibles
+                        </label>
+
+
+                        <div class="parkalia-register-step1__checkbox-grid">
+                            
+                          <div class="parkalia-register-step1__content-label">
+                              <label><input type="checkbox"> Lavado de vehículos</label>
+                              <label><input type="checkbox"> Aspirado</label>
+                              <label><input type="checkbox"> Encerado</label>
+                              <label><input type="checkbox"> Cambio de aceite</label>
+                              <label><input type="checkbox"> Mecánica rápida</label>
+                              <label><input type="checkbox"> Montallantas</label>
+                              <label><input type="checkbox"> Inflado de llantas</label>
+                              <label><input type="checkbox"> Carga vehículos eléctricos</label>
+                              <label><input type="checkbox"> Baños</label>
+                              <label><input type="checkbox"> Sala de espera</label>
+                              <label><input type="checkbox"> WiFi gratuito</label>
+                              <label><input type="checkbox"> Cafetería</label>
+                              <label><input type="checkbox"> Tienda</label>
+                              <label><input type="checkbox"> Valet Parking</label>
+                              <label><input type="checkbox"> Facturación electrónica</label>
+                              <label><input type="checkbox"> Recepción de paquetes</label>
+                          </div>
+
+                        </div>
+                    </div>  
+
+
+
+
+
+
+
+                    <!-- ==============================
+                    SEGURIDAD
+                    =============================== -->
+                    <div class="parkalia-register-step1__field">
+
+
+                      <label class="parkalia-register-step1__label">
+                          Medidas de seguridad
+                      </label>
+
+
+                      <div class="parkalia-register-step1__checkbox-grid">
+                        <div class="parkalia-register-step1__content-label">
+
+                          <label><input type="checkbox"> Vigilancia 24 horas</label>
+                          <label><input type="checkbox"> CCTV</label>
+                          <label><input type="checkbox"> Cámaras con grabación</label>
+                          <label><input type="checkbox"> Cerco eléctrico</label>
+                          <label><input type="checkbox"> Alarma</label>
+                          <label><input type="checkbox"> Extintores</label>
+                          <label><input type="checkbox"> Personal de seguridad</label>
+                          <label><input type="checkbox"> Lector de placas</label>
+                          <label><input type="checkbox"> Acceso QR</label>
+                          <label><input type="checkbox"> Barrera automática</label>
+                        </div>
+
+                      </div>
+                    </div>  
+                    <!-- ==============================
+                    MÉTODOS DE PAGO
+                    =============================== -->
+
+
+                    <div class="parkalia-register-step1__field">
+
+
+                      <label class="parkalia-register-step1__label">
+                          Métodos de pago aceptados
+                      </label>
+                      <div class="parkalia-register-step1__checkbox-grid">
+
+                        <div class="parkalia-register-step1__content-label">
+                          <label><input type="checkbox"> Efectivo</label>
+                          <label><input type="checkbox"> Tarjeta Débito</label>
+                          <label><input type="checkbox"> Tarjeta Crédito</label>
+                          <label><input type="checkbox"> PSE</label>
+                          <label><input type="checkbox"> Transferencia bancaria</label>
+                          <label><input type="checkbox"> Nequi</label>
+                          <label><input type="checkbox"> Daviplata</label>
+                          <label><input type="checkbox"> QR Bancario</label>
+                        </div>
+
+                      </div>
+                    </div>  
+
+
+
+
+
+
+
+                    <!-- ==============================
+                    ACCESIBILIDAD
+                    =============================== -->
+                    <div class="parkalia-register-step1__field">
+
+
+                      <label class="parkalia-register-step1__label">
+                          Accesibilidad
+                      </label>
+
+
+                      <div class="parkalia-register-step1__checkbox-grid">
+
+                        <div class="parkalia-register-step1__content-label">
+                          <label><input type="checkbox"> Rampas</label>
+                          <label><input type="checkbox"> Ascensor</label>
+                          <label><input type="checkbox"> Espacios discapacidad</label>
+                          <label><input type="checkbox"> Baños accesibles</label>
+                          <label><input type="checkbox"> Señalización</label>
+                          <label><input type="checkbox"> Personal de apoyo</label>
+                          <label><input type="checkbox"> Piso táctil</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+
+
+                </form>
+
+
+
+
+
+                <div class="parkalia-register__button-primary">
+
+                    <a href="/frontend/src/html/pages/registers/view_parkalia_register8.html"
+                    class="parkalia-btn parkalia-btn--primary parkalia-btn--expand">
+
+
+                        <span class="parkalia-btn__text">
+                            Siguiente
+                        </span>
+
+
+                        <img 
+                        src="/frontend/public/assets/icons/icon_next-white.svg"
+                        alt=""
+                        class="parkalia-btn__icon">
+
+
+                    </a>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+    </div>
+
+
 </section>

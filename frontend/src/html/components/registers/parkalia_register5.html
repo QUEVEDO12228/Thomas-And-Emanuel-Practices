@@ -1,145 +1,432 @@
 <section class="parkalia-register-step1-page">
-  <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--left"></div>
-  <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--right"></div>
-  <div class="parkalia-register-step1-layout">
-    <section class="parkalia-register-step1">
-      <div class="parkalia-register-step1__card">
-        <div class="parkalia-register-step1__topbar">
-            <a href="javascript:history.back()" alt="Volver" class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">
-                <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
-            </a>
-        </div>
-        <header class="parkalia-register-step1__header">
-          <h1 class="parkalia-register-step1__title">Completa tu registro</h1>
-          <p class="parkalia-register-step1__subtitle">Último paso para crear tu cuenta en<strong class="parkalia-register-step1__highlight">parkalia</strong></p>
-        </header>
-        <form class="parkalia-register-step1__form">
-          <!-- ===================================================== -->
-          <!-- CUPOS -->
-          <!-- ===================================================== -->
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Cupos para automóviles</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
+    <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--left"></div>
+    <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--right"></div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Cupos para motos</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Cupos para bicicletas</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
+    <div class="parkalia-register-step1-layout">
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Cupos para eléctricos</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Cupos para discapacitados</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Cupos para buses</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
+        <!--==================================================
+        BANNER IZQUIERDO
+        ==================================================-->
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Cupos para camiones</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
+        <aside class="parkalia-register-step1-banner">
 
-          <!-- ===================================================== -->
-          <!-- TARIFAS -->
-          <!-- ===================================================== -->
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Nombre tarifa</label>
-          <input type="text" class="parkalia-register-step1__input">
-          </div>
+            <img 
+                src="/frontend/public/assets/images/img_parquing.avif"
+                alt="Configuración de parqueadero Parkalia"
+                class="parkalia-register-step1-banner__image">
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Tipo tarifa</label>
-              <select class="parkalia-register-step1__select">
-              <option>Por minuto</option>
-              <option>Por hora</option>
-              <option>Media jornada</option>
-              <option>Jornada completa</option>
-              <option>Día</option>
-              <option>Noche</option>
-              <option>Semana</option>
-              <option>Mes</option>
-            </select>
-          </div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Precio</label>
-          <input type="number" class="parkalia-register-step1__input">
-          </div>
+            <div class="parkalia-register-step1-banner__overlay"></div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Moneda</label>
-              <select class="parkalia-register-step1__select">
-              <option>COP</option>
-              <option>USD</option>
-              <option>EUR</option>
-            </select>
-          </div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Hora inicio tarifa</label>
-          <input type="time" class="parkalia-register-step1__input">
-          </div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Hora final tarifa</label>
-          <input type="time" class="parkalia-register-step1__input">
-          </div>
+            <div class="parkalia-register-step1__topbar">
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Días aplicables</label>
-              <select class="parkalia-register-step1__select">
-              <option>Lunes</option>
-              <option>Martes</option>
-              <option>Miércoles</option>
-              <option>Jueves</option>
-              <option>Viernes</option>
-              <option>Sábado</option>
-              <option>Domingo</option>
-              <option>Festivos</option>
-            </select>
-          </div>
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Descripción tarifa</label>
-            <textarea class="parkalia-register-step1__textarea"></textarea>
-          </div>
+                <a href="javascript:history.back()"
+                    class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">
 
-          <div class="parkalia-register-step1__field">
-            <label class="parkalia-register-step1__label">Color identificador</label>
-          <input type="color">
-          </div>
-        </form>
-        <div class="parkalia-register__button-primary">
-          <a href="/frontend/src/html/pages/registers/view_parkalia_register6.html" class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
-              <span class="parkalia-btn__text">Siguiente</span>
-              <img src="/frontend/public/assets/icons/icon_next-white.svg" alt="" class="parkalia-btn__icon">
-          </a>
-        </div>
-      </div>
-    </section>
-    <aside class="parkalia-register-step1-banner">
-      <img src="/frontend/public/assets/images/img_banking7.webp" alt="parkalia" class="parkalia-register-step1-banner__image">
-      <div class="parkalia-register-step1-banner__overlay"></div>
-      <div class="parkalia-register-step1-banner__card">
-        <span class="parkalia-register-step1-banner__badge">parkalia SECURITY</span>
-        <h1 class="parkalia-register-step1-banner__title">Seguridad avanzada</h1>
-        <p class="parkalia-register-step1-banner__text">Protegemos tu cuenta con tecnología de última generación.</p>
-      </div>
-    </aside>
-  </div>
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_back.svg"
+                        alt=""
+                        class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
+
+
+                </a>
+
+
+            </div>
+
+
+
+
+            <header class="parkalia-register-step1__header">
+
+
+                <h1 class="parkalia-register-step1__title">
+                    Configura tu parqueadero
+                </h1>
+
+
+                <p class="parkalia-register-step1__subtitle">
+
+                    Define los
+                    <strong class="parkalia-register-step1__highlight">
+                        cupos y tarifas
+                    </strong>
+                    disponibles.
+
+                </p>
+
+
+            </header>
+
+
+
+
+
+            <div class="parkalia-register-step1-banner__card">
+
+
+                <span class="parkalia-register-step1-banner__badge">
+                    PARKALIA MANAGEMENT
+                </span>
+
+
+                <h2 class="parkalia-register-step1-banner__title">
+                    Control total de espacios y precios
+                </h2>
+
+
+                <p class="parkalia-register-step1-banner__text">
+
+                    Configura la capacidad de tu parqueadero, tipos de vehículos permitidos y las tarifas que utilizarás para administrar tus servicios.
+
+                </p>
+
+
+            </div>
+
+
+        </aside>
+
+
+
+
+
+        <!--==================================================
+        FORMULARIO DERECHO
+        ==================================================-->
+
+        <section class="parkalia-register-step1">
+
+
+            <div class="parkalia-register-step1__card">
+
+
+
+
+                <form class="parkalia-register-step1__form">
+
+
+
+                    <!--=========================
+                    CUPOS
+                    =========================-->
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Cupos para automóviles
+                        </label>
+
+                        <input type="number" class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Cupos para motos
+                        </label>
+
+                        <input type="number" class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Cupos para bicicletas
+                        </label>
+
+                        <input type="number" class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Cupos para vehículos eléctricos
+                        </label>
+
+                        <input type="number" class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Cupos para discapacitados
+                        </label>
+
+                        <input type="number" class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Cupos para buses
+                        </label>
+
+                        <input type="number" class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Cupos para camiones
+                        </label>
+
+                        <input type="number" class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+
+
+                    <!--=========================
+                    TARIFAS
+                    =========================-->
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Nombre de tarifa
+                        </label>
+
+                        <input type="text" class="parkalia-register-step1__input">
+
+                    </div>
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Tipo de tarifa
+                        </label>
+
+
+                        <select class="parkalia-register-step1__select">
+
+                            <option>Por minuto</option>
+                            <option>Por hora</option>
+                            <option>Media jornada</option>
+                            <option>Jornada completa</option>
+                            <option>Día</option>
+                            <option>Noche</option>
+                            <option>Semana</option>
+                            <option>Mes</option>
+
+                        </select>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Precio
+                        </label>
+
+
+                        <input type="number" class="parkalia-register-step1__input">
+
+
+                    </div>
+
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Moneda
+                        </label>
+
+
+                        <select class="parkalia-register-step1__select">
+
+                            <option>COP</option>
+                            <option>USD</option>
+                            <option>EUR</option>
+
+                        </select>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Hora inicio tarifa
+                        </label>
+
+
+                        <input type="time" class="parkalia-register-step1__input">
+
+
+                    </div>
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Hora final tarifa
+                        </label>
+
+
+                        <input type="time" class="parkalia-register-step1__input">
+
+
+                    </div>
+
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Días aplicables
+                        </label>
+
+
+                        <select class="parkalia-register-step1__select">
+
+                            <option>Lunes</option>
+                            <option>Martes</option>
+                            <option>Miércoles</option>
+                            <option>Jueves</option>
+                            <option>Viernes</option>
+                            <option>Sábado</option>
+                            <option>Domingo</option>
+                            <option>Festivos</option>
+
+                        </select>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+
+                        <label class="parkalia-register-step1__label">
+                            Descripción de tarifa
+                        </label>
+
+
+                        <textarea 
+                            class="parkalia-register-step1__textarea"
+                            placeholder="Describe las condiciones de esta tarifa"></textarea>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+
+                        <label class="parkalia-register-step1__label">
+                            Color identificador
+                        </label>
+
+
+                        <input 
+                            type="color"
+                            class="parkalia-register-step1__color">
+
+
+                    </div>
+
+
+
+
+                </form>
+
+
+
+
+
+                <div class="parkalia-register__button-primary">
+
+
+                    <a href="/frontend/src/html/pages/registers/view_parkalia_register6.html"
+                        class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
+
+
+                        <span class="parkalia-btn__text">
+                            Siguiente
+                        </span>
+
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_next-white.svg"
+                            alt=""
+                            class="parkalia-btn__icon">
+
+
+                    </a>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+    </div>
+
+
 </section>

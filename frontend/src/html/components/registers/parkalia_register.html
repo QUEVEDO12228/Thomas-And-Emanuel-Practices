@@ -1,94 +1,200 @@
 <section class="parkalia-register-step1-page">
-  <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--left"></div>
-  <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--right"></div>
-  <div class="parkalia-register-step1-layout">
-    <section class="parkalia-register-step1">
-      <div class="parkalia-register-step1__card">
-        <div class="parkalia-register-step1__topbar">
-            <a href="javascript:history.back()" alt="Volver" class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">
-                <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
-            </a>
-        </div>
-        <header class="parkalia-register-step1__header">
-          <h1 class="parkalia-register-step1__title">Completa tu registro</h1>
-          <p class="parkalia-register-step1__subtitle">Último paso para crear tu cuenta en<strong class="parkalia-register-step1__highlight">parkalia</strong></p>
-        </header>
-        <form class="parkalia-register-step1__form">
-        <!-- ===================================================== -->
-        <!-- CUENTA -->
-        <!-- ===================================================== -->
 
-          <div class="parkalia-register-step1__field">
-              <label class="parkalia-register-step1__label">Correo electrónico *</label>
-              <div class="parkalia-register-step1__input-wrapper">
-                  <img src="/frontend/public/assets/icons/icon_email.svg" class="parkalia-register-step1__input-icon">
-                  <input type="email" class="parkalia-register-step1__input" placeholder="correo@empresa.com">
-              </div>
-          </div>
+    <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--left"></div>
+    <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--right"></div>
 
-          <div class="parkalia-register-step1__field">
-              <label class="parkalia-register-step1__label">Contraseña *</label>
-              <div class="parkalia-register-step1__input-wrapper">
-                  <img src="/frontend/public/assets/icons/icon_password.svg" class="parkalia-register-step1__input-icon">
-                  <input type="password" class="parkalia-register-step1__input">
-              </div>
-          </div>
+    <div class="parkalia-register-step1-layout">
 
-          <div class="parkalia-register-step1__field">
-              <label class="parkalia-register-step1__label">Confirmar contraseña *</label>
-              <div class="parkalia-register-step1__input-wrapper">
-                  <img src="/frontend/public/assets/icons/icon_password.svg" class="parkalia-register-step1__input-icon">
-                  <input type="password" class="parkalia-register-step1__input">
-              </div>
-          </div>
+        <!--==================================================
+        BANNER
+        ===================================================-->
 
-          <div class="parkalia-register-step1__field">
-              <label class="parkalia-register-step1__label">Código de verificación *</label>
-              <div class="parkalia-register-step1__input-wrapper">
-                  <input type="text" class="parkalia-register-step1__input" placeholder="000000">
-              </div>
-          </div>
-          <div class="parkalia-register-step1__field">
-                <label class="parkalia-register-step1__label">Logo del parqueadero *</label>
-                <input type="file" class="parkalia-register-step1__file" accept="image/*">
+        <aside class="parkalia-register-step1-banner">
+
+            <img src="/frontend/public/assets/images/img_banking7.webp"
+                alt="Registro Parkalia"
+                class="parkalia-register-step1-banner__image">
+
+            <div class="parkalia-register-step1-banner__overlay"></div>
+
+            <div class="parkalia-register-step1__topbar">
+                <a href="javascript:history.back()"
+                    class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">
+
+                    <img src="/frontend/public/assets/icons/icon_back.svg"
+                        alt=""
+                        class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
+
+                </a>
             </div>
 
-            <div class="parkalia-register-step1__field">
-                <label class="parkalia-register-step1__label">Foto de portada *</label>
-                <input type="file" class="parkalia-register-step1__file" accept="image/*">
+            <header class="parkalia-register-step1__header">
+
+                <h1 class="parkalia-register-step1__title">
+                    Crea tu cuenta
+                </h1>
+
+                <p class="parkalia-register-step1__subtitle">
+                    Primer paso para registrar tu
+                    <strong class="parkalia-register-step1__highlight">
+                        parqueadero
+                    </strong>
+                    en Parkalia.
+                </p>
+
+            </header>
+
+            <div class="parkalia-register-step1-banner__card">
+
+                <span class="parkalia-register-step1-banner__badge">
+                    PARKALIA BUSINESS
+                </span>
+
+                <h2 class="parkalia-register-step1-banner__title">
+                    Todo comienza con un buen registro
+                </h2>
+
+                <p class="parkalia-register-step1-banner__text">
+                    Registra tu empresa y crea la cuenta administradora para comenzar a gestionar tu parqueadero desde una única plataforma.
+                </p>
+
             </div>
 
-            <div class="parkalia-register-step1__field">
-                <label class="parkalia-register-step1__label">Galería de imágenes</label>
-                <input type="file" class="parkalia-register-step1__file" accept="image/*" multiple>
+        </aside>
+
+        <!--==================================================
+        FORMULARIO
+        ===================================================-->
+
+        <section class="parkalia-register-step1">
+
+            <div class="parkalia-register-step1__card">
+                <form class="parkalia-register-step1__form">
+
+                    <!-- CUENTA -->
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">Correo electrónico *</label>
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_email_yellow.svg"
+                                class="parkalia-register-step1__input-icon">
+                            <input type="email"
+                                class="parkalia-register-step1__input"
+                                placeholder="correo@empresa.com">
+                        </div>
+                    </div>
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">Contraseña *</label>
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_password.svg"
+                                class="parkalia-register-step1__input-icon">
+                            <input type="password"
+                                class="parkalia-register-step1__input"
+                                placeholder="••••••••">
+                        </div>
+                    </div>
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">Confirmar contraseña *</label>
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_password.svg"
+                                class="parkalia-register-step1__input-icon">
+                            <input type="password"
+                                class="parkalia-register-step1__input"
+                                placeholder="••••••••">
+                        </div>
+                    </div>
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">Código de verificación *</label>
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="text"
+                                class="parkalia-register-step1__input"
+                                placeholder="000000">
+                        </div>
+                    </div>
+
+                    <!-- EMPRESA -->
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">Nombre comercial *</label>
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="text"
+                                class="parkalia-register-step1__input"
+                                placeholder="Parkalia Centro">
+                        </div>
+                    </div>
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">Razón social</label>
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="text"
+                                class="parkalia-register-step1__input"
+                                placeholder="Parkalia S.A.S">
+                        </div>
+                    </div>
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">NIT *</label>
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="text"
+                                class="parkalia-register-step1__input"
+                                placeholder="900123456-7">
+                        </div>
+                    </div>
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">Tipo de empresa *</label>
+
+                        <select class="parkalia-register-step1__select">
+                            <option>Persona Natural</option>
+                            <option>Persona Jurídica</option>
+                            <option>Empresa Pública</option>
+                            <option>Empresa Privada</option>
+                        </select>
+
+                    </div>
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">Logo del parqueadero *</label>
+
+                        <input type="file"
+                            class="parkalia-register-step1__file"
+                            accept="image/*">
+                    </div>
+
+                    <div class="parkalia-register-step1__field">
+                        <label class="parkalia-register-step1__label">Imagen de portada *</label>
+
+                        <input type="file"
+                            class="parkalia-register-step1__file"
+                            accept="image/*">
+                    </div>
+
+                </form>
+
+                <div class="parkalia-register__button-primary">
+
+                    <a href="/frontend/src/html/pages/registers/view_parkalia_register1.html"
+                        class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
+
+                        <span class="parkalia-btn__text">
+                            Siguiente
+                        </span>
+
+                        <img src="/frontend/public/assets/icons/icon_next-white.svg"
+                            alt=""
+                            class="parkalia-btn__icon">
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="parkalia-register-step1__field">
-                <label class="parkalia-register-step1__label">Nombre comercial *</label>
-            <div class="parkalia-register-step1__input-wrapper">
-                <input type="text" class="parkalia-register-step1__input" placeholder="Parkalia Centro">
-            </div>
-            </div>
+        </section>
 
-            
-          
-        </form>
-        <div class="parkalia-register__button-primary">
-          <a href="/frontend/src/html/pages/registers/view_parkalia_register1.html" class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
-              <span class="parkalia-btn__text">Siguiente</span>
-              <img src="/frontend/public/assets/icons/icon_next-white.svg" alt="" class="parkalia-btn__icon">
-          </a>
-        </div>
-      </div>
-    </section>
-    <aside class="parkalia-register-step1-banner">
-      <img src="/frontend/public/assets/images/img_banking7.webp" alt="parkalia" class="parkalia-register-step1-banner__image">
-      <div class="parkalia-register-step1-banner__overlay"></div>
-      <div class="parkalia-register-step1-banner__card">
-        <span class="parkalia-register-step1-banner__badge">parkalia SECURITY</span>
-        <h1 class="parkalia-register-step1-banner__title">Seguridad avanzada</h1>
-        <p class="parkalia-register-step1-banner__text">Protegemos tu cuenta con tecnología de última generación.</p>
-      </div>
-    </aside>
-  </div>
+    </div>
+
 </section>
