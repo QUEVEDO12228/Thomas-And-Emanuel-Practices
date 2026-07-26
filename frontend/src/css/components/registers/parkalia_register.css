@@ -295,7 +295,7 @@
     justify-content:center;
     align-items:center;
 
-    padding:24px;
+    padding:8px 24px 8px 24px;
 
     box-sizing:border-box;
 }
@@ -438,7 +438,7 @@
 .parkalia-register-step1__field{
     display:flex;
     flex-direction:column;
-    gap:10px;
+    gap:4px;
     width:100%;
 }
 
@@ -598,8 +598,8 @@
     max-width:380px;
     height:100px;
 
-    min-height:100px;
-    max-height:100px;
+    min-height:72px;
+    max-height:72px;
 
     padding:14px 18px;
 
@@ -653,12 +653,12 @@
 
     width:100%;
     max-width:380px;
-
-    padding:14px 18px;
+    padding: 4px;
+    min-height: 48px;
 
     border:2px dashed rgba(255,255,255,.10);
 
-    border-radius:18px;
+    border-radius:14px;
 
     background:rgba(255,255,255,.03);
 
@@ -682,9 +682,10 @@
 
 .parkalia-register-step1__file::file-selector-button{
 
-    padding:10px 18px;
+    padding:6px 8px;
 
     margin-right:18px;
+    margin-top:4px;
 
     border:none;
 
@@ -701,6 +702,7 @@
     cursor:pointer;
 
     font-family:var(--font-primary-bold);
+    font-size: var(--fs-xxxs);
 
 }
 
@@ -757,6 +759,66 @@
 =========================================================*/
 
 .parkalia-register-step1__content-label input[type="checkbox"]{
+
+    width:17px;
+    height:17px;
+
+    accent-color:var(--secondary-500);
+
+    cursor:pointer;
+
+    flex-shrink:0;
+
+}
+.parkalia-register-step1__content-label-largos{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(10px,1fr));
+
+    gap:0px;
+
+    width:100%;
+
+    max-width:820px;
+
+    margin-top:4px;
+
+}
+
+/*=========================================================
+=            CHECKBOX ITEM
+=========================================================*/
+
+.parkalia-register-step1__content-label-largos label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--gray-200);
+
+    font-size:.84rem;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.parkalia-register-step1__content-label-largos label:hover{
+
+    color:white;
+
+}
+
+/*=========================================================
+=            CHECKBOX
+=========================================================*/
+
+.parkalia-register-step1__content-label-largos input[type="checkbox"]{
 
     width:17px;
     height:17px;
@@ -981,7 +1043,7 @@
 
 .parkalia-register-step1__content-label label{
 
-    padding:6px 0;
+    padding-bottom:2px;
 
     border-radius:10px;
 

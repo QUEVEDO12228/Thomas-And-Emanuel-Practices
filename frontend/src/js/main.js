@@ -21,3 +21,4 @@ import '/frontend/src/js/components/registers/parkalia_register8.js';
 import '/frontend/src/js/components/registers/parkalia_register9.js';
 import '/frontend/src/js/components/registers/parkalia_register10.js';
 import '/frontend/src/js/components/registers/parkalia_register11.js';
+import '/frontend/src/js/components/registers/parkalia_register12.js';
