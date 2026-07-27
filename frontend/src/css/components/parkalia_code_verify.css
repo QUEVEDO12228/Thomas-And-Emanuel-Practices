@@ -53,7 +53,7 @@
 }
 .parkalia-code-verify__card:hover{
     transform: translateY(-2px);
-    border-color:rgba(139,92,246,.35);
+    border: 1px solid var(--secondary-400);
 }
 .parkalia-code-verify__topbar {
     position: absolute;
@@ -154,7 +154,7 @@
   width: fit-content;
 }
 .parkalia-code-verify__input {
-    width: 48   px;
+    width: 48px;
     height: 48px;
     border:1px solid rgba(255,255,255,0.08);
     border-radius: 18px;

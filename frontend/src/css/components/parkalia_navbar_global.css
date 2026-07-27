@@ -105,8 +105,7 @@
 }
 .parkalia-navbar__action-button:hover {
     transform: translateY(-4px);
-    border-left: 3px solid var(--secondary-500);
-    border-right: 3px solid var(--secondary-500);
+    border-bottom: 3px solid var(--secondary-500);
     background: rgba(139, 92, 246, 0.08);
     box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
 }

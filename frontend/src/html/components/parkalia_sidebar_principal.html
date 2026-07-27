@@ -1,63 +1,127 @@
 <aside class="parkalia-sidebar-principal">
-    <div class="parkalia-sidebar-principal__logo">
-    </div>
     <nav class="parkalia-sidebar-principal__nav">
+
+        <!-- Dashboard -->
         <div class="parkalia-sidebar-principal__group">
-            <button class="parkalia-sidebar-principal__menu-button active"><span>Inicio</span></button>
-        </div>
-        <div class="parkalia-sidebar-principal__group">
-            <button class="parkalia-sidebar-principal__menu-button active"><span>Transferencias</span></button>
+            <button class="parkalia-sidebar-principal__menu-button active">
+                <span>Inicio</span>
+            </button>
             <ul class="parkalia-sidebar-principal__submenu">
-                <a href="/frontend/src/html/pages/dashboard/banking/transfers/cards/vista_parkalia_new_transfer.html" 
-                class="parkalia-sidebar__link"> Nueva Transferencia (Ejecución)</a>
-                <a href="/frontend/src/html/pages/dashboard/banking/transfers/tables/view_parkalia_table_transfer_history.html" class="parkalia-sidebar__link"> Historial y Comprobantes</a>
-                <a href="/frontend/src/html/pages/dashboard/banking/transfers/tables/view_parkalia_scheduled_consultations_transfers.html" 
-                class="parkalia-sidebar__link"> Consultas programadas</a>
-                <a href="/frontend/src/html/pages/dashboard/banking/transfers/tables/view_parkalia_recipients.html" 
-                class="parkalia-sidebar__link--double"> Gestión de Destinatarios y Favoritos</a>
-                <a href="#" 
-                class="parkalia-sidebar__link--double"> Seguridad y Funciones Especiales</a>
+                <a href="#" class="parkalia-sidebar__link">Resumen General</a>
+                <a href="#" class="parkalia-sidebar__link">Indicadores en Tiempo Real</a>
+                <a href="#" class="parkalia-sidebar__link">Alertas del Sistema</a>
+                <a href="#" class="parkalia-sidebar__link">Analítica y Reportes</a>
             </ul>
         </div>
+
+        <!-- Operación -->
         <div class="parkalia-sidebar-principal__group">
-            <button class="parkalia-sidebar-principal__menu-button"><span>Autorizaciones</span></button>
+            <button class="parkalia-sidebar-principal__menu-button">
+                <span>Operación en Vivo</span>
+            </button>
+
             <ul class="parkalia-sidebar-principal__submenu">
-                <a href="#" class="parkalia-sidebar__link">Gestionar autorizaciones</a>
-                <a href="#" class="parkalia-sidebar__link">Operación por Aprobar</a>
-                <a href="#" class="parkalia-sidebar__link--double">Administra y Esquemas de Autorización</a>
-                <a href="#" class="parkalia-sidebar__link--double">Autoriza de Operaciones No Monetarias</a>
-                <a href="#" class="parkalia-sidebar__link">Historial de autorizaciones</a>
-                <a href="#" class="parkalia-sidebar__link">Seguridad y Autenticación</a>
+                <a href="#" class="parkalia-sidebar__link">Monitoreo del Parqueadero</a>
+                <a href="#" class="parkalia-sidebar__link">Mapa de Espacios</a>
+                <a href="#" class="parkalia-sidebar__link">Entradas de Vehículos</a>
+                <a href="#" class="parkalia-sidebar__link">Salidas de Vehículos</a>
+                <a href="#" class="parkalia-sidebar__link">Reservas</a>
+                <a href="#" class="parkalia-sidebar__link">Historial de Operaciones</a>
             </ul>
         </div>
+
+        <!-- Caja -->
         <div class="parkalia-sidebar-principal__group">
-            <button class="parkalia-sidebar-principal__menu-button"><span>Nómina Electrónica</span></button>
+            <button class="parkalia-sidebar-principal__menu-button">
+                <span>Finanzas y Caja</span>
+            </button>
+
             <ul class="parkalia-sidebar-principal__submenu">
-                <a href="/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_parkalia_manage_groups.html" class="parkalia-sidebar__link">Administrar grupos</a>
-                <a href="/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_parkalia_employee_management_table.html" class="parkalia-sidebar__link">Administrar empleados</a>
-                <a href="/frontend/src/html/pages/dashboard/banking/electronic%20payroll/view_parkalia_dian.html" 
-                class="parkalia-sidebar__link">Transmi automática a la DIAN</a>
-                <a href="#" 
-                class="parkalia-sidebar__link">Pago de nómina</a>
-                <a href="/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_payroll_payment_history.html" class="parkalia-sidebar__link">Historial de pagos de nómina</a>
-                <a href="/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_parkalia_scheduled_consultations_payroll.html" 
-                class="parkalia-sidebar__link">Consultas programadas</a>
+                <a href="#" class="parkalia-sidebar__link">Control de Caja</a>
+                <a href="#" class="parkalia-sidebar__link">Apertura de Turno</a>
+                <a href="#" class="parkalia-sidebar__link">Cierre de Caja</a>
+                <a href="#" class="parkalia-sidebar__link">Facturación</a>
+                <a href="#" class="parkalia-sidebar__link">Historial de Pagos</a>
+                <a href="#" class="parkalia-sidebar__link">Tarifas y Precios</a>
             </ul>
         </div>
+
+        <!-- Parqueaderos -->
         <div class="parkalia-sidebar-principal__group">
-            <button class="parkalia-sidebar-principal__menu-button"><span>Inversiones</span></button>
+            <button class="parkalia-sidebar-principal__menu-button">
+                <span>Gestión de Parqueaderos</span>
+            </button>
+
             <ul class="parkalia-sidebar-principal__submenu">
-                <a href="#" class="parkalia-sidebar__link">Fo de Inversión y Fiducias</a>
-                <a href="#" class="parkalia-sidebar__link">Acci y ETFs</a>
-                <a href="#" class="parkalia-sidebar__link">Certific de Depósito (CDT/CDA)</a>
-                <a href="#" class="parkalia-sidebar__link">-advisors</a>
-                <a href="#" class="parkalia-sidebar__link">Inversi Sostenibles (ESG)</a>
-                <a href="#" class="parkalia-sidebar__link">Herramie de Educación y Análisis</a>
+                <a href="#" class="parkalia-sidebar__link">Mis Parqueaderos</a>
+                <a href="/frontend/src/html/pages/registers/view_parkalia_register_parking_lot.html" class="parkalia-sidebar__link">Crear Parqueadero</a>
+                <a href="#" class="parkalia-sidebar__link">Zonas y Espacios</a>
+                <a href="#" class="parkalia-sidebar__link">Configuración de Tarifas</a>
+                <a href="#" class="parkalia-sidebar__link">Horarios de Atención</a>
+                <a href="#" class="parkalia-sidebar__link">Sucursales</a>
             </ul>
         </div>
-        <div class="parkalia-sidebar-principal__search">
-            <img src="/frontend/public/assets/icons/icon_search.svg" alt="Buscar" class="parkalia-sidebar-principal__search-icon">
-            <input type="text" placeholder="Buscar operación..." class="parkalia-sidebar-principal__search-input">
+
+        <!-- Clientes -->
+        <div class="parkalia-sidebar-principal__group">
+            <button class="parkalia-sidebar-principal__menu-button">
+                <span>Clientes</span>
+            </button>
+
+            <ul class="parkalia-sidebar-principal__submenu">
+                <a href="#" class="parkalia-sidebar__link">Clientes Frecuentes</a>
+                <a href="#" class="parkalia-sidebar__link">Mensualidades</a>
+                <a href="#" class="parkalia-sidebar__link">Convenios Empresariales</a>
+                <a href="#" class="parkalia-sidebar__link">Vehículos Registrados</a>
+                <a href="#" class="parkalia-sidebar__link">Clientes VIP</a>
+                <a href="#" class="parkalia-sidebar__link">Lista Restringida</a>
+            </ul>
+        </div>
+
+        <!-- Personal -->
+        <div class="parkalia-sidebar-principal__group">
+            <button class="parkalia-sidebar-principal__menu-button">
+                <span>Personal y Roles</span>
+            </button>
+
+            <ul class="parkalia-sidebar-principal__submenu">
+                <a href="#" class="parkalia-sidebar__link">Empleados</a>
+                <a href="#" class="parkalia-sidebar__link">Operadores</a>
+                <a href="#" class="parkalia-sidebar__link">Cajeros</a>
+                <a href="#" class="parkalia-sidebar__link">Supervisores</a>
+                <a href="#" class="parkalia-sidebar__link">Roles y Permisos</a>
+                <a href="#" class="parkalia-sidebar__link">Historial de Actividad</a>
+            </ul>
+        </div>
+
+        <!-- Dispositivos -->
+        <div class="parkalia-sidebar-principal__group">
+            <button class="parkalia-sidebar-principal__menu-button">
+                <span>Dispositivos</span>
+            </button>
+
+            <ul class="parkalia-sidebar-principal__submenu">
+                <a href="#" class="parkalia-sidebar__link">Talanqueras</a>
+                <a href="#" class="parkalia-sidebar__link">Cámaras LPR</a>
+                <a href="#" class="parkalia-sidebar__link">Sensores de Ocupación</a>
+                <a href="#" class="parkalia-sidebar__link">Terminales de Pago</a>
+                <a href="#" class="parkalia-sidebar__link">Estado de Equipos</a>
+            </ul>
+        </div>
+
+        <!-- Reportes -->
+        <div class="parkalia-sidebar-principal__group">
+            <button class="parkalia-sidebar-principal__menu-button">
+                <span>Reportes</span>
+            </button>
+
+            <ul class="parkalia-sidebar-principal__submenu active">
+                <a href="#" class="parkalia-sidebar__link">Ingresos</a>
+                <a href="#" class="parkalia-sidebar__link">Ocupación</a>
+                <a href="#" class="parkalia-sidebar__link">Vehículos Atendidos</a>
+                <a href="#" class="parkalia-sidebar__link">Horas Pico</a>
+                <a href="#" class="parkalia-sidebar__link">Exportar Reportes</a>
+            </ul>
         </div>
     </nav>
 </aside>

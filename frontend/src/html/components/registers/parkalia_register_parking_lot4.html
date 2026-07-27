@@ -1,0 +1,265 @@
+<section class="parkalia-register-step1-page">
+
+    <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--left"></div>
+    <div class="parkalia-register-step1-page__glow parkalia-register-step1-page__glow--right"></div>
+
+    <div class="parkalia-register-step1-layout">
+
+        <!-- ===========================
+             BANNER IZQUIERDO
+        ============================ -->
+        <aside class="parkalia-register-step1-banner">
+
+            <img
+                src="/frontend/public/assets/images/img_parquing.avif"
+                alt="Parqueadero Parkalia"
+                class="parkalia-register-step1-banner__image">
+
+            <div class="parkalia-register-step1-banner__overlay"></div>
+
+            <!-- Botón volver -->
+            <div class="parkalia-register-step1__topbar">
+                <a href="javascript:history.back()"
+                    class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary"
+                    aria-label="Volver">
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_back.svg"
+                        alt=""
+                        class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
+                </a>
+            </div>
+
+            <!-- Texto superior del banner -->
+            <header class="parkalia-register-step1__header">
+
+                <h1 class="parkalia-register-step1__title">
+                    Información del parqueadero
+                </h1>
+
+                <p class="parkalia-register-step1__subtitle">
+                    Paso 4 de la configuración. Completa las características principales de tu
+                    <strong class="parkalia-register-step1__highlight">
+                        parqueadero
+                    </strong>
+                    para comenzar a administrar tu operación con Parkalia.
+                </p>
+
+            </header>
+
+            <!-- Card inferior -->
+            <div class="parkalia-register-step1-banner__card">
+
+                <span class="parkalia-register-step1-banner__badge">
+                    PARKALIA PARKING
+                </span>
+
+                <h2 class="parkalia-register-step1-banner__title">
+                    Gestiona tu parqueadero de forma inteligente
+                </h2>
+
+                <p class="parkalia-register-step1-banner__text">
+                    Configura la capacidad, tipos de vehículos permitidos, modalidad,
+                    accesos y demás características para crear un parqueadero completamente
+                    adaptado a tu operación.
+                </p>
+
+            </div>
+
+        </aside>
+
+        <!-- ===========================
+             FORMULARIO
+        ============================ -->
+        <section class="parkalia-register-step1">
+
+            <div class="parkalia-register-step1__card">
+
+                <form class="parkalia-register-step1__form">
+
+                    <!-- Tipo -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Tipo de parqueadero *
+                        </label>
+
+                        <select class="parkalia-register-step1__select">
+                            <option>Público</option>
+                            <option>Privado</option>
+                            <option>Mixto</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Modalidad -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Modalidad *
+                        </label>
+
+                        <select class="parkalia-register-step1__select">
+                            <option>Cubierto</option>
+                            <option>Descubierto</option>
+                            <option>Mixto</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Capacidad -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Capacidad total *
+                        </label>
+
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="number" class="parkalia-register-step1__input">
+                        </div>
+
+                    </div>
+
+                    <!-- Pisos -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Número de pisos
+                        </label>
+
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="number" class="parkalia-register-step1__input">
+                        </div>
+
+                    </div>
+
+                    <!-- Área -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Área total (m²)
+                        </label>
+
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="number" class="parkalia-register-step1__input">
+                        </div>
+
+                    </div>
+
+                    <!-- Altura -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Altura máxima permitida (m)
+                        </label>
+
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="number" step="0.01" class="parkalia-register-step1__input">
+                        </div>
+
+                    </div>
+
+                    <!-- Entradas -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Número de entradas
+                        </label>
+
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="number" class="parkalia-register-step1__input">
+                        </div>
+
+                    </div>
+
+                    <!-- Salidas -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Número de salidas
+                        </label>
+
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="number" class="parkalia-register-step1__input">
+                        </div>
+
+                    </div>
+
+                    <!-- Tiempo máximo -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Tiempo máximo permitido (horas)
+                        </label>
+
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="number" class="parkalia-register-step1__input">
+                        </div>
+
+                    </div>
+
+                    <!-- Tiempo mínimo -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Tiempo mínimo de permanencia (min)
+                        </label>
+
+                        <div class="parkalia-register-step1__input-wrapper">
+                            <input type="number" class="parkalia-register-step1__input">
+                        </div>
+
+                    </div>
+                    <!-- Vehículos -->
+                    <div class="parkalia-register-step1__field">
+
+                        <label class="parkalia-register-step1__label">
+                            Vehículos permitidos
+                        </label>
+
+                        <div class="parkalia-register-step1__content-label">
+
+                            <label><input type="checkbox"> Automóvil</label>
+                            <label><input type="checkbox"> Camioneta</label>
+                            <label><input type="checkbox"> SUV</label>
+                            <label><input type="checkbox"> Pick-Up</label>
+                            <label><input type="checkbox"> Moto</label>
+                            <label><input type="checkbox"> Bicicleta</label>
+                            <label><input type="checkbox"> Patineta<br>eléctrica</label>
+                            <label><input type="checkbox"> Scooter</label>
+                            <label><input type="checkbox"> Camión</label>
+                            <label><input type="checkbox"> Furgón</label>
+                            <label><input type="checkbox"> Bus</label>
+                            <label><input type="checkbox"> Vehículo eléctrico</label>
+
+                        </div>
+
+                    </div>
+                    <div class="parkalia-register__button-primary">
+
+                            <a
+                                href="/frontend/src/html/pages/registers/view_parkalia_register_parking_lot5.html"
+                                class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
+
+                                <span class="parkalia-btn__text">
+                                    Siguiente
+                                </span>
+
+                                <img
+                                    src="/frontend/public/assets/icons/icon_next-white.svg"
+                                    alt=""
+                                    class="parkalia-btn__icon">
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+        </section>
+
+    </div>
+
+</section>

@@ -7,6 +7,7 @@
     font-size: var(--fs-xs);
     margin-bottom: 12px;
     padding-top: 12px;  
+    margin-left: 2.4rem;
 
 }
 
@@ -28,6 +29,7 @@ SLIDER
 
     align-items:center;
     padding-bottom: 12px;
+    margin-left: 2.4rem;
 
 }
 
@@ -97,7 +99,7 @@ ARROWS
 }
 
 .parkalia-section-card-top-offer__arrow--right{
-    right:12px;
+    right:32px;
 }
 /* 
 .parkalia-section-card-top-offer__offer-card::before {
