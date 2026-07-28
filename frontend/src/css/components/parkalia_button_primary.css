@@ -24,8 +24,8 @@
 
     linear-gradient(
         135deg,
-        var(--secondary-500),
-        var(--secondary-300)
+        var(--secondary-400),
+        var(--info-color)
     );
     backdrop-filter:blur(22px);
     overflow:hidden;

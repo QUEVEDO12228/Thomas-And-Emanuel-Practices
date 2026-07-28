@@ -8,6 +8,8 @@ import '/frontend/src/js/components/parkalia_top_offers.js';
 import '/frontend/src/js/components/parkalia_navbar_global.js';
 import '/frontend/src/js/components/parkalia_sidebar_principal.js';
 import '/frontend/src/js/components/parkalia_drop-down_menu.js';
+import '/frontend/src/js/components/parkalia_register_auth_user1.js';
+import '/frontend/src/js/components/parkalia_register_auth_user2.js';
 
 import '/frontend/src/js/components/registers/parkalia_register_parking_lot.js';
 import '/frontend/src/js/components/registers/parkalia_register_parking_lot1.js';
