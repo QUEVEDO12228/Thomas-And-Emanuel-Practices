@@ -1,0 +1,219 @@
+.parkalia-notifications-page{
+    position:relative;
+    min-height:100vh;
+    padding:40px;
+    overflow:hidden;
+    background:var(--background-primary);
+    font-family:var(--font-primary);
+}
+.parkalia-notifications-page__glow{
+    position:absolute;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    filter:blur(150px);
+    opacity:.15;
+    pointer-events:none;
+}
+.parkalia-notifications-page__glow--left{
+    top:-180px;
+    left:-180px;
+    background:var(--secondary-500);
+}
+.parkalia-notifications-page__glow--right{
+    right:-180px;
+    bottom:-180px;
+    background:var(--primary-400);
+}
+.parkalia-notifications{
+    position:relative;
+    z-index:2;
+}
+.parkalia-notifications__container{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+}
+.parkalia-notifications__header{
+    margin-bottom:30px;
+}
+.parkalia-notifications__title{
+    margin:0 0 10px;
+    color:var(--white);
+    font-size:var(--fs-lg);
+    font-family:var(--font-primary-bold);
+}
+.parkalia-notifications__subtitle{
+    margin:0;
+    color:var(--gray-300);
+    font-size:15px;
+}
+.parkalia-notifications-card{
+    padding:28px;
+    margin-bottom:24px;
+    border-radius:var(--radius-xl);
+    border:1px solid var(--border-color);
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(18px);
+    box-shadow:var(--shadow-primary);
+}
+.parkalia-notifications-card__header{
+    margin-bottom:22px;
+}
+.parkalia-notifications-card__title{
+    margin:0;
+    color:var(--white);
+    font-size:20px;
+    font-family:var(--font-primary-bold);
+}
+.parkalia-notifications-summary{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(180px,1fr));
+    gap:18px;
+}
+.parkalia-notifications-summary__item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    border-radius:18px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.06);
+}
+.parkalia-notifications-summary__item span{
+    color:var(--gray-300);
+    font-size:14px;
+}
+.parkalia-notifications-summary__item strong{
+    color:var(--secondary-300);
+    font-size:26px;
+    font-family: var(--font-primary-bold);
+}
+.parkalia-notifications-settings{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(300px,1fr));
+    gap:16px;
+}
+.parkalia-notifications-setting{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    border-radius:16px;
+    background:rgba(255,255,255,.04);
+}
+.parkalia-notifications-setting span{
+    color:var(--gray-200);
+    font-size:14px;
+}
+.parkalia-notifications-list{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+.parkalia-notification-item{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    padding:20px;
+    border-radius:18px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+    transition:.3s ease;
+}
+.parkalia-notification-item:hover{
+    transform:translateX(5px);
+    background:rgba(255,255,255,.07);
+}
+.parkalia-notification-item h3{
+    margin:0 0 8px;
+    color:var(--white);
+    font-size:16px;
+}
+.parkalia-notification-item p{
+    margin:0 0 8px;
+    color:var(--gray-300);
+    font-size:14px;
+}
+.parkalia-notification-item small{
+    color:var(--gray-500);
+}
+.parkalia-notification-item__icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:42px;
+    height:42px;
+    flex-shrink:0;
+    border-radius:50%;
+    font-size:20px;
+    font-family:var(--font-primary-bold);
+}
+.parkalia-notification-item__icon.success{
+    background:rgba(34,197,94,.15);
+    color:var(--success-color);
+}
+.parkalia-notification-item__icon.warning{
+    background:rgba(255,193,7,.15);
+    color:var(--secondary-300);
+}
+.parkalia-notification-item__icon.danger{
+    background:rgba(239,68,68,.15);
+    color:var(--danger-color);
+}
+.parkalia-notifications-history{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.parkalia-notifications-history__row{
+    display:grid;
+    grid-template-columns:180px 180px 1fr;
+    align-items:center;
+    padding:16px;
+    border-radius:14px;
+    background:rgba(255,255,255,.04);
+    color:var(--gray-300);
+    font-size:14px;
+}
+.parkalia-notifications-history__row span:nth-child(2){
+    color:var(--secondary-300);
+}
+.parkalia-notifications__buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:18px;
+    margin-top:30px;
+}
+@media(max-width:1200px){
+    .parkalia-notifications-summary{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+}
+@media(max-width:900px){
+    .parkalia-notifications-page{
+        padding:25px;
+    }
+    .parkalia-notifications-settings{
+        grid-template-columns:1fr;
+    }
+    .parkalia-notifications-history__row{
+        grid-template-columns:1fr;
+        gap:8px;
+    }
+}
+@media(max-width:600px){
+    .parkalia-notifications-page{
+        padding:15px;
+    }
+    .parkalia-notifications-summary{
+        grid-template-columns:1fr;
+    }
+    .parkalia-notifications-card{
+        padding:20px;
+    }
+    .parkalia-notifications__buttons{
+        flex-direction:column;
+    }
+}

@@ -23,12 +23,15 @@
             <a href="javascript:history.back()"
                class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">
 
+
                 <img
                     src="/frontend/public/assets/icons/icon_back.svg"
                     alt=""
                     class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
 
+
             </a>
+
 
         </div>
 
@@ -40,19 +43,19 @@
 
 
             <span class="parkalia-register-step1-banner__badge">
-                PARKALIA BUSINESS
+                PARKALIA SECURITY
             </span>
 
 
             <h2 class="parkalia-register-step1-banner__title">
-                Presenta tu parqueadero
+                Configuración inteligente
             </h2>
 
 
             <p class="parkalia-register-step1-banner__text">
 
-                Agrega imágenes, videos y documentos necesarios
-                para crear un perfil profesional y confiable.
+                Define las preferencias del sistema y acepta las condiciones
+                para comenzar a operar tu parqueadero.
 
             </p>
 
@@ -71,10 +74,14 @@
     ==========================-->
 
 
+
     <section class="parkalia-register-step1">
 
 
+
         <div class="parkalia-register-step1__card">
+
+
 
 
 
@@ -82,14 +89,13 @@
 
 
                 <h1 class="parkalia-register-step1__title">
-                    Galería y documentos
+                    Configuración final
                 </h1>
 
 
                 <p class="parkalia-register-step1__subtitle">
 
-                    Completa la información visual y administrativa
-                    de tu negocio.
+                    Ajusta las preferencias generales de tu cuenta.
 
                 </p>
 
@@ -100,79 +106,42 @@
 
 
 
+
             <form class="parkalia-register-step1__form">
 
 
 
-                <!-- ======================
-                    IMÁGENES
-                ======================= -->
-
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Logo del parqueadero *
-                    </label>
-
-                    <input 
-                        type="file"
-                        class="parkalia-register-step1__file"
-                        accept="image/*">
-
-                </div>
-
-
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Imagen de portada *
-                    </label>
-
-                    <input 
-                        type="file"
-                        class="parkalia-register-step1__file"
-                        accept="image/*">
-
-                </div>
-
-
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Fotografías del parqueadero
-                    </label>
-
-                    <input 
-                        type="file"
-                        class="parkalia-register-step1__file"
-                        accept="image/*"
-                        multiple>
-
-                </div>
-
-
-
 
 
                 <!-- ======================
-                    VIDEOS
+                    CONFIGURACIÓN
                 ======================= -->
 
 
+
                 <div class="parkalia-register-step1__field">
 
+
                     <label class="parkalia-register-step1__label">
-                        Videos del parqueadero
+                        ¿Mostrar precios públicamente?
                     </label>
 
-                    <input
-                        type="file"
-                        class="parkalia-register-step1__file"
-                        accept="video/*"
-                        multiple>
+
+                    <select class="parkalia-register-step1__select">
+
+
+                        <option>
+                            Sí
+                        </option>
+
+
+                        <option>
+                            No
+                        </option>
+
+
+                    </select>
+
 
                 </div>
 
@@ -180,89 +149,124 @@
 
 
 
-                <!-- ======================
-                    DOCUMENTOS
-                ======================= -->
-
 
                 <div class="parkalia-register-step1__field">
 
+
                     <label class="parkalia-register-step1__label">
-                        RUT *
+                        ¿Mostrar disponibilidad?
                     </label>
 
-                    <input
-                        type="file"
-                        class="parkalia-register-step1__file"
-                        accept=".pdf,.jpg,.png">
+
+                    <select class="parkalia-register-step1__select">
+
+
+                        <option>
+                            Sí
+                        </option>
+
+
+                        <option>
+                            No
+                        </option>
+
+
+                    </select>
+
 
                 </div>
 
 
 
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Cámara de Comercio
-                    </label>
-
-                    <input
-                        type="file"
-                        class="parkalia-register-step1__file"
-                        accept=".pdf">
-
-                </div>
 
 
 
                 <div class="parkalia-register-step1__field">
 
+
                     <label class="parkalia-register-step1__label">
-                        Licencia de funcionamiento
+                        ¿Aceptar reservas automáticamente?
                     </label>
 
-                    <input
-                        type="file"
-                        class="parkalia-register-step1__file"
-                        accept=".pdf">
+
+                    <select class="parkalia-register-step1__select">
+
+
+                        <option>
+                            Sí
+                        </option>
+
+
+                        <option>
+                            No
+                        </option>
+
+
+                    </select>
+
 
                 </div>
 
 
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Póliza o seguro
-                    </label>
-
-                    <input
-                        type="file"
-                        class="parkalia-register-step1__file"
-                        accept=".pdf">
-
-                </div>
 
 
 
 
 
                 <!-- ======================
-                    PERFIL PÚBLICO
+                    INFORMACIÓN ADICIONAL
                 ======================= -->
+
 
 
                 <div class="parkalia-register-step1__field">
 
 
                     <label class="parkalia-register-step1__label">
-                        Título del perfil
+                        ¿Cómo conoció Parkalia?
                     </label>
 
 
-                    <input
-                        type="text"
-                        class="parkalia-register-step1__input">
+
+                    <select class="parkalia-register-step1__select">
+
+
+                        <option>
+                            Google
+                        </option>
+
+
+                        <option>
+                            Facebook
+                        </option>
+
+
+                        <option>
+                            Instagram
+                        </option>
+
+
+                        <option>
+                            TikTok
+                        </option>
+
+
+                        <option>
+                            Publicidad
+                        </option>
+
+
+                        <option>
+                            Recomendación
+                        </option>
+
+
+                        <option>
+                            Otro
+                        </option>
+
+
+                    </select>
 
 
                 </div>
@@ -271,12 +275,15 @@
 
 
 
+
+
                 <div class="parkalia-register-step1__field">
 
 
                     <label class="parkalia-register-step1__label">
-                        Descripción pública
+                        Comentarios adicionales
                     </label>
+
 
 
                     <textarea
@@ -290,76 +297,39 @@
 
 
 
+
+
+                <!-- ======================
+                    TÉRMINOS
+                ======================= -->
                 <div class="parkalia-register-step1__field">
-
-
-                    <label class="parkalia-register-step1__label">
-                        Palabras clave
-                    </label>
-
-
-                    <input
-                        type="text"
-                        class="parkalia-register-step1__input"
-                        placeholder="Centro, Seguro, 24 horas, Cubierto...">
-
-
+                    <label class="parkalia-register-step1__label">Vehículos permitidos</label>
+                    <div class="parkalia-register-step1__content-label-largos">
+                        <label><input type="checkbox"> Confirmo que la información<br>suministrada es verdadera.</label>
+                        <label><input type="checkbox"> Acepto los Términos y Condiciones.</label>
+                        <label><input type="checkbox"> Acepto la Política de Privacidad.</label>
+                        <label><input type="checkbox"> Autorizo el tratamiento de datos personales.</label>
+                        <label><input type="checkbox"> Autorizo a Parkalia a verificar la información suministrada.</label>
+                        <label><input type="checkbox"> Acepto recibir notificaciones relacionadas con mi cuenta.</label>
+                    </div>
                 </div>
-
-
-
-
-
-                <div class="parkalia-register-step1__field">
-
-
-                    <label class="parkalia-register-step1__label">
-                        URL personalizada
-                    </label>
-
-
-                    <input
-                        type="text"
-                        class="parkalia-register-step1__input"
-                        placeholder="parkalia.com/p/mi-parqueadero">
-
-
-                </div>
-
-
-
+                
+                <div class="parkalia-register__button-primary">
+                <a href="/frontend/src/html/pages/registers/view_parkalia_register_parking_lot.html" class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
+                    <span class="parkalia-btn__text">Agregar empleado</span><img src="/frontend/public/assets/icons/icon_next-white.svg" alt="" class="parkalia-btn__icon">
+                </a>
+                <a href="/frontend/src/html/pages/registers/view_parkalia_register_parking_lot.html" class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
+                    <span class="parkalia-btn__text">Siguiente</span><img src="/frontend/public/assets/icons/icon_next-white.svg" alt="" class="parkalia-btn__icon">
+                </a>
+            </div>
             </form>
 
 
 
 
 
-            <div class="parkalia-register__button-primary">
-
-
-                <a href="/frontend/src/html/pages/registers/view_parkalia_register_parking_lot11.html"
-                   class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
-
-
-                    <span class="parkalia-btn__text">
-                        Siguiente
-                    </span>
-
-
-                    <img
-                        src="/frontend/public/assets/icons/icon_next-white.svg"
-                        alt=""
-                        class="parkalia-btn__icon">
-
-
-                </a>
-
-
-            </div>
-
-
-
         </div>
+
 
 
     </section>

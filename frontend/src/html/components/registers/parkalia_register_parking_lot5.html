@@ -7,7 +7,6 @@
     <div class="parkalia-register-step1-layout">
 
 
-
         <!--==================================================
         BANNER IZQUIERDO
         ==================================================-->
@@ -15,9 +14,9 @@
         <aside class="parkalia-register-step1-banner">
 
 
-            <img 
+            <img
                 src="/frontend/public/assets/images/img_parquing.avif"
-                alt="Configuración de parqueadero Parkalia"
+                alt="Promociones y horarios Parkalia"
                 class="parkalia-register-step1-banner__image">
 
 
@@ -46,21 +45,21 @@
 
 
 
+
             <header class="parkalia-register-step1__header">
 
 
                 <h1 class="parkalia-register-step1__title">
-                    Configura tu parqueadero
+                    Promociones y horarios
                 </h1>
 
 
                 <p class="parkalia-register-step1__subtitle">
 
-                    Define los
+                    Configura ofertas y disponibilidad de tu
                     <strong class="parkalia-register-step1__highlight">
-                        cupos y tarifas
-                    </strong>
-                    disponibles.
+                        parqueadero
+                    </strong>.
 
                 </p>
 
@@ -80,13 +79,13 @@
 
 
                 <h2 class="parkalia-register-step1-banner__title">
-                    Control total de espacios y precios
+                    Mejora la experiencia del cliente
                 </h2>
 
 
                 <p class="parkalia-register-step1-banner__text">
 
-                    Configura la capacidad de tu parqueadero, tipos de vehículos permitidos y las tarifas que utilizarás para administrar tus servicios.
+                    Crea promociones atractivas y define los horarios de atención para que tus clientes conozcan siempre la disponibilidad del servicio.
 
                 </p>
 
@@ -95,6 +94,7 @@
 
 
         </aside>
+
 
 
 
@@ -116,133 +116,21 @@
 
 
 
-                    <!--=========================
-                    CUPOS
-                    =========================-->
 
 
                     <div class="parkalia-register-step1__field">
 
-                        <label class="parkalia-register-step1__label">
-                            Cupos para automóviles
-                        </label>
-
-                        <input type="number" class="parkalia-register-step1__input">
-
-                    </div>
-
-
-
-                    <div class="parkalia-register-step1__field">
 
                         <label class="parkalia-register-step1__label">
-                            Cupos para motos
-                        </label>
-
-                        <input type="number" class="parkalia-register-step1__input">
-
-                    </div>
-
-
-
-                    <div class="parkalia-register-step1__field">
-
-                        <label class="parkalia-register-step1__label">
-                            Cupos para bicicletas
-                        </label>
-
-                        <input type="number" class="parkalia-register-step1__input">
-
-                    </div>
-
-
-
-                    <div class="parkalia-register-step1__field">
-
-                        <label class="parkalia-register-step1__label">
-                            Cupos para vehículos eléctricos
-                        </label>
-
-                        <input type="number" class="parkalia-register-step1__input">
-
-                    </div>
-
-
-
-                    <div class="parkalia-register-step1__field">
-
-                        <label class="parkalia-register-step1__label">
-                            Cupos para discapacitados
-                        </label>
-
-                        <input type="number" class="parkalia-register-step1__input">
-
-                    </div>
-
-
-
-                    <div class="parkalia-register-step1__field">
-
-                        <label class="parkalia-register-step1__label">
-                            Cupos para buses
-                        </label>
-
-                        <input type="number" class="parkalia-register-step1__input">
-
-                    </div>
-
-
-
-                    <div class="parkalia-register-step1__field">
-
-                        <label class="parkalia-register-step1__label">
-                            Cupos para camiones
-                        </label>
-
-                        <input type="number" class="parkalia-register-step1__input">
-
-                    </div>
-
-
-
-
-
-                    <!--=========================
-                    TARIFAS
-                    =========================-->
-
-
-
-                    <div class="parkalia-register-step1__field">
-
-                        <label class="parkalia-register-step1__label">
-                            Nombre de tarifa
-                        </label>
-
-                        <input type="text" class="parkalia-register-step1__input">
-
-                    </div>
-
-
-
-
-                    <div class="parkalia-register-step1__field">
-
-                        <label class="parkalia-register-step1__label">
-                            Tipo de tarifa
+                            Tipo de descuento
                         </label>
 
 
                         <select class="parkalia-register-step1__select">
 
-                            <option>Por minuto</option>
-                            <option>Por hora</option>
-                            <option>Media jornada</option>
-                            <option>Jornada completa</option>
-                            <option>Día</option>
-                            <option>Noche</option>
-                            <option>Semana</option>
-                            <option>Mes</option>
+                            <option>Porcentaje</option>
+                            <option>Valor fijo</option>
+                            <option>Tarifa especial</option>
 
                         </select>
 
@@ -255,12 +143,15 @@
 
                     <div class="parkalia-register-step1__field">
 
+
                         <label class="parkalia-register-step1__label">
-                            Precio
+                            Valor descuento
                         </label>
 
 
-                        <input type="number" class="parkalia-register-step1__input">
+                        <input 
+                            type="number"
+                            class="parkalia-register-step1__input">
 
 
                     </div>
@@ -271,16 +162,84 @@
 
                     <div class="parkalia-register-step1__field">
 
+
                         <label class="parkalia-register-step1__label">
-                            Moneda
+                            Fecha inicio
+                        </label>
+
+
+                        <input 
+                            type="date"
+                            class="parkalia-register-step1__input">
+
+
+                    </div>
+
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+
+                        <label class="parkalia-register-step1__label">
+                            Fecha final
+                        </label>
+
+
+                        <input 
+                            type="date"
+                            class="parkalia-register-step1__input">
+
+
+                    </div>
+
+
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+
+                        <label class="parkalia-register-step1__label">
+                            Imagen promoción
+                        </label>
+
+
+                        <input 
+                            type="file"
+                            class="parkalia-register-step1__file"
+                            accept="image/*">
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <!--=========================
+                    HORARIOS
+                    =========================-->
+
+
+
+                    <div class="parkalia-register-step1__field">
+
+
+                        <label class="parkalia-register-step1__label">
+                            ¿Abierto 24 horas?
                         </label>
 
 
                         <select class="parkalia-register-step1__select">
 
-                            <option>COP</option>
-                            <option>USD</option>
-                            <option>EUR</option>
+
+                            <option>Sí</option>
+                            <option>No</option>
+
 
                         </select>
 
@@ -293,12 +252,15 @@
 
                     <div class="parkalia-register-step1__field">
 
+
                         <label class="parkalia-register-step1__label">
-                            Hora inicio tarifa
+                            Hora apertura
                         </label>
 
 
-                        <input type="time" class="parkalia-register-step1__input">
+                        <input 
+                            type="time"
+                            class="parkalia-register-step1__input">
 
 
                     </div>
@@ -306,66 +268,60 @@
 
 
 
-                    
+
                     <div class="parkalia-register-step1__field">
 
 
                         <label class="parkalia-register-step1__label">
-                            Descripción de tarifa
+                            Hora cierre
                         </label>
 
 
-                        <textarea 
-                            class="parkalia-register-step1__textarea"
-                            placeholder="Describe las condiciones de esta tarifa"></textarea>
+                        <input 
+                            type="time"
+                            class="parkalia-register-step1__input">
 
 
                     </div>
 
 
-                    <div class="parkalia-register__button-primary">
-
-
-                    <a href="/frontend/src/html/pages/registers/view_parkalia_register_parking_lot6.html"
-                        class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
-
-
-                        <span class="parkalia-btn__text">
-                            Siguiente
-                        </span>
-
-
-                        <img
-                            src="/frontend/public/assets/icons/icon_next-white.svg"
-                            alt=""
-                            class="parkalia-btn__icon">
-
-
-                    </a>
-
-
-                </div>
 
 
                    
-
-
-
-
-
                     
+
 
 
 
 
                 </form>
 
+                 <div class="parkalia-register__button-primary">
 
+
+                        <a href="/frontend/src/html/pages/registers/view_parkalia_register_parking_lot6.html"
+                            class="parkalia-btn parkalia-btn--primary parkalia-login__parkalia-btn--primary parkalia-btn--expand">
+
+
+                            <span class="parkalia-btn__text">
+                                Siguiente
+                            </span>
+
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_next-white.svg"
+                                alt=""
+                                class="parkalia-btn__icon">
+
+
+                        </a>
+
+
+                    </div>
 
 
 
                 
-
 
 
 

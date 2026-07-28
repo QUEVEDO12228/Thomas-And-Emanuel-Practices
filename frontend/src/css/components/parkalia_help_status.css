@@ -1,0 +1,277 @@
+.parkalia-help-page{
+    position:relative;
+    min-height:100vh;
+    padding:40px;
+    overflow:hidden;
+    background:var(--background-primary);
+    font-family:var(--font-primary);
+}
+.parkalia-help-page__glow{
+    position:absolute;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    filter:blur(150px);
+    opacity:.15;
+    pointer-events:none;
+}
+.parkalia-help-page__glow--left{
+    top:-180px;
+    left:-180px;
+    background:var(--secondary-500);
+}
+.parkalia-help-page__glow--right{
+    right:-180px;
+    bottom:-180px;
+    background:var(--primary-400);
+}
+.parkalia-help{
+    position:relative;
+    z-index:2;
+}
+.parkalia-help__container{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+}
+.parkalia-help__header{
+    margin-bottom:35px;
+}
+.parkalia-help__title{
+    margin:0 0 12px;
+    color:var(--white);
+    font-size:var(--fs-lg);
+    font-family:var(--font-primary-bold);
+}
+.parkalia-help__subtitle{
+    margin:0;
+    color:var(--gray-300);
+    font-size:15px;
+}
+.parkalia-help-search{
+    margin-bottom:25px;
+    padding:35px;
+    border-radius:var(--radius-xl);
+    background:linear-gradient(135deg,rgba(255,193,7,.18),rgba(255,255,255,.04));
+    border:1px solid rgba(255,193,7,.20);
+    backdrop-filter:blur(20px);
+}
+.parkalia-help-search__content h2{
+    margin:0 0 10px;
+    color:var(--white);
+    font-size:26px;
+}
+.parkalia-help-search__content p{
+    margin:0 0 25px;
+    color:var(--gray-300);
+}
+.parkalia-help-search__box{
+    display:flex;
+    gap:15px;
+}
+.parkalia-help-search__input{
+    flex:1;
+    height:52px;
+    padding:0 20px;
+    border-radius:16px;
+    border:
+    1px solid rgba(255,255,255,.10);
+    background:rgba(255,255,255,.06);
+    color:white;
+    outline:none;
+}
+.parkalia-help-search__input::placeholder{
+    color:var(--gray-500);
+}
+.parkalia-help-search__input:focus{
+    border-color:
+    var(--secondary-400);
+    box-shadow:0 0 0 4px rgba(255,193,7,.12);
+}
+.parkalia-help-search__button{
+    width:130px;
+    border:none;
+    border-radius:16px;
+    background:linear-gradient(135deg,var(--secondary-500),var(--secondary-400));
+    color:#000;
+    font-family:
+    var(--font-primary-bold);
+    cursor:pointer;
+    transition:.3s;
+}
+.parkalia-help-search__button:hover{
+    transform:translateY(-3px);
+    box-shadow:
+    var(--shadow-secondary);
+}
+.parkalia-help-card{
+    padding:28px;
+    margin-bottom:25px;
+    border-radius:var(--radius-xl);
+    background:rgba(255,255,255,.04);
+    border:1px solid var(--border-color);
+    backdrop-filter:blur(18px);
+    box-shadow:var(--shadow-primary);
+}
+.parkalia-help-card__header{
+    margin-bottom:25px;
+}
+.parkalia-help-card__header h2{
+    margin:0;
+    color:var(--white);
+    font-size:20px;
+    font-family:var(--font-primary-bold);
+}
+.parkalia-help-categories{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(200px,1fr));
+    gap:18px;
+}
+.parkalia-help-category{
+    padding:22px;
+    border-radius:18px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+    transition:.3s ease;
+}
+.parkalia-help-category:hover{
+    transform:translateY(-5px);
+    border-color:  rgba(255,193,7,.35);
+}
+.parkalia-help-category__icon{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:14px;
+    background:rgba(255,193,7,.15);
+    margin-bottom:15px;
+    font-size:22px;
+}
+.parkalia-help-category h3{
+    margin:0 0 10px;
+    color:var(--white);
+    font-size:16px;
+}
+.parkalia-help-category p{
+    margin:0;
+    color:var(--gray-400);
+    font-size:13px;
+}
+.parkalia-help-faq{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+.parkalia-help-faq__item button{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    border:none;
+    border-radius:16px;
+    background:rgba(255,255,255,.05);
+    color:var(--gray-200);
+    cursor:pointer;
+    text-align:left;
+    transition:.3s;
+}
+.parkalia-help-faq__item button:hover{
+    background:rgba(255,193,7,.10);
+    color:white;
+}
+.parkalia-help-faq__item span{
+    color:var(--secondary-300);
+    font-size:22px;
+}
+.parkalia-help-support{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    margin-bottom:25px;
+    padding:30px;
+    border-radius:var(--radius-xl);
+    background:linear-gradient(135deg,rgba(255,193,7,.15),rgba(255,255,255,.05));
+}
+.parkalia-help-support__info h2{
+    margin:0 0 10px;
+    color:white;
+}
+.parkalia-help-support__info p{
+    margin:0;
+    color:
+    var(--gray-300);
+}
+.parkalia-help-support__actions{
+    display:flex;
+    gap:15px;
+}
+.parkalia-help-status{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+.parkalia-help-status__item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    border-radius:16px;
+    background:rgba(255,255,255,.04);
+}
+.parkalia-help-status__item span{
+    color:var(--gray-300);
+}
+.parkalia-help-status__item strong{
+    font-size:14px;
+}
+.parkalia-help-status__item .online{
+    color:var(--success-color);
+}
+@media(max-width:1200px){
+    .parkalia-help-categories{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .parkalia-help-status{
+        grid-template-columns:1fr;
+    }
+}
+@media(max-width:900px){
+    .parkalia-help-page{
+        padding:25px;
+    }
+    .parkalia-help-faq{
+        grid-template-columns:1fr;
+
+    }
+    .parkalia-help-support{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}
+@media(max-width:600px){
+    .parkalia-help-page{
+        padding:15px;
+    }
+    .parkalia-help-search{
+        padding:22px;
+    }
+    .parkalia-help-search__box{
+        flex-direction:column;
+    }
+
+    .parkalia-help-search__button{
+        height:50px;
+        width:100%;
+    }
+    .parkalia-help-categories{
+        grid-template-columns:1fr;
+    }
+    .parkalia-help-support__actions{
+        width:100%;
+        flex-direction:column;
+    }
+}

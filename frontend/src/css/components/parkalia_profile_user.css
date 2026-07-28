@@ -1,0 +1,231 @@
+.parkalia-profile-page{
+    position:relative;
+    min-height:100vh;
+    padding:40px;
+    overflow:hidden;
+    background:var(--background-primary);
+    font-family:var(--font-primary);
+}
+.parkalia-profile-page__glow{
+    position:absolute;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    filter:blur(150px);
+    opacity:.15;
+    pointer-events:none;
+}
+.parkalia-profile-page__glow--left{
+    top:-180px;
+    left:-180px;
+    background:var(--secondary-500);
+}
+.parkalia-profile-page__glow--right{
+    right:-180px;
+    bottom:-180px;
+    background:var(--primary-400);
+}
+.parkalia-profile{
+    position:relative;
+    z-index:2;
+    width:100%;
+}
+.parkalia-profile__container{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+}
+.parkalia-profile__header{
+    margin-bottom:30px;
+}
+.parkalia-profile__title{
+    margin:0 0 10px;
+    color:var(--white);
+    font-family:var(--font-primary-bold);
+    font-size:var(--fs-lg);
+}
+.parkalia-profile__subtitle{
+    margin:0;
+    color:var(--gray-300);
+    font-size:15px;
+}
+.parkalia-profile-card{
+    position:relative;
+    overflow:hidden;
+    margin-bottom:24px;
+    border-radius:var(--radius-xxl);
+    border:1px solid var(--border-color);
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    box-shadow:var(--shadow-primary);
+}
+.parkalia-profile-card__cover{
+    height:110px;
+    background:linear-gradient(135deg,rgba(255,193,7,.35),rgba(0,0,0,.5));
+}
+.parkalia-profile-card__content{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    padding:25px 35px;
+}
+.parkalia-profile-card__avatar{
+    width:120px;
+    height:120px;
+    margin-top:-70px;
+    border-radius:50%;
+    overflow:hidden;
+    border:4px solid var(--secondary-400);
+    background:var(--gray-900);
+}
+.parkalia-profile-card__image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.parkalia-profile-card__info{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+.parkalia-profile-card__name{
+    margin:0;
+    color:var(--white);
+    font-size:26px;
+    font-family:var(--font-primary-bold);
+}
+.parkalia-profile-card__role{
+    color:var(--secondary-300);
+    font-size:15px;
+}
+.parkalia-profile-card__status{
+    color:var(--success-color);
+    font-size:14px;
+}
+.parkalia-profile-card__actions{
+    margin-left:auto;
+}
+.parkalia-profile-box{
+    margin-bottom:24px;
+    padding:28px;
+    border-radius:var(--radius-xl);
+    border:1px solid var(--border-color);
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(18px);
+}
+.parkalia-profile-box__header{
+    margin-bottom:24px;
+}
+.parkalia-profile-box__title{
+    margin:0;
+    color:var(--white);
+    font-size:20px;
+    font-family:
+    var(--font-primary-bold);
+}
+.parkalia-profile-form{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(250px,1fr));
+    gap:22px;
+}
+.parkalia-profile-form__field{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+.parkalia-profile-form__field--full{
+    grid-column:1 / -1;
+}
+.parkalia-profile-form__label{
+    color:var(--gray-200);
+    font-size:13px;
+    font-family:var(--font-primary-semibold);
+}
+.parkalia-profile-form__input,
+.parkalia-profile-form__select{
+    width:100%;
+    height:48px;
+    padding:0 18px;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.05);
+    color:var(--white);
+    outline:none;
+    font-size:14px;
+    transition:.3s ease;
+}
+.parkalia-profile-form__input:focus,
+.parkalia-profile-form__select:focus{
+    border-color:var(--secondary-400);
+    box-shadow:0 0 0 4px rgba(255,193,7,.15);
+}
+.parkalia-profile-form__input[readonly]{
+    opacity:.65;
+    cursor:not-allowed;
+}
+.parkalia-profile-form__checks{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+}
+.parkalia-profile-form__checks label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:var(--gray-200);
+    cursor:pointer;
+}
+.parkalia-profile-form__checks input{
+    width:17px;
+    height:17px;
+    accent-color:var(--secondary-500);
+}
+.parkalia-profile__buttons{
+
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:18px;
+
+    margin-top:30px;
+}
+@media(max-width:1200px){
+    .parkalia-profile-form{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:850px){
+    .parkalia-profile-page{
+        padding:25px;
+    }
+    .parkalia-profile-card__content{
+        flex-direction:column;
+        text-align:center;
+    }
+    .parkalia-profile-card__actions{
+        margin:auto;
+    }
+    .parkalia-profile-form{
+        grid-template-columns:1fr;
+    }
+}
+@media(max-width:500px){
+    .parkalia-profile-page{
+        padding:15px;
+    }
+    .parkalia-profile__title{
+        font-size:28px;
+    }
+    .parkalia-profile-card__avatar{
+        width:95px;
+        height:95px;
+    }
+    .parkalia-profile__buttons{
+        flex-direction:column;
+    }
+    .parkalia-btn{
+        width:100%;
+    }
+}

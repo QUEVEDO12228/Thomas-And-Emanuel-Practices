@@ -1,0 +1,874 @@
+/*=========================================================
+=            SETTINGS PAGE
+=========================================================*/
+
+
+.parkalia-settings-page{
+
+    position:relative;
+
+    min-height:100vh;
+
+    padding:40px;
+
+    overflow:hidden;
+
+    background:var(--background-primary);
+
+    font-family:var(--font-primary);
+
+}
+
+
+
+
+/*=========================================================
+=            GLOW
+=========================================================*/
+
+
+.parkalia-settings-page__glow{
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    filter:blur(150px);
+
+    opacity:.15;
+
+    pointer-events:none;
+
+}
+
+
+
+.parkalia-settings-page__glow--left{
+
+    top:-180px;
+
+    left:-180px;
+
+    background:var(--secondary-500);
+
+}
+
+
+
+.parkalia-settings-page__glow--right{
+
+    right:-180px;
+
+    bottom:-180px;
+
+    background:var(--primary-400);
+
+}
+
+
+
+
+
+
+
+/*=========================================================
+=            CONTAINER
+=========================================================*/
+
+
+.parkalia-settings{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+.parkalia-settings__container{
+
+    max-width:1400px;
+
+    width:100%;
+
+    margin:auto;
+
+}
+
+
+
+
+
+
+
+/*=========================================================
+=            HEADER
+=========================================================*/
+
+
+.parkalia-settings__header{
+
+    margin-bottom:35px;
+
+}
+
+
+
+.parkalia-settings__title{
+
+    margin:0 0 12px;
+
+    color:var(--white);
+
+    font-size:var(--fs-lg);
+
+    font-family:var(--font-primary-bold);
+
+}
+
+
+
+.parkalia-settings__subtitle{
+
+    margin:0;
+
+    color:var(--gray-300);
+
+    font-size:15px;
+
+}
+
+
+
+
+
+
+
+
+/*=========================================================
+=            CARD
+=========================================================*/
+
+
+.parkalia-settings-card{
+
+
+    margin-bottom:25px;
+
+
+    padding:28px;
+
+
+    border-radius:
+
+    var(--radius-xl);
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+    background:
+
+    rgba(255,255,255,.04);
+
+
+    backdrop-filter:
+
+    blur(18px);
+
+
+    box-shadow:
+
+    var(--shadow-primary);
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+.parkalia-settings-card:hover{
+
+
+    border-color:
+
+    rgba(255,193,7,.25);
+
+
+}
+
+
+
+
+
+
+
+/*=========================================================
+=            CARD HEADER
+=========================================================*/
+
+
+.parkalia-settings-card__header{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.parkalia-settings-card__title{
+
+    margin:0;
+
+    color:var(--white);
+
+    font-size:20px;
+
+    font-family:
+
+    var(--font-primary-bold);
+
+}
+
+
+
+
+
+
+
+/*=========================================================
+=            FORM GRID
+=========================================================*/
+
+
+.parkalia-settings-form{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(2,minmax(280px,1fr));
+
+
+    gap:22px 30px;
+
+
+}
+
+
+
+
+
+
+
+/*=========================================================
+=            FIELD
+=========================================================*/
+
+
+.parkalia-settings-form__field{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:8px;
+
+
+}
+
+
+
+.parkalia-settings-form__field label{
+
+
+    color:
+
+    var(--gray-200);
+
+
+    font-size:13px;
+
+
+    font-family:
+
+    var(--font-primary-semibold);
+
+
+}
+
+
+
+
+
+
+
+
+/*=========================================================
+=            INPUT
+=========================================================*/
+
+
+.parkalia-settings-form__input,
+
+
+.parkalia-settings-form__select{
+
+
+    width:100%;
+
+
+    height:48px;
+
+
+    padding:0 18px;
+
+
+    border-radius:16px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.08);
+
+
+    background:
+
+    rgba(255,255,255,.04);
+
+
+    color:
+
+    var(--white);
+
+
+    outline:none;
+
+
+    font-size:14px;
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+.parkalia-settings-form__input::placeholder{
+
+
+    color:
+
+    var(--gray-500);
+
+
+}
+
+
+
+.parkalia-settings-form__input:hover,
+
+
+.parkalia-settings-form__select:hover{
+
+
+    background:
+
+    rgba(255,255,255,.07);
+
+
+}
+
+
+
+.parkalia-settings-form__input:focus,
+
+
+.parkalia-settings-form__select:focus{
+
+
+    border-color:
+
+    var(--secondary-400);
+
+
+    box-shadow:
+
+    0 0 0 4px rgba(255,193,7,.12);
+
+
+}
+
+
+
+
+
+
+.parkalia-settings-form__select option{
+
+
+    background:#151515;
+
+    color:white;
+
+}
+
+
+
+
+
+
+
+
+/*=========================================================
+=            FILE
+=========================================================*/
+
+
+.parkalia-settings-form__file{
+
+
+    min-height:48px;
+
+
+    padding:5px;
+
+
+    border-radius:16px;
+
+
+    border:
+
+    2px dashed rgba(255,255,255,.12);
+
+
+    background:
+
+    rgba(255,255,255,.03);
+
+
+    color:
+
+    var(--gray-300);
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.parkalia-settings-form__file:hover{
+
+
+    border-color:
+
+    var(--secondary-400);
+
+
+}
+
+
+
+
+
+
+
+/*=========================================================
+=            OPTIONS
+=========================================================*/
+
+
+.parkalia-settings-options{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(2,minmax(280px,1fr));
+
+
+    gap:16px;
+
+
+}
+
+
+
+.parkalia-settings-option{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    padding:18px;
+
+
+    border-radius:16px;
+
+
+    background:
+
+    rgba(255,255,255,.04);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.06);
+
+
+}
+
+
+
+.parkalia-settings-option span{
+
+
+    color:
+
+    var(--gray-200);
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+/*=========================================================
+=            SWITCH
+=========================================================*/
+
+
+.parkalia-switch{
+
+
+    position:relative;
+
+
+    width:52px;
+
+
+    height:28px;
+
+
+}
+
+
+
+.parkalia-switch input{
+
+
+    opacity:0;
+
+
+    width:0;
+
+
+    height:0;
+
+
+}
+
+
+
+.parkalia-switch__slider{
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    border-radius:999px;
+
+
+    background:
+
+    var(--gray-600);
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.parkalia-switch__slider::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:22px;
+
+
+    height:22px;
+
+
+    left:3px;
+
+
+    top:3px;
+
+
+    border-radius:50%;
+
+
+    background:white;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.parkalia-switch input:checked + .parkalia-switch__slider{
+
+
+    background:
+
+    var(--secondary-500);
+
+
+}
+
+
+
+.parkalia-switch input:checked + .parkalia-switch__slider::before{
+
+
+    transform:translateX(24px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/*=========================================================
+=            BUTTONS
+=========================================================*/
+
+
+.parkalia-settings__buttons{
+
+
+    display:flex;
+
+
+    justify-content:flex-end;
+
+
+    gap:18px;
+
+
+    margin-top:35px;
+
+
+}
+
+
+
+.parkalia-settings__buttons button{
+
+
+    min-width:170px;
+
+
+}
+
+
+
+
+
+
+
+/*=========================================================
+=            HOVER EFFECTS
+=========================================================*/
+
+
+.parkalia-settings-card,
+
+
+.parkalia-settings-option{
+
+
+    transition:
+
+    transform .3s ease,
+
+    border-color .3s ease;
+
+
+}
+
+
+
+.parkalia-settings-option:hover{
+
+
+    transform:translateY(-3px);
+
+
+    border-color:
+
+    rgba(255,193,7,.25);
+
+
+}
+
+
+
+
+
+
+
+
+/*=========================================================
+=            RESPONSIVE
+=========================================================*/
+
+
+@media(max-width:1100px){
+
+
+    .parkalia-settings-form,
+
+
+    .parkalia-settings-options{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+    .parkalia-settings-page{
+
+
+        padding:20px;
+
+
+    }
+
+
+
+    .parkalia-settings-card{
+
+
+        padding:20px;
+
+
+    }
+
+
+
+    .parkalia-settings__title{
+
+
+        font-size:2rem;
+
+
+    }
+
+
+
+    .parkalia-settings__buttons{
+
+
+        flex-direction:column;
+
+
+    }
+
+
+
+    .parkalia-settings__buttons button{
+
+
+        width:100%;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/*=========================================================
+=            REDUCED MOTION
+=========================================================*/
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+    *{
+
+        transition:none!important;
+
+    }
+
+
+}

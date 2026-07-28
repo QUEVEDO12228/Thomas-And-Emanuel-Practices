@@ -8,7 +8,7 @@
     <aside class="parkalia-register-step1-banner">
 
 
-        <img 
+        <img
             src="/frontend/public/assets/images/img_parquing.avif"
             alt="Registro Parkalia"
             class="parkalia-register-step1-banner__image">
@@ -17,12 +17,13 @@
         <div class="parkalia-register-step1-banner__overlay"></div>
 
 
+
         <div class="parkalia-register-step1__topbar">
 
             <a href="javascript:history.back()"
                class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">
 
-                <img 
+                <img
                     src="/frontend/public/assets/icons/icon_back.svg"
                     alt=""
                     class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
@@ -33,22 +34,25 @@
 
 
 
+
+
         <div class="parkalia-register-step1-banner__card">
 
+
             <span class="parkalia-register-step1-banner__badge">
-                PARKALIA SECURITY
+                PARKALIA BUSINESS
             </span>
 
 
             <h2 class="parkalia-register-step1-banner__title">
-                Administración segura
+                Presenta tu parqueadero
             </h2>
 
 
             <p class="parkalia-register-step1-banner__text">
 
-                Gestiona pagos, facturación y preferencias del sistema 
-                con una plataforma segura y confiable.
+                Agrega imágenes, videos y documentos necesarios
+                para crear un perfil profesional y confiable.
 
             </p>
 
@@ -57,6 +61,7 @@
 
 
     </aside>
+
 
 
 
@@ -72,20 +77,25 @@
         <div class="parkalia-register-step1__card">
 
 
+
             <header class="parkalia-register-step1__header">
 
 
                 <h1 class="parkalia-register-step1__title">
-                    Datos financieros
+                    Galería y documentos
                 </h1>
 
 
                 <p class="parkalia-register-step1__subtitle">
-                    Completa la información necesaria para pagos y configuración general.
+
+                    Completa la información visual y administrativa
+                    de tu negocio.
+
                 </p>
 
 
             </header>
+
 
 
 
@@ -95,19 +105,20 @@
 
 
                 <!-- ======================
-                    DATOS BANCARIOS
+                    IMÁGENES
                 ======================= -->
 
 
                 <div class="parkalia-register-step1__field">
 
                     <label class="parkalia-register-step1__label">
-                        Banco
+                        Logo del parqueadero *
                     </label>
 
                     <input 
-                        type="text"
-                        class="parkalia-register-step1__input">
+                        type="file"
+                        class="parkalia-register-step1__file"
+                        accept="image/*">
 
                 </div>
 
@@ -116,34 +127,13 @@
                 <div class="parkalia-register-step1__field">
 
                     <label class="parkalia-register-step1__label">
-                        Tipo de cuenta
-                    </label>
-
-                    <select class="parkalia-register-step1__select">
-
-                        <option>
-                            Ahorros
-                        </option>
-
-                        <option>
-                            Corriente
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Número de cuenta
+                        Imagen de portada *
                     </label>
 
                     <input 
-                        type="text"
-                        class="parkalia-register-step1__input">
+                        type="file"
+                        class="parkalia-register-step1__file"
+                        accept="image/*">
 
                 </div>
 
@@ -152,168 +142,14 @@
                 <div class="parkalia-register-step1__field">
 
                     <label class="parkalia-register-step1__label">
-                        Titular de la cuenta
+                        Fotografías del parqueadero
                     </label>
 
                     <input 
-                        type="text"
-                        class="parkalia-register-step1__input">
-
-                </div>
-
-
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Documento del titular
-                    </label>
-
-                    <input 
-                        type="text"
-                        class="parkalia-register-step1__input">
-
-                </div>
-
-
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Correo para pagos
-                    </label>
-
-                    <input 
-                        type="email"
-                        class="parkalia-register-step1__input">
-
-                </div>
-
-
-
-
-                <!-- ======================
-                    FACTURACIÓN
-                ======================= -->
-
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        ¿Emite factura electrónica?
-                    </label>
-
-
-                    <select class="parkalia-register-step1__select">
-
-                        <option>
-                            Sí
-                        </option>
-
-                        <option>
-                            No
-                        </option>
-
-
-                    </select>
-
-
-                </div>
-
-
-
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Resolución DIAN
-                    </label>
-
-
-                    <input 
-                        type="text"
-                        class="parkalia-register-step1__input">
-
-
-                </div>
-
-
-
-
-                <div class="parkalia-register-step1__field">
-
-                    <label class="parkalia-register-step1__label">
-                        Prefijo de facturación
-                    </label>
-
-
-                    <input 
-                        type="text"
-                        class="parkalia-register-step1__input">
-
-
-                </div>
-
-
-
-
-                <!-- ======================
-                    NOTIFICACIONES
-                ======================= -->
-                <div class="parkalia-register-step1__field">
-
-
-                      <label class="parkalia-register-step1__label">
-                         Recibir notificaciones por
-                      </label>
-                      <div class="parkalia-register-step1__checkbox-grid">
-
-                        <div class="parkalia-register-step1__content-label">
-                          <label><input type="checkbox"> Correo electrónico</label>
-                          <label><input type="checkbox"> WhatsApp</label>
-                          <label><input type="checkbox"> SMS</label>
-                          <label><input type="checkbox"> Notificaciones Push</label>
-                        </div>
-
-                      </div>
-                    </div> 
-
-
-
-
-                <!-- ======================
-                    IDIOMA
-                ======================= -->
-
-
-                <div class="parkalia-register-step1__field">
-
-
-                    <label class="parkalia-register-step1__label">
-                        Idioma principal
-                    </label>
-
-
-                    <select class="parkalia-register-step1__select">
-
-
-                        <option>
-                            Español
-                        </option>
-
-
-                        <option>
-                            English
-                        </option>
-
-
-                        <option>
-                            Português
-                        </option>
-
-
-                    </select>
-
+                        type="file"
+                        class="parkalia-register-step1__file"
+                        accept="image/*"
+                        multiple>
 
                 </div>
 
@@ -322,7 +158,97 @@
 
 
                 <!-- ======================
-                    MONEDA
+                    VIDEOS
+                ======================= -->
+
+
+                <div class="parkalia-register-step1__field">
+
+                    <label class="parkalia-register-step1__label">
+                        Videos del parqueadero
+                    </label>
+
+                    <input
+                        type="file"
+                        class="parkalia-register-step1__file"
+                        accept="video/*"
+                        multiple>
+
+                </div>
+
+
+
+
+
+                <!-- ======================
+                    DOCUMENTOS
+                ======================= -->
+
+
+                <div class="parkalia-register-step1__field">
+
+                    <label class="parkalia-register-step1__label">
+                        RUT *
+                    </label>
+
+                    <input
+                        type="file"
+                        class="parkalia-register-step1__file"
+                        accept=".pdf,.jpg,.png">
+
+                </div>
+
+
+
+                <div class="parkalia-register-step1__field">
+
+                    <label class="parkalia-register-step1__label">
+                        Cámara de Comercio
+                    </label>
+
+                    <input
+                        type="file"
+                        class="parkalia-register-step1__file"
+                        accept=".pdf">
+
+                </div>
+
+
+
+                <div class="parkalia-register-step1__field">
+
+                    <label class="parkalia-register-step1__label">
+                        Licencia de funcionamiento
+                    </label>
+
+                    <input
+                        type="file"
+                        class="parkalia-register-step1__file"
+                        accept=".pdf">
+
+                </div>
+
+
+
+                <div class="parkalia-register-step1__field">
+
+                    <label class="parkalia-register-step1__label">
+                        Póliza o seguro
+                    </label>
+
+                    <input
+                        type="file"
+                        class="parkalia-register-step1__file"
+                        accept=".pdf">
+
+                </div>
+
+
+
+
+
+                <!-- ======================
+                    PERFIL PÚBLICO
                 ======================= -->
 
 
@@ -330,29 +256,72 @@
 
 
                     <label class="parkalia-register-step1__label">
-                        Moneda principal
+                        Título del perfil
                     </label>
 
 
-                    <select class="parkalia-register-step1__select">
+                    <input
+                        type="text"
+                        class="parkalia-register-step1__input">
 
 
-                        <option>
-                            Peso Colombiano (COP)
-                        </option>
+                </div>
 
 
-                        <option>
-                            Dólar (USD)
-                        </option>
 
 
-                        <option>
-                            Euro (EUR)
-                        </option>
+
+                <div class="parkalia-register-step1__field">
 
 
-                    </select>
+                    <label class="parkalia-register-step1__label">
+                        Descripción pública
+                    </label>
+
+
+                    <textarea
+                        class="parkalia-register-step1__textarea">
+                    </textarea>
+
+
+                </div>
+
+
+
+
+
+                <div class="parkalia-register-step1__field">
+
+
+                    <label class="parkalia-register-step1__label">
+                        Palabras clave
+                    </label>
+
+
+                    <input
+                        type="text"
+                        class="parkalia-register-step1__input"
+                        placeholder="Centro, Seguro, 24 horas, Cubierto...">
+
+
+                </div>
+
+
+
+
+
+                <div class="parkalia-register-step1__field">
+
+
+                    <label class="parkalia-register-step1__label">
+                        URL personalizada
+                    </label>
+
+
+                    <input
+                        type="text"
+                        class="parkalia-register-step1__input"
+                        placeholder="parkalia.com/p/mi-parqueadero">
 
 
                 </div>
@@ -360,6 +329,7 @@
 
 
             </form>
+
 
 
 
@@ -376,7 +346,7 @@
                     </span>
 
 
-                    <img 
+                    <img
                         src="/frontend/public/assets/icons/icon_next-white.svg"
                         alt=""
                         class="parkalia-btn__icon">
@@ -386,6 +356,7 @@
 
 
             </div>
+
 
 
         </div>

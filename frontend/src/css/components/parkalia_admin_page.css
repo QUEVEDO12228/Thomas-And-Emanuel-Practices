@@ -1,0 +1,325 @@
+.parkalia-admin-page{
+    position:relative;
+    min-height:100vh;
+    padding:40px;
+    overflow:hidden;
+    background:var(--background-primary);
+    font-family:var(--font-primary);
+}
+.parkalia-admin-page__glow{
+    position:absolute;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    filter:blur(150px);
+    opacity:.12;
+    pointer-events:none;
+}
+.parkalia-admin-page__glow--left{
+    top:-180px;
+    left:-180px;
+    background:var(--secondary-500);
+}
+.parkalia-admin-page__glow--right{
+    right:-180px;
+    bottom:-180px;
+    background:var(--primary-500);
+}
+.parkalia-admin{
+    position:relative;
+    z-index:2;
+}
+.parkalia-admin__container{
+    width:100%;
+    max-width:1500px;
+    margin:auto;
+}
+.parkalia-admin__header{
+    margin-bottom:35px;
+}
+.parkalia-admin__title{
+    margin:0 0 12px;
+    color:var(--white);
+    font-size:var(--fs-lg);
+    font-family:var(--font-primary-bold);
+}
+.parkalia-admin__subtitle{
+    margin:0;
+    color:var(--gray-300);
+    font-size:15px;
+}
+.parkalia-admin-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+    margin-bottom:30px;
+}
+.parkalia-admin-stat{
+    padding:26px;
+    border-radius:var(--radius-xl);
+    background:rgba(255,255,255,.04);
+    border:1px solid var(--border-color);
+    backdrop-filter:blur(18px);
+    transition:.3s;
+}
+.parkalia-admin-stat:hover{
+    transform:translateY(-6px);
+    border-color:rgba(255,193,7,.45);
+}
+.parkalia-admin-stat span{
+    display:block;
+    margin-bottom:14px;
+    color:var(--gray-400);
+    font-size:13px;
+}
+.parkalia-admin-stat strong{
+    color:var(--secondary-300);
+    font-size:34px;
+    font-family:var(--font-primary-bold);
+}
+.parkalia-admin-stat .success{
+    color:var(--success-color);
+    font-size:22px;
+}
+.parkalia-admin-card{
+    margin-bottom:30px;
+    padding:28px;
+    border-radius:var(--radius-xl);
+    background:rgba(255,255,255,.04);
+    border:1px solid var(--border-color);
+    backdrop-filter:blur(20px);
+    box-shadow:var(--shadow-primary);
+}
+.parkalia-admin-card__header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+.parkalia-admin-card__header h2{
+    margin:0;
+    color:var(--white);
+    font-size:20px;
+    font-family:var(--font-primary-bold);
+}
+.parkalia-admin-table{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.parkalia-admin-table__head{
+    display:grid;
+    grid-template-columns:1.2fr 1.5fr 1fr 1fr .8fr;
+    padding:14px 18px;
+    color:var(--gray-400);
+    font-size:12px;
+    text-transform:uppercase;
+}
+.parkalia-admin-table__row{
+    display:grid;
+    grid-template-columns:1.2fr 1.5fr 1fr 1fr .8fr;
+    align-items:center;
+    padding:18px;
+    border-radius:16px;
+    background:rgba(255,255,255,.04);
+    color:var(--gray-200);
+    transition:.3s;
+}
+.parkalia-admin-table__row:hover{
+    background:rgba(255,255,255,.07);
+    transform:translateX(5px);
+}
+.parkalia-admin-table__row button{
+    height:34px;
+    width:90px;
+    border-radius:10px;
+    border:1px solid rgba(255,193,7,.35);
+    background:rgba(255,193,7,.12);
+    color:var(--secondary-300);
+    cursor:pointer;
+    transition:.3s;
+}
+.parkalia-admin-table__row button:hover{
+    background:var(--secondary-500);
+    color:#000;
+}
+.active{
+    color:var(--success-color);
+}
+.danger{
+    color:var(--danger-color)!important;
+}
+.parkalia-admin-roles{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.parkalia-admin-role{
+    padding:24px;
+    border-radius:20px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+    transition:.3s;
+}
+.parkalia-admin-role:hover{
+    transform:translateY(-5px);
+    border-color:var(--secondary-500);
+}
+.parkalia-admin-role h3{
+    margin:0 0 12px;
+    color:var(--white);
+}
+.parkalia-admin-role p{
+    color:var(--gray-400);
+    font-size:14px;
+}
+.parkalia-admin-role span{
+    display:inline-flex;
+    padding:8px 15px;
+    border-radius:999px;
+    background:rgba(255,193,7,.12);
+    color:var(--secondary-300);
+    font-size:12px;
+}
+.parkalia-admin-security{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.parkalia-admin-security__item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px;
+    border-radius:18px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+}
+.parkalia-admin-security__item h3{
+    margin:0 0 8px;
+    color:white;
+    font-size:16px;
+}
+.parkalia-admin-security__item p{
+    margin:0;
+    color:var(--gray-400);
+    font-size:13px;
+}
+.parkalia-admin-security__item strong{
+    font-size:30px;
+    color:var(--secondary-300);
+}
+.parkalia-admin-settings{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.parkalia-admin-setting{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px;
+    border-radius:18px;
+    background:rgba(255,255,255,.04);
+}
+.parkalia-admin-setting h3{
+    margin:0 0 8px;
+    color:white;
+}
+.parkalia-admin-setting p{
+    margin:0;
+    color:var(--gray-400);
+}
+.parkalia-switch{
+    position:relative;
+    width:55px;
+    height:28px;
+}
+.parkalia-switch input{
+    display:none;
+}
+.parkalia-switch span{
+    position:absolute;
+    inset:0;
+    background:#333;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+.parkalia-switch span::before{
+    content:"";
+    position:absolute;
+    width:22px;
+    height:22px;
+    top:3px;
+    left:4px;
+    border-radius:50%;
+    background:white;
+    transition:.3s;
+}
+.parkalia-switch input:checked + span{
+    background:var(--secondary-500);
+}
+.parkalia-switch input:checked + span::before{
+    transform:translateX(25px);
+}
+.parkalia-admin-integrations{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.parkalia-admin-integration{
+    padding:24px;
+    border-radius:20px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+}
+.parkalia-admin-integration h3{
+    margin:0 0 10px;
+    color:white;
+}
+.parkalia-admin-integration p{
+    color:var(--gray-400);
+    font-size:14px;
+}
+.parkalia-admin-integration span{
+    display:inline-flex;
+    padding:8px 16px;
+    border-radius:999px;
+    font-size:12px;
+}
+.connected{
+    background:rgba(34,197,94,.15);
+    color:var(--success-color);
+}
+.warning{
+    background:rgba(255,193,7,.15);
+    color:var(--secondary-300);
+}
+@media(max-width:1200px){
+    .parkalia-admin-stats,.parkalia-admin-security,.parkalia-admin-integrations{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .parkalia-admin-roles{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:768px){
+    .parkalia-admin-page{
+        padding:20px;
+    }
+    .parkalia-admin-stats,.parkalia-admin-security,.parkalia-admin-integrations,.parkalia-admin-roles{
+        grid-template-columns:1fr;
+    }
+    .parkalia-admin-table{
+        overflow-x:auto;
+    }
+    .parkalia-admin-table__head,.parkalia-admin-table__row{
+        min-width:900px;
+    }
+    .parkalia-admin-card__header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+}

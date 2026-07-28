@@ -12,6 +12,11 @@
 @import url('./components/parkalia_drop-down_menu.css');
 @import url('./components/parkalia_sidebar_principal.css');
 @import url('./components/parkalia_register_auth_user1.css');
-
+@import url('./components/parkalia_profile_user.css');
+@import url('./components/parkalia_security_history.css');
+@import url('./components/parkalia_notifications_history.css');
+@import url('./components/parkalia_settings_page.css');
+@import url('./components/parkalia_help_status.css');
+@import url('./components/parkalia_admin_page.css');
 
 @import url('./components/registers/parkalia_register.css');
