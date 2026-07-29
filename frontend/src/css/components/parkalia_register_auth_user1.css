@@ -423,7 +423,6 @@ CARD
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 28px;
     background:  rgba(255,255,255,0.06);
-    backdrop-filter: blur(20px);
 }
 .parkalia-register-auth-user-step1-banner__badge {
     display: inline-flex;
@@ -532,13 +531,24 @@ PASSWORD RULES
     font-family: var(--font-primary-bold);
 }
 
-.parkalia-register-auth-user-step1__password-list{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.parkalia-register-auth-user-step1__password-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Elementos base en 2 columnas */
+.parkalia-register-auth-user-step1__password-list li {
+  width: calc(50% - 4px); 
+}
+
+/* El último elemento ocupa todo el ancho */
+.parkalia-register-auth-user-step1__password-list li:last-child {
+  width: 100%;
 }
 
 .parkalia-register-auth-user-step1__password-item{
