@@ -22,7 +22,7 @@
             =            HEADER
             ==========================================-->
 
-            <header class="parkalia-profile__header">
+            <!-- <header class="parkalia-profile__header">
 
                 <div class="parkalia-profile__heading">
                     
@@ -37,69 +37,91 @@
 
                 </div>
 
-            </header>
+            </header> -->
 
             <!--=========================================
             =            PROFILE CARD
             ==========================================-->
+            <div class="parkalia-profile-card__content-button">
+                <a href="javascript:history.back()" alt="Volver" class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">
+                    <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
+                </a>
+                <section class="parkalia-profile-card">
+                    
 
-            <section class="parkalia-profile-card">
+                    <div class="parkalia-profile-card__cover"></div>
 
-                <div class="parkalia-profile-card__cover"></div>
+                    <div class="parkalia-profile-card__content">
 
-                <div class="parkalia-profile-card__content">
+                        <div class="parkalia-profile-card__avatar">
 
-                    <div class="parkalia-profile-card__avatar">
+                            <img
+                                src="/frontend/public/assets/images/profile.jpg"
+                                alt="Usuario"
+                                class="parkalia-profile-card__image">
 
-                        <img
-                            src="/frontend/public/assets/images/profile.jpg"
-                            alt="Usuario"
-                            class="parkalia-profile-card__image">
+                        </div>
+
+                        <div class="parkalia-profile-card__info">
+
+                            <h2 class="parkalia-profile-card__name">
+                                Información Personal
+                            </h2>
+
+                            <span class="parkalia-profile-card__role">
+                                Administrador General
+                            </span>
+
+                            <span class="parkalia-profile-card__status">
+                                ● Cuenta Activa
+                            </span>
+
+                        </div>
+
+                        <div class="parkalia-profile-card__actions">
+
+                            <div class="parkalia-profile-form__field parkalia-profile-form__field--full">
+
+                                <label class="parkalia-profile-form__label">
+                                    Notificaciones
+                                </label>
+
+                                <div class="parkalia-profile-form__checks">
+
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        Correo Electrónico
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        WhatsApp
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        SMS
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        Push
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="parkalia-profile-card__info">
-
-                        <h2 class="parkalia-profile-card__name">
-                            Juan David Rodríguez
-                        </h2>
-
-                        <span class="parkalia-profile-card__role">
-                            Administrador General
-                        </span>
-
-                        <span class="parkalia-profile-card__status">
-                            ● Cuenta Activa
-                        </span>
-
-                    </div>
-
-                    <div class="parkalia-profile-card__actions">
-
-                        <button class="parkalia-btn parkalia-btn--secondary">
-                            Cambiar Foto
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </section>
+                </section>
+            </div>
 
             <!--=========================================
             =            PERSONAL INFORMATION
             ==========================================-->
-
-            <section class="parkalia-profile-box">
-
-                <div class="parkalia-profile-box__header">
-
-                    <h2 class="parkalia-profile-box__title">
-                        Información Personal
-                    </h2>
-
-                </div>
-
                 <form class="parkalia-profile-form">
 
                     <div class="parkalia-profile-form__field">
@@ -179,26 +201,6 @@
                             class="parkalia-profile-form__input">
 
                     </div>
-
-                </form>
-
-            </section>
-
-            <!--=========================================
-            =            ACCOUNT INFORMATION
-            ==========================================-->
-
-            <section class="parkalia-profile-box">
-
-                <div class="parkalia-profile-box__header">
-
-                    <h2 class="parkalia-profile-box__title">
-                        Información de la Cuenta
-                    </h2>
-
-                </div>
-
-                <form class="parkalia-profile-form">
 
                     <div class="parkalia-profile-form__field">
 
@@ -283,26 +285,6 @@
 
                     </div>
 
-                </form>
-
-            </section>
-
-            <!--=========================================
-            =            PREFERENCES
-            ==========================================-->
-
-            <section class="parkalia-profile-box">
-
-                <div class="parkalia-profile-box__header">
-
-                    <h2 class="parkalia-profile-box__title">
-                        Preferencias
-                    </h2>
-
-                </div>
-
-                <form class="parkalia-profile-form">
-
                     <div class="parkalia-profile-form__field">
 
                         <label class="parkalia-profile-form__label">
@@ -360,37 +342,7 @@
 
                     </div>
 
-                    <div class="parkalia-profile-form__field parkalia-profile-form__field--full">
-
-                        <label class="parkalia-profile-form__label">
-                            Notificaciones
-                        </label>
-
-                        <div class="parkalia-profile-form__checks">
-
-                            <label>
-                                <input type="checkbox" checked>
-                                Correo Electrónico
-                            </label>
-
-                            <label>
-                                <input type="checkbox" checked>
-                                WhatsApp
-                            </label>
-
-                            <label>
-                                <input type="checkbox">
-                                SMS
-                            </label>
-
-                            <label>
-                                <input type="checkbox" checked>
-                                Push
-                            </label>
-
-                        </div>
-
-                    </div>
+                    
 
                 </form>
 
@@ -401,10 +353,6 @@
             ==========================================-->
 
             <div class="parkalia-profile__buttons">
-
-                <a href="#" class="parkalia-btn parkalia-btn--secondary">
-                    Cancelar
-                </a>
 
                 <a href="#" class="parkalia-btn parkalia-btn--primary">
 

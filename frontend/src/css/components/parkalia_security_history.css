@@ -1,1017 +1,277 @@
-/*=========================================================
-=            SECURITY PAGE
-=========================================================*/
-
-
 .parkalia-security-page{
-
     position:relative;
-
     min-height:100vh;
-
-    padding:40px;
-
+    padding:12px;
     overflow:hidden;
-
     background:var(--background-primary);
-
     font-family:var(--font-primary);
-
 }
-
-
-
-/*=========================================================
-=            GLOW
-=========================================================*/
-
-
 .parkalia-security-page__glow{
-
     position:absolute;
-
     width:450px;
-
     height:450px;
-
     border-radius:50%;
-
     filter:blur(150px);
-
     opacity:.15;
-
     pointer-events:none;
-
 }
-
-
-
 .parkalia-security-page__glow--left{
-
     top:-180px;
-
     left:-180px;
-
     background:var(--secondary-500);
-
 }
-
-
-
 .parkalia-security-page__glow--right{
-
     right:-180px;
-
     bottom:-180px;
-
     background:var(--primary-400);
-
 }
-
-
-
-
-
-/*=========================================================
-=            CONTAINER
-=========================================================*/
-
-
 .parkalia-security{
-
     position:relative;
-
     z-index:2;
-
 }
-
-
-
 .parkalia-security__container{
-
-
     width:100%;
-
     max-width:1400px;
-
     margin:auto;
-
-
 }
-
-
-
-
-
-/*=========================================================
-=            HEADER
-=========================================================*/
-
-
 .parkalia-security__header{
-
     margin-bottom:30px;
-
 }
-
-
-
 .parkalia-security__title{
-
-
     margin:0 0 10px;
-
-
     color:var(--white);
-
-
-    font-size:var(--fs-lg);
-
-
-    font-family:
-    var(--font-primary-bold);
-
-
+    font-size:var(--fs-xs);
+    font-family:var(--font-primary-bold);
 }
-
-
-
 .parkalia-security__subtitle{
-
-
     margin:0;
-
-
     color:var(--gray-300);
-
-
     font-size:15px;
-
-
 }
-
-
-
-
-
-/*=========================================================
-=            SECURITY CARD
-=========================================================*/
-
-
 .parkalia-security-card{
-
-
-    padding:28px;
-
-
     margin-bottom:24px;
-
-
-    border-radius:
-    var(--radius-xl);
-
-
-    border:
-
-    1px solid var(--border-color);
-
-
-    background:
-
-    rgba(255,255,255,.04);
-
-
-    backdrop-filter:
-
-    blur(18px);
-
-
-    box-shadow:
-
-    var(--shadow-primary);
-
-
 }
-
-
-
-
-
 .parkalia-security-card__header{
-
-
     margin-bottom:25px;
-
-
 }
-
-
-
 .parkalia-security-card__title{
-
-
     margin:0 0 8px;
-
-
     color:var(--white);
-
-
-    font-size:20px;
-
-
-    font-family:
-    var(--font-primary-bold);
-
-
+    font-size:var(--fs-xxs);
+    font-family:var(--font-primary-bold);
 }
-
-
-
 .parkalia-security-card__description{
-
-
     margin:0;
-
-
     color:var(--gray-400);
-
-
     font-size:14px;
-
-
 }
-
-
-
-
-
-/*=========================================================
-=            FORM
-=========================================================*/
-
-
 .parkalia-security-form{
-
-
     display:grid;
-
-
-    grid-template-columns:
-    repeat(3,minmax(240px,1fr));
-
-
+    grid-template-columns:repeat(3,minmax(240px,1fr));
     gap:22px;
-
-
 }
-
-
-
 .parkalia-security-form__field{
-
-
     display:flex;
-
-
     flex-direction:column;
-
-
     gap:8px;
-
-
 }
-
-
-
 .parkalia-security-form__label{
-
-
     color:var(--gray-200);
-
-
     font-size:13px;
-
-
-    font-family:
-    var(--font-primary-semibold);
-
-
+    font-family:var(--font-primary-semibold);
 }
-
-
-
 .parkalia-security-form__input{
-
-
     width:100%;
-
-
     height:48px;
-
-
     padding:0 18px;
-
-
     border-radius:16px;
-
-
-    border:
-
-    1px solid rgba(255,255,255,.08);
-
-
-    background:
-
-    rgba(255,255,255,.05);
-
-
+    border:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.05);
     color:var(--white);
-
-
     outline:none;
-
-
     font-size:14px;
-
-
     transition:.3s ease;
-
-
 }
-
-
-
 .parkalia-security-form__input::placeholder{
-
-
     color:var(--gray-500);
-
-
 }
-
-
-
 .parkalia-security-form__input:focus{
-
-
-    border-color:
-
-    var(--secondary-400);
-
-
-    box-shadow:
-
-    0 0 0 4px rgba(255,193,7,.15);
-
-
+    border-color:var(--secondary-400);
+    box-shadow:0 0 0 4px rgba(255,193,7,.15);
 }
-
-
-
-
-
-
-
-/*=========================================================
-=            AUTH GRID
-=========================================================*/
-
-
 .parkalia-security-grid{
-
-
     display:grid;
-
-
     grid-template-columns:
-
     repeat(2,minmax(280px,1fr));
-
-
     gap:18px;
-
-
 }
-
-
-
 .parkalia-security-item{
-
-
     display:flex;
-
-
     justify-content:space-between;
-
-
     align-items:center;
-
-
-    padding:18px;
-
-
+    padding:8px;
     border-radius:16px;
-
-
-    background:
-
-    rgba(255,255,255,.04);
-
-
     border:
-
     1px solid rgba(255,255,255,.06);
-
-
 }
-
-
-
 .parkalia-security-item__label{
-
-
     color:var(--gray-200);
-
-
     font-size:14px;
-
-
 }
-
-
-
 .parkalia-security-item__status{
-
-
     padding:6px 14px;
-
-
     border-radius:999px;
-
-
-    background:
-
-    rgba(34,197,94,.15);
-
-
-    color:
-
-    var(--success-color);
-
-
+    background:rgba(34,197,94,.15);
+    color:var(--success-color);
     font-size:12px;
-
-
-    font-family:
-    var(--font-primary-semibold);
-
-
+    font-family:var(--font-primary-semibold);
 }
-
-
-
-
-
 .parkalia-security-item__button{
-
-
     height:36px;
-
-
     padding:0 18px;
-
-
     border-radius:12px;
-
-
     border:none;
-
-
-    background:
-
-    rgba(255,193,7,.15);
-
-
-    color:
-
-    var(--secondary-300);
-
-
+    background:rgba(255,193,7,.15);
+    color:var(--secondary-300);
     cursor:pointer;
-
-
     transition:.3s;
-
-
 }
-
-
-
 .parkalia-security-item__button:hover{
-
-
-    background:
-
-    rgba(255,193,7,.25);
-
-
+    background:rgba(255,193,7,.25);
 }
-
-
-
-
-
-
-
-/*=========================================================
-=            SWITCH
-=========================================================*/
-
-
 .parkalia-switch{
-
-
     position:relative;
-
-
     width:46px;
-
-
     height:24px;
-
-
 }
-
-
-
 .parkalia-switch input{
-
-
     display:none;
-
-
 }
-
-
-
 .parkalia-switch__slider{
-
-
     position:absolute;
-
-
     inset:0;
-
-
     cursor:pointer;
-
-
     border-radius:999px;
-
-
-    background:
-
-    var(--gray-600);
-
-
+    background:var(--gray-600);
     transition:.3s;
-
-
 }
-
-
-
 .parkalia-switch__slider::before{
-
-
     content:"";
-
-
     position:absolute;
-
-
     width:18px;
-
-
     height:18px;
-
-
     left:3px;
-
-
     top:3px;
-
-
     border-radius:50%;
-
-
     background:white;
-
-
     transition:.3s;
-
-
 }
-
-
-
 .parkalia-switch input:checked + .parkalia-switch__slider{
-
-
-    background:
-
-    var(--secondary-500);
-
-
+    background:var(--secondary-500);
 }
-
-
-
 .parkalia-switch input:checked + .parkalia-switch__slider::before{
-
-
-    transform:
-
-    translateX(22px);
-
-
+    transform:translateX(22px);
 }
-
-
-
-
-
-
-
-/*=========================================================
-=            SESSIONS
-=========================================================*/
-
-
 .parkalia-security-session{
-
-
     display:flex;
-
-
     justify-content:space-between;
-
-
     align-items:center;
-
-
     gap:20px;
-
-
     padding:20px;
-
-
     margin-bottom:14px;
-
-
     border-radius:18px;
-
-
-    background:
-
-    rgba(255,255,255,.04);
-
-
-    border:
-
-    1px solid rgba(255,255,255,.06);
-
-
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
 }
-
-
-
 .parkalia-security-session__info h3{
-
-
     margin:0 0 8px;
-
-
     color:var(--white);
-
-
     font-size:16px;
-
-
 }
-
-
-
 .parkalia-security-session__info p{
-
-
     margin:0 0 5px;
-
-
     color:var(--gray-300);
-
-
 }
-
-
-
 .parkalia-security-session__info span{
-
-
     color:var(--gray-500);
-
-
     font-size:13px;
-
-
 }
-
-
-
 .parkalia-security-session__button{
-
-
     height:40px;
-
-
     padding:0 18px;
-
-
     border-radius:12px;
-
-
-    background:
-
-    rgba(239,68,68,.12);
-
-
+    background:rgba(239,68,68,.12);
     border:none;
-
-
-    color:
-
-    #EF4444;
-
-
+    color:#EF4444;
     cursor:pointer;
-
-
     transition:.3s;
-
-
 }
-
-
-
 .parkalia-security-session__button:hover{
-
-
-    background:
-
-    rgba(239,68,68,.25);
-
-
+    background:rgba(239,68,68,.25);
 }
-
-
-
-
-
-
-
-/*=========================================================
-=            HISTORY TIMELINE
-=========================================================*/
-
-
 .parkalia-security-history{
-
-
     display:flex;
-
-
     flex-direction:column;
-
-
     gap:18px;
-
-
 }
-
-
-
 .parkalia-security-history__item{
-
-
     display:flex;
-
-
     align-items:flex-start;
-
-
     gap:15px;
-
-
 }
-
-
-
 .parkalia-security-history__dot{
-
-
     width:12px;
-
-
     height:12px;
-
-
     margin-top:7px;
-
-
     border-radius:50%;
-
-
-    background:
-
-    var(--secondary-500);
-
-
-    box-shadow:
-
-    0 0 15px rgba(255,193,7,.7);
-
-
+    background:var(--secondary-500);
+    box-shadow:0 0 15px rgba(255,193,7,.7);
 }
-
-
-
 .parkalia-security-history__item h3{
-
-
     margin:0 0 5px;
-
-
     color:var(--white);
-
-
     font-size:15px;
-
-
 }
-
-
-
 .parkalia-security-history__item p{
-
-
     margin:0;
-
-
     color:var(--gray-400);
-
-
     font-size:13px;
-
-
 }
-
-
-
-
-
-
-
-/*=========================================================
-=            BUTTONS
-=========================================================*/
-
-
 .parkalia-security__buttons{
-
-
     display:flex;
-
-
     justify-content:flex-end;
-
-
     gap:18px;
-
-
     margin-top:30px;
-
-
 }
-
-
-
-
-
-/*=========================================================
-=            RESPONSIVE
-=========================================================*/
-
-
 @media(max-width:1100px){
-
-
     .parkalia-security-form{
-
-
-        grid-template-columns:
-
-        repeat(2,1fr);
-
-
+        grid-template-columns:repeat(2,1fr);
     }
-
-
 }
-
-
-
 @media(max-width:800px){
-
-
     .parkalia-security-page{
-
-
         padding:25px;
-
-
     }
-
-
-
     .parkalia-security-form,
     .parkalia-security-grid{
-
-
         grid-template-columns:1fr;
-
-
     }
-
-
-
     .parkalia-security-session{
-
-
         flex-direction:column;
-
-
         align-items:flex-start;
-
-
     }
-
-
-
 }
-
-
-
 @media(max-width:500px){
-
-
     .parkalia-security-page{
-
-
         padding:15px;
-
-
     }
-
-
-
     .parkalia-security__title{
-
-
         font-size:28px;
-
-
     }
-
-
-
     .parkalia-security-card{
-
-
         padding:20px;
-
-
     }
-
-
-
     .parkalia-security__buttons{
-
-
         flex-direction:column;
-
-
     }
-
-
 }
