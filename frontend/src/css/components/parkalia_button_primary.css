@@ -3,11 +3,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;    
-    width: fit-content;
-    min-width: fit-content;
+    width: max-content;
+    min-width: max-content;
     height: 40px;
     padding: 14px;
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-full);   
     border: 1px solid transparent;
     cursor: pointer;
     overflow: hidden;

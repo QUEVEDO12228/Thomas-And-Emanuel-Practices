@@ -18,5 +18,10 @@
 @import url('./components/parkalia_settings_page.css');
 @import url('./components/parkalia_help_status.css');
 @import url('./components/parkalia_admin_page.css');
+@import url('./components/parkalia_dashboard.css');
+@import url('./components/parkalia_realtime.css');
+@import url('./components/parkalia_cash.css');
+@import url('./components/parkalia_shift_opening.css');
+@import url('./components/parkalia_cash_close.css');
 
 @import url('./components/registers/parkalia_register.css');

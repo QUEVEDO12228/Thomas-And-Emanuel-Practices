@@ -1,248 +1,85 @@
-<!--==================================================
-=            PROFILE PAGE
-==================================================-->
-
 <section class="parkalia-profile-page">
-
-    <!--=========================================
-    =            GLOW EFFECTS
-    ==========================================-->
     <div class="parkalia-profile-page__glow parkalia-profile-page__glow--left"></div>
     <div class="parkalia-profile-page__glow parkalia-profile-page__glow--right"></div>
-
-    <!--=========================================
-    =            CONTENT
-    ==========================================-->
-
     <section class="parkalia-profile">
-
         <div class="parkalia-profile__container">
-
-            <!--=========================================
-            =            HEADER
-            ==========================================-->
-
-            <!-- <header class="parkalia-profile__header">
-
-                <div class="parkalia-profile__heading">
-                    
-
-                    <h1 class="parkalia-profile__title">
-                        Mi Perfil
-                    </h1>
-
-                    <p class="parkalia-profile__subtitle">
-                        Administra tu información personal, preferencias y datos de acceso de tu cuenta Parkalia.
-                    </p>
-
-                </div>
-
-            </header> -->
-
-            <!--=========================================
-            =            PROFILE CARD
-            ==========================================-->
             <div class="parkalia-profile-card__content-button">
-                <a href="javascript:history.back()" alt="Volver" class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">
-                    <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
-                </a>
                 <section class="parkalia-profile-card">
-                    
-
                     <div class="parkalia-profile-card__cover"></div>
 
                     <div class="parkalia-profile-card__content">
 
-                        <div class="parkalia-profile-card__avatar">
+                        <a href="javascript:history.back()"
+                        class="parkalia-profile-card__back parkalia-btn-secondary">
+                            <img src="/frontend/public/assets/icons/icon_back.svg"
+                                alt="Volver"
+                                class="parkalia-btn-secondary__icon">
+                        </a>
 
-                            <img
-                                src="/frontend/public/assets/images/profile.jpg"
+                        <div class="parkalia-profile-card__avatar">
+                            <img src="/frontend/public/assets/images/profile.jpg"
                                 alt="Usuario"
                                 class="parkalia-profile-card__image">
-
                         </div>
 
                         <div class="parkalia-profile-card__info">
-
-                            <h2 class="parkalia-profile-card__name">
-                                Información Personal
-                            </h2>
-
-                            <span class="parkalia-profile-card__role">
-                                Administrador General
-                            </span>
-
-                            <span class="parkalia-profile-card__status">
-                                ● Cuenta Activa
-                            </span>
-
+                            <h2 class="parkalia-profile-card__name">Información Personal</h2>
+                            <span class="parkalia-profile-card__role">Administrador General</span>
+                            <span class="parkalia-profile-card__status">● Cuenta Activa</span>
                         </div>
 
                         <div class="parkalia-profile-card__actions">
-
                             <div class="parkalia-profile-form__field parkalia-profile-form__field--full">
-
-                                <label class="parkalia-profile-form__label">
-                                    Notificaciones
-                                </label>
-
+                                <label class="parkalia-profile-form__label">Notificaciones</label>
                                 <div class="parkalia-profile-form__checks">
-
-                                    <label>
-                                        <input type="checkbox" checked>
-                                        Correo Electrónico
-                                    </label>
-
-                                    <label>
-                                        <input type="checkbox" checked>
-                                        WhatsApp
-                                    </label>
-
-                                    <label>
-                                        <input type="checkbox">
-                                        SMS
-                                    </label>
-
-                                    <label>
-                                        <input type="checkbox" checked>
-                                        Push
-                                    </label>
-
+                                    <label><input type="checkbox" checked>Correo Electrónico</label>
+                                    <label><input type="checkbox" checked>WhatsApp</label>
+                                    <label><input type="checkbox">SMS</label>
+                                    <label><input type="checkbox" checked>Push</label>
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
-
                 </section>
             </div>
-
-            <!--=========================================
-            =            PERSONAL INFORMATION
-            ==========================================-->
                 <form class="parkalia-profile-form">
-
                     <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Nombre Completo
-                        </label>
-
-                        <input
-                            type="text"
-                            class="parkalia-profile-form__input"
-                            value="Juan David Rodríguez">
-
+                        <label class="parkalia-profile-form__label">Nombre Completo</label>
+                        <input type="text" class="parkalia-profile-form__input" value="Juan David Rodríguez">
                     </div>
-
                     <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Tipo Documento
-                        </label>
-
-                        <select class="parkalia-profile-form__select">
-
-                            <option>Cédula de Ciudadanía</option>
-
-                        </select>
-
+                        <label class="parkalia-profile-form__label">Tipo Documento</label>
+                        <select class="parkalia-profile-form__select"><option>Cédula de Ciudadanía</option></select>
                     </div>
-
                     <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Número Documento
-                        </label>
-
-                        <input
-                            type="text"
-                            class="parkalia-profile-form__input"
-                            value="1000123456">
-
+                        <label class="parkalia-profile-form__label">Número Documento</label>
+                        <input type="text" class="parkalia-profile-form__input" value="1000123456">
                     </div>
-
                     <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Correo Electrónico
-                        </label>
-
-                        <input
-                            type="email"
-                            class="parkalia-profile-form__input"
-                            value="juan@parkalia.com">
-
+                        <label class="parkalia-profile-form__label">Correo Electrónico</label>
+                        <input type="email" class="parkalia-profile-form__input" value="juan@parkalia.com">
                     </div>
-
                     <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Teléfono
-                        </label>
-
-                        <input
-                            type="text"
-                            class="parkalia-profile-form__input"
-                            value="+57 300 000 0000">
-
+                        <label class="parkalia-profile-form__label">Teléfono</label>
+                        <input type="text" class="parkalia-profile-form__input" value="+57 300 000 0000">
                     </div>
-
                     <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Fecha Nacimiento
-                        </label>
-
-                        <input
-                            type="date"
-                            class="parkalia-profile-form__input">
-
+                        <label class="parkalia-profile-form__label">Fecha Nacimiento</label>
+                        <input type="date" class="parkalia-profile-form__input">
                     </div>
-
                     <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Usuario
-                        </label>
-
-                        <input
-                            type="text"
-                            class="parkalia-profile-form__input"
-                            value="juandavid">
-
+                        <label class="parkalia-profile-form__label">Usuario</label>
+                        <input type="text" class="parkalia-profile-form__input" value="juandavid">
                     </div>
-
                     <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Rol
-                        </label>
-
-                        <input
-                            type="text"
-                            class="parkalia-profile-form__input"
-                            value="Administrador"
-                            readonly>
-
+                        <label class="parkalia-profile-form__label">Rol</label>
+                        <input type="text" class="parkalia-profile-form__input" value="Administrador" readonly>
                     </div>
-
                     <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Estado
-                        </label>
-
-                        <input
-                            type="text"
-                            class="parkalia-profile-form__input"
-                            value="Activo"
-                            readonly>
-
+                        <label class="parkalia-profile-form__label">Estado</label>
+                        <input type="text" class="parkalia-profile-form__input" value="Activo" readonly>
                     </div>
-
                     <div class="parkalia-profile-form__field">
 
                         <label class="parkalia-profile-form__label">
@@ -282,63 +119,6 @@
                             class="parkalia-profile-form__input"
                             value="Parkalia S.A.S."
                             readonly>
-
-                    </div>
-
-                    <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Idioma
-                        </label>
-
-                        <select class="parkalia-profile-form__select">
-
-                            <option>Español</option>
-                            <option>English</option>
-
-                        </select>
-
-                    </div>
-
-                    <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Zona Horaria
-                        </label>
-
-                        <select class="parkalia-profile-form__select">
-
-                            <option>America/Bogota</option>
-
-                        </select>
-
-                    </div>
-
-                    <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Formato Fecha
-                        </label>
-
-                        <select class="parkalia-profile-form__select">
-
-                            <option>DD/MM/YYYY</option>
-
-                        </select>
-
-                    </div>
-
-                    <div class="parkalia-profile-form__field">
-
-                        <label class="parkalia-profile-form__label">
-                            Tema
-                        </label>
-
-                        <select class="parkalia-profile-form__select">
-
-                            <option>Dark</option>
-
-                        </select>
 
                     </div>
 

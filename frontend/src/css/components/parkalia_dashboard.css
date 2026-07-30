@@ -1,0 +1,249 @@
+.parkalia-dashboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-lg);
+    font-family: var(--font-primary);
+    color: var(--primary-50);
+    padding: 2.4rem;
+}
+.parkalia-dashboard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--gap-lg);
+}
+.parkalia-dashboard__breadcrumb {
+    display: block;
+    font-size: var(--fs-xxxs);
+    color: var(--gray-400);
+    margin-bottom: var(--gap-xs);
+}
+.parkalia-dashboard__title {
+    font-family: var(--font-primary-bold);
+    font-size: var(--fs-xs);
+    letter-spacing: -.03em;
+    color: var(--white);
+    margin: 0;
+}
+.parkalia-dashboard__subtitle {
+    margin-top: var(--gap-sm);
+    max-width: 550px;
+    color: var(--gray-300);
+    font-size: var(--fs-xxxs);
+    line-height: 1.6;
+}
+.parkalia-dashboard__header-actions {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--gap-md);
+}
+.parkalia-dashboard__filter {
+    display:flex;
+    flex-direction:column;
+    gap:var(--gap-xs);
+}
+.parkalia-dashboard__filter-label {
+    font-size:var(--fs-xxxs);
+    color:var(--gray-300);
+    font-family:var(--font-primary-semibold);
+}
+.parkalia-dashboard__input,.parkalia-dashboard__select {
+    height:46px;
+    min-width: 300px    ;
+    padding:0 var(--input-padding-x);
+    background:rgba(255,255,255,.04);
+    border:1px solid var(--border-color);
+    border-radius:var(--radius-md);
+    color:var(--white);
+    font-size:var(--fs-xxs);
+    outline:none;
+    transition:var(--transition-normal);
+    backdrop-filter:blur(15px);
+}
+.parkalia-dashboard__input:hover,.parkalia-dashboard__select:hover {
+    border-color:rgba(255,193,7,.35);
+}
+.parkalia-dashboard__input:focus,.parkalia-dashboard__select:focus {
+    border-color:var(--secondary-400);
+    box-shadow:0 0 0 4pxrgba(255,193,7,.12);
+}
+.parkalia-dashboard__section,.parkalia-dashboard__summary,.parkalia-dashboard__kpis {
+    display:flex;
+    flex-direction:column;
+    gap:var(--gap-sm);
+}
+.parkalia-dashboard__section-header,.parkalia-dashboard__summary-header,.parkalia-dashboard__kpis-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.parkalia-dashboard__section-title,.parkalia-dashboard__summary-title,.parkalia-dashboard__kpis-title {
+    margin:0;
+    font-size:var(--fs-xs);
+    color:var(--white);
+}
+.parkalia-dashboard__section-description,.parkalia-dashboard__kpis-description {
+    color:var(--gray-400);
+    font-size:var(--fs-xxs);
+}
+.parkalia-dashboard__summary-status,.parkalia-dashboard__kpi-status,.parkalia-dashboard__metric-status,.parkalia-dashboard__live-indicator {
+    padding:6px 14px;
+    border-radius:var(--radius-full);
+    font-size:var(--fs-xxxxs);
+    font-family:var(--font-primary-semibold);
+    background:rgba(34,197,94,.12);
+    color:var(--success-color);
+}
+.parkalia-dashboard__kpi-status--warning,.parkalia-dashboard__metric-status--warning {
+    background:rgba(255,193,7,.12);
+    color:var(--warning-color);
+}
+.parkalia-dashboard__kpi-status--danger {
+    background:rgba(239,68,68,.12);
+    color:var(--danger-color);
+}
+.parkalia-dashboard__kpi-status--info {
+    background:rgba(37,99,235,.15);
+    color:#60A5FA;
+}
+.parkalia-dashboard__summary-card,.parkalia-dashboard__kpi-card,.parkalia-dashboard__metric-card,.parkalia-dashboard__live-card,.parkalia-dashboard__alert-card {
+    background:rgba(255,255,255,.035);
+    border:1px solid var(--border-color);
+    border-radius:var(--radius-xl);
+    padding:var(--gap-xl);
+    backdrop-filter:blur(18px);
+    box-shadow:var(--shadow-primary);
+    transition:var(--transition-normal);
+}
+.parkalia-dashboard__summary-card:hover,.parkalia-dashboard__kpi-card:hover,.parkalia-dashboard__metric-card:hover,.parkalia-dashboard__live-card:hover {
+    transform:translateY(-5px);
+    border-color:rgba(255,193,7,.35);
+}
+.parkalia-dashboard__summary-description{
+    font-size: var(--fs-xxxxs);
+}
+.parkalia-dashboard__summary-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:var(--gap-lg);
+}
+.parkalia-dashboard__summary-label,.parkalia-dashboard__kpi-label,.parkalia-dashboard__metric-label {
+    color:var(--gray-400);
+    font-size:var(--fs-xxs);
+}
+.parkalia-dashboard__summary-value {
+    display:block;
+    margin-top:var(--gap-md);
+    font-size:var(--fs-xs);
+    color:var(--white);
+}
+.parkalia-dashboard__kpis-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:var(--gap-lg);
+}
+.parkalia-dashboard__kpi-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.parkalia-dashboard__kpi-value {
+    display:block;
+    margin-top:var(--gap-lg);
+    font-size:var(--fs-lg);
+    color:var(--white);
+    letter-spacing:-.04em;
+}
+.parkalia-dashboard__kpi-description,.parkalia-dashboard__metric-description {
+    color:var(--gray-400);
+    margin-top:var(--gap-sm);
+    font-size: var(--fs-xxxxs);
+}
+.parkalia-dashboard__metrics-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:var(--gap-lg);
+}
+.parkalia-dashboard__metric-value {
+    display:block;
+    margin-top:var(--gap-lg);
+    font-size:var(--fs-xl);
+    color:var(--secondary-400);
+}
+.parkalia-dashboard__live-grid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:var(--gap-xl);
+}
+.parkalia-dashboard__live-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.parkalia-dashboard__live-title {
+    font-size:var(--fs-sm);
+    margin:0;
+}
+.parkalia-dashboard__live-list {
+    margin-top:var(--gap-lg);
+}
+.parkalia-dashboard__live-item {
+    display:flex;
+    justify-content:space-between;
+    padding:var(--gap-md) 0;
+    border-bottom:1px solid var(--border-color);
+}
+.parkalia-dashboard__live-name {
+    color:var(--white);
+}
+.parkalia-dashboard__live-detail,.parkalia-dashboard__live-time {
+    color:var(--gray-400);
+    font-size:var(--fs-xxxs);
+}
+.parkalia-dashboard__alerts {
+    display:flex;
+    flex-direction:column;
+    gap:var(--gap-md);
+}
+.parkalia-dashboard__alert-card {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.parkalia-dashboard__alert-title {
+    font-size:var(--fs-xs);
+}
+.parkalia-dashboard__alert-text {
+    color:var(--gray-400);
+}
+.parkalia-dashboard__alert-priority {
+    padding:8px 18px;
+    border-radius:var(--radius-full);
+}
+.parkalia-dashboard__alert-priority--high {
+    background:rgba(255,193,7,.15);
+    color:var(--warning-color);
+}
+.parkalia-dashboard__alert-priority--critical {
+    background:rgba(239,68,68,.15);
+    color:var(--danger-color);
+}
+@media(max-width:1200px){
+    .parkalia-dashboard__kpis-grid,.parkalia-dashboard__metrics-grid {
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:768px){
+    .parkalia-dashboard__header {
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .parkalia-dashboard__header-actions {
+        width:100%;
+        flex-wrap:wrap;
+    }
+    .parkalia-dashboard__summary-grid,.parkalia-dashboard__kpis-grid,.parkalia-dashboard__metrics-grid,.parkalia-dashboard__live-grid {
+        grid-template-columns:1fr;
+    }
+}

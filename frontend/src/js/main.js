@@ -16,6 +16,11 @@ import '/frontend/src/js/components/parkalia_notifications_history.js';
 import '/frontend/src/js/components/parkalia_settings_page.js';
 import '/frontend/src/js/components/parkalia_help_status.js';
 import '/frontend/src/js/components/parkalia_admin_page.js';
+import '/frontend/src/js/components/parkalia_dashboard.js';
+import '/frontend/src/js/components/parkalia_realtime.js';
+import '/frontend/src/js/components/parkalia_cash.js';
+import '/frontend/src/js/components/parkalia_shift_opening.js';
+import '/frontend/src/js/components/parkalia_cash_close.js';
 
 import '/frontend/src/js/components/registers/parkalia_register_parking_lot.js';
 import '/frontend/src/js/components/registers/parkalia_register_parking_lot1.js';

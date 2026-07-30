@@ -1,46 +1,21 @@
-/* ==========================================================
-   SECTION
-========================================================== */
-
 .parkalia-section-card-top-offer__title {
     color: var(--white);
     font-size: var(--fs-xs);
     margin-bottom: 12px;
     padding-top: 12px;  
     margin-left: 2.4rem;
-
 }
-
-/* ==========================================================
-   OFFERS GRID
-========================================================== */
-
-/* ==========================================================
-   SLIDER
-========================================================== */
-
-/*==========================================================
-SLIDER
-==========================================================*/
-
 .parkalia-section-card-top-offer__slider{
     position: relative;
     width:100%;
-
     align-items:center;
     padding-bottom: 12px;
     margin-left: 1rem;
-
 }
-
 .parkalia-section-card-top-offer__viewport{
-
     width:100%;
-
     overflow:hidden;
-
 }
-
 .parkalia-section-card-top-offer__track{
 
     display:flex;
@@ -90,7 +65,6 @@ ARROWS
 .parkalia-section-card-top-offer__arrow{
     position:absolute;
     top:50%;
-    transform:translateY(-50%);
     z-index:20;
 }
 
@@ -287,7 +261,7 @@ ARROWS
     gap: 2rem;
 
 }
-.parkalia-section-card-top-offer__content-button{
+/* .parkalia-section-card-top-offer__content-button{
     display: flex;
     width: 100%;
 
@@ -296,7 +270,7 @@ ARROWS
     align-items: center;
 
     gap: 2rem;
-}
+} */
 
 /* ==========================================================
    PRICES

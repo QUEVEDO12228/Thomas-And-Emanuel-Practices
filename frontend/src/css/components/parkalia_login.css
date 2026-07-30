@@ -43,53 +43,29 @@
 }
 .parkalia-login__link {
     position: relative;
-
     width: fit-content;
     font-size: var(--fs-xxxs);
-
     color: var(--gray-300);
-
     text-decoration: none;
-
     transition: var(--transition-normal);
     margin-left: 12rem;
 }
-
 .parkalia-login__link::after {
     content: '';
-
     position: absolute;
-
     left: 0;
     bottom: -4px;
-
     width: 0%;
     height: 1px;
-
     background: var(--secondary-400);
-
     transition: var(--transition-normal);
 }
-
 .parkalia-login__link:hover {
     color: var(--white);
 }
-
 .parkalia-login__link:hover::after {
     width: 100%;
 }
-
-/* =========================================================
-TOPBAR
-========================================================= */
-
-
-
-
-/* =========================================================
-CARD
-========================================================= */
-
 .parkalia-login__card {
     width: 100%;
     max-width: 432px;

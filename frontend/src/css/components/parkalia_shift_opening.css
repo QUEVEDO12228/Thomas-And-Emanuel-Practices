@@ -1,0 +1,945 @@
+/* =========================================================
+   PARKALIA SHIFT OPENING
+   APERTURA DE TURNO
+   BEM STRICT
+========================================================= */
+
+
+.parkalia-shift-opening {
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--gap-xxxl);
+
+    color:var(--primary-50);
+
+    font-family:var(--font-primary);
+
+}
+
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+
+.parkalia-shift-opening__header {
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:flex-end;
+
+
+    gap:var(--gap-xl);
+
+
+}
+
+
+
+.parkalia-shift-opening__breadcrumb {
+
+
+    display:block;
+
+
+    margin-bottom:var(--gap-xs);
+
+
+    color:var(--gray-400);
+
+
+    font-size:var(--fs-xxxs);
+
+
+}
+
+
+
+.parkalia-shift-opening__title {
+
+
+    margin:0;
+
+
+    color:var(--white);
+
+
+    font-size:var(--fs-lg);
+
+
+    letter-spacing:-.04em;
+
+
+    font-family:var(--font-primary-bold);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__description {
+
+
+    margin-top:var(--gap-sm);
+
+
+    color:var(--gray-300);
+
+
+    max-width:600px;
+
+
+    line-height:1.6;
+
+
+    font-size:var(--fs-xs);
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   STATUS BADGE
+========================================================= */
+
+
+.parkalia-shift-opening__status {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.parkalia-shift-opening__badge {
+
+
+    padding:10px 18px;
+
+
+    border-radius:var(--radius-full);
+
+
+    font-size:var(--fs-xxxs);
+
+
+}
+
+
+
+.parkalia-shift-opening__badge--available {
+
+
+    color:var(--success-color);
+
+
+    background:
+
+    rgba(34,197,94,.12);
+
+
+    border:
+
+    1px solid rgba(34,197,94,.25);
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+
+.parkalia-shift-opening__content {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    minmax(0,2fr)
+    minmax(300px,1fr);
+
+
+    gap:var(--gap-xl);
+
+
+    align-items:start;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   FORM CONTAINER
+========================================================= */
+
+
+.parkalia-shift-opening__form {
+
+
+    padding:var(--gap-xxl);
+
+
+    border-radius:var(--radius-xl);
+
+
+    background:
+
+    rgba(255,255,255,.035);
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+    box-shadow:var(--shadow-primary);
+
+
+}
+
+
+
+
+
+
+
+.parkalia-shift-opening__section-header {
+
+
+    margin-bottom:var(--gap-xl);
+
+
+}
+
+
+
+.parkalia-shift-opening__section-title {
+
+
+    margin:0;
+
+
+    color:var(--white);
+
+
+    font-size:var(--fs-md);
+
+
+}
+
+
+
+.parkalia-shift-opening__section-description {
+
+
+    margin-top:var(--gap-sm);
+
+
+    color:var(--gray-400);
+
+
+    font-size:var(--fs-xs);
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   FORM FIELDS
+========================================================= */
+
+
+.parkalia-shift-opening__fields {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+    gap:var(--gap-lg);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__field {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:var(--gap-xs);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__field--full {
+
+
+    grid-column:
+
+    1 / -1;
+
+
+}
+
+
+
+
+
+.parkalia-shift-opening__label {
+
+
+    color:var(--gray-300);
+
+
+    font-size:var(--fs-xxxs);
+
+
+    font-family:var(--font-primary-semibold);
+
+
+}
+
+
+
+
+
+.parkalia-shift-opening__input,
+
+
+.parkalia-shift-opening__textarea {
+
+
+    width:100%;
+
+
+    padding:
+
+    var(--input-padding-y)
+
+    var(--input-padding-x);
+
+
+
+    border-radius:var(--radius-md);
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+    background:
+
+    rgba(255,255,255,.04);
+
+
+    color:var(--white);
+
+
+    font-family:var(--font-primary);
+
+
+    outline:none;
+
+
+    transition:var(--transition-normal);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__input:hover,
+
+
+.parkalia-shift-opening__textarea:hover {
+
+
+    border-color:
+
+    rgba(255,193,7,.35);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__input:focus,
+
+
+.parkalia-shift-opening__textarea:focus {
+
+
+    border-color:
+
+    var(--secondary-400);
+
+
+    box-shadow:
+
+    0 0 0 3px rgba(255,193,7,.12);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__textarea {
+
+
+    min-height:130px;
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   MONEY INPUT
+========================================================= */
+
+
+.parkalia-shift-opening__money {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    overflow:hidden;
+
+
+    border-radius:var(--radius-md);
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+    background:
+
+    rgba(255,255,255,.04);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__money span {
+
+
+    padding:0 18px;
+
+
+    color:var(--secondary-400);
+
+
+    font-family:var(--font-primary-bold);
+
+
+}
+
+
+
+.parkalia-shift-opening__money .parkalia-shift-opening__input {
+
+
+    border:none;
+
+
+    background:transparent;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+
+.parkalia-shift-opening__actions {
+
+
+    display:flex;
+
+
+    justify-content:flex-end;
+
+
+    gap:var(--gap-md);
+
+
+    margin-top:var(--gap-xxl);
+
+
+}
+
+
+
+
+
+.parkalia-shift-opening__button {
+
+
+    height:46px;
+
+
+    padding:
+
+    0 var(--button-padding-x);
+
+
+    border-radius:var(--radius-md);
+
+
+    cursor:pointer;
+
+
+    font-family:var(--font-primary-semibold);
+
+
+    transition:var(--transition-normal);
+
+
+}
+
+
+
+
+
+.parkalia-shift-opening__button--primary {
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    var(--secondary-400),
+
+    var(--secondary-500)
+
+    );
+
+
+    border:none;
+
+
+    color:var(--black);
+
+
+    box-shadow:
+
+    0 12px 30px rgba(255,193,7,.25);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__button--primary:hover {
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+    0 18px 35px rgba(255,193,7,.35);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__button--cancel {
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+    color:var(--gray-200);
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+}
+
+
+
+.parkalia-shift-opening__button--cancel:hover {
+
+
+    background:
+
+    rgba(255,255,255,.1);
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   SUMMARY PANEL
+========================================================= */
+
+
+.parkalia-shift-opening__summary {
+
+
+    padding:var(--gap-xl);
+
+
+    border-radius:var(--radius-xl);
+
+
+    background:
+
+    rgba(255,255,255,.035);
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+    box-shadow:var(--shadow-primary);
+
+
+}
+
+
+
+.parkalia-shift-opening__summary-title {
+
+
+    margin:0;
+
+
+    color:var(--white);
+
+
+    font-size:var(--fs-md);
+
+
+}
+
+
+
+
+
+.parkalia-shift-opening__summary-list {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:var(--gap-md);
+
+
+    margin-top:var(--gap-xl);
+
+
+}
+
+
+
+
+
+.parkalia-shift-opening__summary-item {
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    padding-bottom:var(--gap-md);
+
+
+    border-bottom:
+
+    1px solid var(--border-color);
+
+
+}
+
+
+
+
+
+.parkalia-shift-opening__summary-item span {
+
+
+    color:var(--gray-400);
+
+
+    font-size:var(--fs-xxxs);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__summary-item strong {
+
+
+    color:var(--white);
+
+
+    font-size:var(--fs-xs);
+
+
+}
+
+
+
+
+
+
+
+.parkalia-shift-opening__summary-status {
+
+
+    color:var(--warning-color)!important;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   SECURITY BOX
+========================================================= */
+
+
+.parkalia-shift-opening__security {
+
+
+    margin-top:var(--gap-xl);
+
+
+    padding:var(--gap-lg);
+
+
+    border-radius:var(--radius-lg);
+
+
+    background:
+
+    rgba(255,193,7,.08);
+
+
+    border:
+
+    1px solid rgba(255,193,7,.2);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__security strong {
+
+
+    color:var(--secondary-400);
+
+
+}
+
+
+
+
+.parkalia-shift-opening__security p {
+
+
+    margin-top:var(--gap-sm);
+
+
+    color:var(--gray-300);
+
+
+    line-height:1.5;
+
+
+    font-size:var(--fs-xxxs);
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+
+@media(max-width:1100px){
+
+
+    .parkalia-shift-opening__content {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+    .parkalia-shift-opening__header {
+
+
+        flex-direction:column;
+
+
+        align-items:flex-start;
+
+
+    }
+
+
+
+
+    .parkalia-shift-opening__fields {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+    .parkalia-shift-opening__actions {
+
+
+        flex-direction:column;
+
+
+    }
+
+
+
+
+    .parkalia-shift-opening__button {
+
+
+        width:100%;
+
+
+    }
+
+
+}
