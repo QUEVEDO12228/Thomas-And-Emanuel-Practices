@@ -7,56 +7,58 @@
                 <h1 class="parkalia-security__title">Seguridad</h1>
                 <p class="parkalia-security__subtitle">Administra el acceso, protección y actividad de seguridad de tu cuenta Parkalia.</p>
             </header>
-            <section class="parkalia-security-card">
-                <div class="parkalia-security-card__header">
-                    <h2 class="parkalia-security-card__title">Cambiar contraseña</h2>
-                    <p class="parkalia-security-card__description">Actualiza tu contraseña periódicamente para mantener tu cuenta protegida.</p>
-                </div>
-                <form class="parkalia-security-form">
-                    <div class="parkalia-security-form__field">
-                        <label class="parkalia-security-form__label">Contraseña actual</label>
-                        <input type="password" class="parkalia-security-form__input" placeholder="Ingrese contraseña actual">
+            <div class="parkalia-security__cards-content">
+                <section class="parkalia-security-card">
+                    <div class="parkalia-security-card__header">
+                        <h2 class="parkalia-security-card__title">Cambiar contraseña</h2>
+                        <p class="parkalia-security-card__description">Actualiza tu contraseña periódicamente para mantener tu cuenta protegida.</p>
                     </div>
-                    <div class="parkalia-security-form__field">
-                        <label class="parkalia-security-form__label">Nueva contraseña</label>
-                        <input type="password" class="parkalia-security-form__input" placeholder="Ingrese nueva contraseña">
+                    <form class="parkalia-security-form">
+                        <div class="parkalia-security-form__field">
+                            <label class="parkalia-security-form__label">Contraseña actual</label>
+                            <input type="password" class="parkalia-security-form__input" placeholder="Ingrese contraseña actual">
+                        </div>
+                        <div class="parkalia-security-form__field">
+                            <label class="parkalia-security-form__label">Nueva contraseña</label>
+                            <input type="password" class="parkalia-security-form__input" placeholder="Ingrese nueva contraseña">
+                        </div>
+                        <div class="parkalia-security-form__field">
+                            <label class="parkalia-security-form__label">Confirmar contraseña</label>
+                            <input type="password" class="parkalia-security-form__input" placeholder="Repita la contraseña">
+                        </div>
+                    </form>
+                </section>
+                <section class="parkalia-security-card">
+                    <div class="parkalia-security-card__header">
+                        <h2 class="parkalia-security-card__title">Autenticación</h2>
+                        <p class="parkalia-security-card__description">Configura métodos adicionales de protección para tu cuenta.</p>
                     </div>
-                    <div class="parkalia-security-form__field">
-                        <label class="parkalia-security-form__label">Confirmar contraseña</label>
-                        <input type="password" class="parkalia-security-form__input" placeholder="Repita la contraseña">
+                    <div class="parkalia-security-grid">
+                        <div class="parkalia-security-item">
+                            <span class="parkalia-security-item__label">Autenticación de dos factores</span>
+                            <span class="parkalia-security-item__status">Activado</span>
+                        </div>
+                        <div class="parkalia-security-item">
+                            <span class="parkalia-security-item__label">Código de verificación</span>
+                            <button class="parkalia-security-item__button">Configurar</button>
+                        </div>
+                        <div class="parkalia-security-item">
+                            <span class="parkalia-security-item__label">Alertas de inicio de sesión</span>
+                            <label class="parkalia-switch">
+                                <input type="checkbox" checked>
+                                <span class="parkalia-switch__slider"></span>
+                            </label>
+                        </div>
+                        <div class="parkalia-security-item">
+                            <span class="parkalia-security-item__label">Notificaciones de seguridad</span>
+                            <label class="parkalia-switch">
+                                <input type="checkbox" checked>
+                                <span class="parkalia-switch__slider"></span>
+                            </label>
+                        </div>
                     </div>
-                </form>
-            </section>
-            <section class="parkalia-security-card">
-                <div class="parkalia-security-card__header">
-                    <h2 class="parkalia-security-card__title">Autenticación</h2>
-                    <p class="parkalia-security-card__description">Configura métodos adicionales de protección para tu cuenta.</p>
-                </div>
-                <div class="parkalia-security-grid">
-                    <div class="parkalia-security-item">
-                        <span class="parkalia-security-item__label">Autenticación de dos factores</span>
-                        <span class="parkalia-security-item__status">Activado</span>
-                    </div>
-                    <div class="parkalia-security-item">
-                        <span class="parkalia-security-item__label">Código de verificación</span>
-                        <button class="parkalia-security-item__button">Configurar</button>
-                    </div>
-                    <div class="parkalia-security-item">
-                        <span class="parkalia-security-item__label">Alertas de inicio de sesión</span>
-                        <label class="parkalia-switch">
-                            <input type="checkbox" checked>
-                            <span class="parkalia-switch__slider"></span>
-                        </label>
-                    </div>
-                    <div class="parkalia-security-item">
-                        <span class="parkalia-security-item__label">Notificaciones de seguridad</span>
-                        <label class="parkalia-switch">
-                            <input type="checkbox" checked>
-                            <span class="parkalia-switch__slider"></span>
-                        </label>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
             <section class="parkalia-security-card">
                 <div class="parkalia-security-card__header">
                     <h2 class="parkalia-security-card__title">Sesiones activas</h2>
@@ -107,7 +109,9 @@
                 </div>
             </section>
             <div class="parkalia-security__buttons">
-                <a href="#" class="parkalia-btn parkalia-btn--secondary">Cancelar</a>
+                <a href="javascript:history.back()" alt="Volver" class="parkalia-btn-secondary parkalia-recipients-table__btn-secondary">Cerrar sesión
+                    <img src="/frontend/public/assets/icons/icon_cancel_white.svg" alt="" class="parkalia-btn-secondary__icon parkalia-recipients-table__btn-secondary-icon">
+                </a>
                 <a href="#" class="parkalia-btn parkalia-btn--primary">Guardar cambios</a>
             </div>
         </div>

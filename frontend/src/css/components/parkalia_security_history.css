@@ -46,12 +46,19 @@
 .parkalia-security__subtitle{
     color:var(--gray-300);
     font-size:var(--fs-xs);
+    border-bottom:1px solid rgba(255,255,255,.4);
+    padding-bottom:var(--gap-lg);
 }
 .parkalia-security-card{
     margin-bottom:24px;
 }
 .parkalia-security-card__header{
     margin-bottom:25px;
+}
+.parkalia-security__cards-content{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
 }
 .parkalia-security-card__title{
     color:var(--white);
