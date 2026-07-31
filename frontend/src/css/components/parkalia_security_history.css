@@ -38,15 +38,14 @@
     margin-bottom:30px;
 }
 .parkalia-security__title{
-    margin:0 0 10px;
+    margin-top: var(--gap-xl);
     color:var(--white);
-    font-size:var(--fs-xs);
+    font-size:var(--fs-md);
     font-family:var(--font-primary-bold);
 }
 .parkalia-security__subtitle{
-    margin:0;
     color:var(--gray-300);
-    font-size:15px;
+    font-size:var(--fs-xs);
 }
 .parkalia-security-card{
     margin-bottom:24px;
@@ -55,20 +54,19 @@
     margin-bottom:25px;
 }
 .parkalia-security-card__title{
-    margin:0 0 8px;
     color:var(--white);
-    font-size:var(--fs-xxs);
+    font-size:var(--fs-sm);
     font-family:var(--font-primary-bold);
 }
 .parkalia-security-card__description{
     margin:0;
     color:var(--gray-400);
-    font-size:14px;
+    font-size:var(--fs-xs);
 }
 .parkalia-security-form{
     display:grid;
-    grid-template-columns:repeat(3,minmax(240px,1fr));
-    gap:22px;
+    row-gap:row;
+    gap:18px;
 }
 .parkalia-security-form__field{
     display:flex;
@@ -82,6 +80,7 @@
 }
 .parkalia-security-form__input{
     width:100%;
+    max-width:400px;
     height:48px;
     padding:0 18px;
     border-radius:16px;

@@ -6,6 +6,7 @@
     overflow: hidden;
     font-family: var(--font-primary);
     background: var(--primary-950);
+    border-bottom: 1px solid rgba(255,255,255,.4);
 }
 .parkalia-navbar__logo{
     padding-bottom: 6px;

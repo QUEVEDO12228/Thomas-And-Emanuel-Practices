@@ -8,6 +8,9 @@
     overflow-x:hidden;
 
     scrollbar-width:thin;
+
+    margin-top: 5px;
+    border-right:1px solid rgba(255,255,255,.4);
 }
 .parkalia-sidebar-principal::-webkit-scrollbar{
     width:8px;

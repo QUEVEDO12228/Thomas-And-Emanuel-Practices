@@ -129,15 +129,16 @@
     text-align: center;
 }
 .parkalia-login__title {
-    margin-bottom: var(--gap-xs);
+    margin-bottom: var(--gap-lg);
     color: var(--white);
-    font-size: 1.6rem;
+    font-size: var(--fs-md);
     font-family: var(--font-primary-bold);
 }
 .parkalia-login__subtitle {
+    margin-bottom: var(--gap-lg);
     color: var(--gray-300);
     line-height: 1.8;
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxs);
 }
 .parkalia-login__highlight {
     color: var(--secondary-300);
@@ -159,7 +160,7 @@
 }
 .parkalia-login__label {
     color: var(--white);
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
 }
 .parkalia-login__forgot-link {
     color: var(--secondary-300);
@@ -303,7 +304,7 @@
     padding:0 14px;
     background: #0B1020;
     color: var(--gray-400);
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
 }
 .parkalia-login__socials {
     display: flex;
@@ -340,14 +341,14 @@
     font-size: var(--fs-xxxxs);
 }
 .parkalia-login__footer-text{
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxs);
     color: var(--white);
     text-align: center;
 }
 .parkalia-login__register-link{
     position: relative;
     width: fit-content;
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxs);
     color: var(--gray-300);
     text-decoration: none;
     transition: var(--transition-normal);

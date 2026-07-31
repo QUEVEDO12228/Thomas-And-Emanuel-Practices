@@ -12,7 +12,7 @@
     cursor: pointer;
     overflow: hidden;
     font-family: var(--font-primary-semibold);
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
     font-weight: 600;
     letter-spacing: .3px;
     transition:background .25s ease, border-color .25s ease, box-shadow .25s ease, transform .25s ease;
