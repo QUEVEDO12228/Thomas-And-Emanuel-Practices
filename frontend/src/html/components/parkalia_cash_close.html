@@ -1,652 +1,119 @@
-<!--=========================================================
-=                 PARKALIA FINANZAS
-=                 CIERRE DE CAJA
-==========================================================-->
-
 <section class="parkalia-cash-close">
-
-
-
-    <!--=========================================================
-    = HEADER
-    ==========================================================-->
-
     <header class="parkalia-cash-close__header">
-
-
         <div class="parkalia-cash-close__heading">
-
-
-            <span class="parkalia-cash-close__breadcrumb">
-                Inicio / Finanzas / Cierre de Caja
-            </span>
-
-
-            <h1 class="parkalia-cash-close__title">
-                Cierre de Caja
-            </h1>
-
-
-            <p class="parkalia-cash-close__description">
-                Realiza arqueo, valida movimientos y finaliza
-                el turno actual de operación.
-            </p>
-
-
+            <span class="parkalia-cash-close__breadcrumb">Inicio / Finanzas / Cierre de Caja</span>
+            <h1 class="parkalia-cash-close__title">Cierre de Caja</h1>
+            <p class="parkalia-cash-close__description">Realiza arqueo, valida movimientos y finaliza el turno actual de operación.</p>
         </div>
-
-
-
-
         <div class="parkalia-cash-close__status">
-
-
-            <span class="
-            parkalia-cash-close__badge
-            parkalia-cash-close__badge--active">
-
-                Turno activo
-
-            </span>
-
-
+            <span class="parkalia-cash-close__badge parkalia-cash-close__badge--active">Turno activo</span>
         </div>
-
-
     </header>
-
-
-
-
-
-
-
-
-    <!--=========================================================
-    = RESUMEN DEL TURNO
-    ==========================================================-->
-
     <section class="parkalia-cash-close__summary">
-
-
-
-
-
-    <article class="parkalia-cash-close__card">
-
-
-    <span class="parkalia-cash-close__label">
-    Base inicial
-    </span>
-
-
-    <strong class="parkalia-cash-close__value">
-    $500.000
-    </strong>
-
-
-    <p class="parkalia-cash-close__text">
-    Monto registrado al iniciar.
-    </p>
-
-
-    </article>
-
-
-
-
-
-
-    <article class="parkalia-cash-close__card">
-
-
-    <span class="parkalia-cash-close__label">
-    Ingresos registrados
-    </span>
-
-
-    <strong class="
-    parkalia-cash-close__value
-    parkalia-cash-close__value--success">
-
-    $5.420.000
-
-    </strong>
-
-
-    <p class="parkalia-cash-close__text">
-    Pagos recibidos durante turno.
-    </p>
-
-
-    </article>
-
-
-
-
-
-
-
-    <article class="parkalia-cash-close__card">
-
-
-    <span class="parkalia-cash-close__label">
-    Egresos
-    </span>
-
-
-    <strong class="
-    parkalia-cash-close__value
-    parkalia-cash-close__value--danger">
-
-    $420.000
-
-    </strong>
-
-
-    <p class="parkalia-cash-close__text">
-    Salidas registradas.
-    </p>
-
-
-    </article>
-
-
-
-
-
-
-
-    <article class="parkalia-cash-close__card">
-
-
-    <span class="parkalia-cash-close__label">
-    Caja esperada
-    </span>
-
-
-    <strong class="
-    parkalia-cash-close__value
-    parkalia-cash-close__value--warning">
-
-    $5.500.000
-
-    </strong>
-
-
-    <p class="parkalia-cash-close__text">
-    Valor calculado automáticamente.
-    </p>
-
-
-    </article>
-
-
-
-
+        <article class="parkalia-cash-close__card">
+            <span class="parkalia-cash-close__label">Base inicial</span>
+            <strong class="parkalia-cash-close__value">$500.000</strong>
+            <p class="parkalia-cash-close__text">Monto registrado al iniciar.</p>
+        </article>
+        <article class="parkalia-cash-close__card">
+            <span class="parkalia-cash-close__label">Ingresos registrados</span>
+            <strong class="parkalia-cash-close__value parkalia-cash-close__value--success">$5.420.000</strong>
+            <p class="parkalia-cash-close__text">Pagos recibidos durante turno.</p>
+        </article>
+        <article class="parkalia-cash-close__card">
+            <span class="parkalia-cash-close__label">Egresos</span>
+            <strong class="parkalia-cash-close__value parkalia-cash-close__value--danger">$420.000</strong>
+            <p class="parkalia-cash-close__text">Salidas registradas.</p>
+        </article>
+        <article class="parkalia-cash-close__card">
+            <span class="parkalia-cash-close__label">Caja esperada</span>
+            <strong class="parkalia-cash-close__value parkalia-cash-close__value--warning">$5.500.000</strong>
+            <p class="parkalia-cash-close__text">Valor calculado automáticamente.</p>
+        </article>
     </section>
-
-
-
-
-
-
-
-
-    <!--=========================================================
-    = CONTENIDO PRINCIPAL
-    ==========================================================-->
-
     <div class="parkalia-cash-close__content">
-
-
-
-
-
-
-    <!--=========================================================
-    = ARQUEO DE CAJA
-    ==========================================================-->
-
-    <section class="parkalia-cash-close__panel">
-
-
-
-    <header class="parkalia-cash-close__panel-header">
-
-
-    <h2 class="parkalia-cash-close__panel-title">
-    Arqueo de caja
-    </h2>
-
-
-    <p class="parkalia-cash-close__panel-description">
-    Ingresa el dinero físico contado para comparar.
-    </p>
-
-
-    </header>
-
-
-
-
-
-
-    <div class="parkalia-cash-close__fields">
-
-
-
-
-
-    <div class="parkalia-cash-close__field">
-
-
-    <label class="parkalia-cash-close__label">
-    Efectivo contado
-    </label>
-
-
-    <div class="parkalia-cash-close__money">
-
-
-    <span>
-    COP
-    </span>
-
-
-    <input 
-    type="number"
-    class="parkalia-cash-close__input"
-    placeholder="5500000">
-
-
+        <section class="parkalia-cash-close__panel">
+            <header class="parkalia-cash-close__panel-header">
+                <h2 class="parkalia-cash-close__panel-title">Arqueo de caja</h2>
+                <p class="parkalia-cash-close__panel-description">Ingresa el dinero físico contado para comparar.</p>
+            </header>
+            <div class="parkalia-cash-close__fields">
+                <div class="parkalia-cash-close__field">
+                    <label class="parkalia-cash-close__label">Efectivo contado</label>
+                    <div class="parkalia-cash-close__money">
+                        <span>COP</span>
+                        <input type="number" class="parkalia-cash-close__input" placeholder="5500000">
+                    </div>
+                </div>
+                <div class="parkalia-cash-close__field">
+                    <label class="parkalia-cash-close__label">Diferencia</label>
+                    <input class="parkalia-cash-close__input parkalia-cash-close__input--readonly" value="$0">
+                </div>
+                <div class="parkalia-cash-close__field">
+                    <label class="parkalia-cash-close__label">Método principal</label>
+                    <select class="parkalia-cash-close__input">
+                        <option>Efectivo</option>
+                        <option>Tarjeta</option>
+                        <option>Transferencia</option>
+                    </select>
+                </div>
+                <div class="parkalia-cash-close__field">
+                    <label class="parkalia-cash-close__label">Responsable cierre</label>
+                    <input class="parkalia-cash-close__input" value="Carlos Rodríguez">
+                </div>
+                <div class="parkalia-cash-close__field parkalia-cash-close__field--full">
+                    <label class="parkalia-cash-close__label">Observaciones</label>
+                    <textarea class="parkalia-cash-close__textarea" placeholder="Notas del cierre de caja"></textarea>
+                </div>
+            </div>
+            <footer class="parkalia-cash-close__actions">
+                <button class="parkalia-cash-close__button parkalia-cash-close__button--cancel">Cancelar</button>
+                <button class="parkalia-cash-close__button parkalia-cash-close__button--primary">Confirmar cierre</button>
+            </footer>
+        </section>
+        <aside class="parkalia-cash-close__validation">
+            <header class="parkalia-cash-close__validation-header">
+                <h2 class="parkalia-cash-close__validation-title">Resumen final</h2>
+            </header>
+            <div class="parkalia-cash-close__validation-list">
+                <div class="parkalia-cash-close__validation-item">
+                    <span>Caja esperada</span>
+                    <strong>$5.500.000</strong>
+                </div>
+                <div class="parkalia-cash-close__validation-item">
+                    <span>Caja contada</span>
+                    <strong>$5.500.000</strong>
+                </div>
+                <div class="parkalia-cash-close__validation-item">
+                    <span>Diferencia</span>
+                    <strong class="parkalia-cash-close__difference">$0</strong>
+                </div>
+            </div>
+            <div class="parkalia-cash-close__status-box parkalia-cash-close__status-box--success">
+                <strong>Caja cuadrada</strong>
+                <p>No existen diferencias pendientes.</p>
+            </div>
+        </aside>
     </div>
-
-
-    </div>
-
-
-
-
-
-
-    <div class="parkalia-cash-close__field">
-
-
-    <label class="parkalia-cash-close__label">
-    Diferencia
-    </label>
-
-
-    <input 
-    class="
-    parkalia-cash-close__input
-    parkalia-cash-close__input--readonly"
-    value="$0">
-
-
-    </div>
-
-
-
-
-
-
-    <div class="parkalia-cash-close__field">
-
-
-    <label class="parkalia-cash-close__label">
-    Método principal
-    </label>
-
-
-    <select class="parkalia-cash-close__input">
-
-
-    <option>
-    Efectivo
-    </option>
-
-
-    <option>
-    Tarjeta
-    </option>
-
-
-    <option>
-    Transferencia
-    </option>
-
-
-    </select>
-
-
-    </div>
-
-
-
-
-
-
-    <div class="parkalia-cash-close__field">
-
-
-    <label class="parkalia-cash-close__label">
-    Responsable cierre
-    </label>
-
-
-    <input 
-    class="parkalia-cash-close__input"
-    value="Carlos Rodríguez">
-
-
-    </div>
-
-
-
-
-
-    <div class="
-    parkalia-cash-close__field
-    parkalia-cash-close__field--full">
-
-
-    <label class="parkalia-cash-close__label">
-    Observaciones
-    </label>
-
-
-    <textarea 
-    class="parkalia-cash-close__textarea"
-    placeholder="Notas del cierre de caja">
-    </textarea>
-
-
-    </div>
-
-
-
-
-    </div>
-
-
-
-
-
-
-    <footer class="parkalia-cash-close__actions">
-
-
-    <button class="
-    parkalia-cash-close__button
-    parkalia-cash-close__button--cancel">
-
-    Cancelar
-
-    </button>
-
-
-
-    <button class="
-    parkalia-cash-close__button
-    parkalia-cash-close__button--primary">
-
-    Confirmar cierre
-
-    </button>
-
-
-
-    </footer>
-
-
-
-    </section>
-
-
-
-
-
-
-
-
-
-    <!--=========================================================
-    = VALIDACIÓN FINAL
-    ==========================================================-->
-
-    <aside class="parkalia-cash-close__validation">
-
-
-
-    <header class="parkalia-cash-close__validation-header">
-
-
-    <h2 class="parkalia-cash-close__validation-title">
-    Resumen final
-    </h2>
-
-
-    </header>
-
-
-
-
-
-
-
-    <div class="parkalia-cash-close__validation-list">
-
-
-
-    <div class="parkalia-cash-close__validation-item">
-
-
-    <span>
-    Caja esperada
-    </span>
-
-
-    <strong>
-    $5.500.000
-    </strong>
-
-
-    </div>
-
-
-
-
-
-
-    <div class="parkalia-cash-close__validation-item">
-
-
-    <span>
-    Caja contada
-    </span>
-
-
-    <strong>
-    $5.500.000
-    </strong>
-
-
-    </div>
-
-
-
-
-
-
-    <div class="parkalia-cash-close__validation-item">
-
-
-    <span>
-    Diferencia
-    </span>
-
-
-    <strong class="
-    parkalia-cash-close__difference">
-
-    $0
-
-    </strong>
-
-
-    </div>
-
-
-
-
-    </div>
-
-
-
-
-
-
-    <div class="
-    parkalia-cash-close__status-box
-    parkalia-cash-close__status-box--success">
-
-
-    <strong>
-    Caja cuadrada
-    </strong>
-
-
-    <p>
-    No existen diferencias pendientes.
-    </p>
-
-
-    </div>
-
-
-
-
-
-    </aside>
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-    <!--=========================================================
-    = MOVIMIENTOS DEL TURNO
-    ==========================================================-->
-
     <section class="parkalia-cash-close__movements">
-
-
-
-    <header class="parkalia-cash-close__section-header">
-
-
-    <h2 class="parkalia-cash-close__section-title">
-
-    Movimientos del turno
-
-    </h2>
-
-
-    </header>
-
-
-
-
-
-
-    <div class="parkalia-cash-close__movement-list">
-
-
-
-    <article class="parkalia-cash-close__movement">
-
-
-    <div>
-
-    <strong>
-    Ingreso vehículo ABC123
-    </strong>
-
-    <span>
-    Pago efectivo
-    </span>
-
-    </div>
-
-
-    <strong class="
-    parkalia-cash-close__movement-value
-    parkalia-cash-close__movement-value--income">
-
-    +$15.000
-
-    </strong>
-
-
-    </article>
-
-
-
-
-
-
-
-    <article class="parkalia-cash-close__movement">
-
-
-    <div>
-
-    <strong>
-    Factura #000245
-    </strong>
-
-    <span>
-    Pago tarjeta
-    </span>
-
-    </div>
-
-
-    <strong class="
-    parkalia-cash-close__movement-value
-    parkalia-cash-close__movement-value--income">
-
-    +$35.000
-
-    </strong>
-
-
-    </article>
-
-
-
-
-
-
-    </div>
-
-
-
+        <header class="parkalia-cash-close__section-header">
+            <h2 class="parkalia-cash-close__section-title">Movimientos del turno</h2>
+        </header>
+        <div class="parkalia-cash-close__movement-list">
+            <article class="parkalia-cash-close__movement">
+                <div>
+                    <strong>Ingreso vehículo ABC123</strong>
+                    <span>Pago efectivo</span>
+                </div>
+                <strong class="parkalia-cash-close__movement-value parkalia-cash-close__movement-value--income">+$15.000</strong>
+            </article>
+            <article class="parkalia-cash-close__movement">
+                <div>
+                    <strong>Factura #000245</strong>
+                    <span>Pago tarjeta</span>
+                </div>
+                <strong class="parkalia-cash-close__movement-value parkalia-cash-close__movement-value--income">+$35.000</strong>
+            </article>
+        </div>
     </section>
-
-
-
-
-
 </section>

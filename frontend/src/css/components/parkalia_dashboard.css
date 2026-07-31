@@ -50,11 +50,11 @@
 }
 .parkalia-dashboard__input,.parkalia-dashboard__select {
     height:46px;
-    min-width: 300px    ;
+    min-width: 300px;
     padding:0 var(--input-padding-x);
     background:rgba(255,255,255,.04);
     border:1px solid var(--border-color);
-    border-radius:var(--radius-md);
+    border-radius: 18px;
     color:var(--white);
     font-size:var(--fs-xxs);
     outline:none;

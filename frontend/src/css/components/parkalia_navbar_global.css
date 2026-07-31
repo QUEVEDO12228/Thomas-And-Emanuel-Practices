@@ -243,7 +243,7 @@
     transition: var(--transition-normal);
 }
 .parkalia-navbar-session:hover {
-    border-color: rgba(139,92,246,.35);
+    border-color: var(--secondary-400);
     box-shadow: var(--shadow-secondary);
 }
 .parkalia-navbar-session__content {

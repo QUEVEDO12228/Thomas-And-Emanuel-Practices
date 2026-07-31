@@ -1,10 +1,7 @@
 :root {
-
     /* =========================================================
-       PRIMARY COLORS
-       BLACK / PREMIUM / TECHNOLOGY
+       PRIMARY COLORS BLACK / PREMIUM / TECHNOLOGY
     ========================================================= */
-
     --primary-950: #000000;
     --primary-900: #080808;
     --primary-800: #121212;
@@ -16,13 +13,9 @@
     --primary-200: #A6A6A6;
     --primary-100: #D6D6D6;
     --primary-50:  #F5F5F5;
-
-
     /* =========================================================
-       SECONDARY COLORS
-       PARKING YELLOW / WARNING
+       SECONDARY COLORS PARKING YELLOW / WARNING
     ========================================================= */
-
     --secondary-950: #3B2800;
     --secondary-900: #5A3B00;
     --secondary-800: #7A5100;
@@ -34,13 +27,9 @@
     --secondary-200: #FFE082;
     --secondary-100: #FFF3C4;
     --secondary-50:  #FFFBEA;
-
-
     /* =========================================================
-       TERTIARY COLORS
-       PARKING GREEN / AVAILABLE
+       TERTIARY COLORS PARKING GREEN / AVAILABLE
     ========================================================= */
-
     --tertiary-950: #04210F;
     --tertiary-900: #063118;
     --tertiary-800: #094524;
@@ -53,14 +42,11 @@
     --tertiary-100: #DCFCE7;
     --tertiary-50:  #F0FDF4;
 
-
     /* =========================================================
        NEUTRAL COLORS
     ========================================================= */
-
     --white: #FFFFFF;
     --black: #000000;
-
     --gray-950: #050505;
     --gray-900: #111111;
     --gray-800: #1F1F1F;
@@ -72,47 +58,31 @@
     --gray-200: #D9D9D9;
     --gray-100: #EFEFEF;
     --gray-50:  #F8F8F8;
-
-
     /* =========================================================
        EXTRA COLORS
     ========================================================= */
-
     --success-color: #22C55E;
     --warning-color: #FFC107;
     --danger-color: #EF4444;
     --info-color: #2563EB;
-
     --glass-color: rgba(255,255,255,.05);
     --border-color: rgba(255,255,255,.08);
-
-    --shadow-primary:
-        0 10px 30px rgba(0,0,0,.35);
-
-    --shadow-secondary:
-        0 0 25px rgba(255,193,7,.30);
-
-
+    --shadow-primary:0 10px 30px rgba(0,0,0,.35);
+    --shadow-secondary:0 0 25px rgba(255,193,7,.30);
     /* =========================================================
        TYPOGRAPHY
     ========================================================= */
-
     --font-primary: 'Inter', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
-
     --font-primary-regular: 'Inter-Regular', sans-serif;
     --font-primary-semibold: 'Inter-SemiBold', sans-serif;
     --font-primary-bold: 'Inter-Bold', sans-serif;
-
     --font-secondary-medium: 'Roboto-Medium', sans-serif;
     --font-secondary-semibold: 'Roboto-SemiBold', sans-serif;
     --font-secondary-italic: 'Roboto-Italic', sans-serif;
-
-
     /* =========================================================
        FONT SIZE SYSTEM
     ========================================================= */
-
     --fs-xxxxl: 8rem;
     --fs-xxxl: 6.4rem;
     --fs-xxl: 4.8rem;
@@ -125,12 +95,9 @@
     --fs-xxxs: 1.2rem;
     --fs-xxxxs: 10px;
     --fs-xxxxxs: 8px;
-
-
     /* =========================================================
        BORDER RADIUS
     ========================================================= */
-
     --radius-xs: 4px;
     --radius-sm: 8px;
     --radius-md: 12px;
@@ -138,12 +105,9 @@
     --radius-xl: 24px;
     --radius-xxl: 32px;
     --radius-full: 999px;
-
-
     /* =========================================================
        SPACING SYSTEM
     ========================================================= */
-
     --gap-xxs: 4px;
     --gap-xs: 8px;
     --gap-sm: 12px;
@@ -152,31 +116,21 @@
     --gap-xl: 32px;
     --gap-xxl: 48px;
     --gap-xxxl: 64px;
-
-
     /* =========================================================
        BUTTON SYSTEM
     ========================================================= */
-
     --button-padding-y: 12px;
     --button-padding-x: 18px;
-
     --button-secondary-padding-y: 10px;
     --button-secondary-padding-x: 16px;
-
-
     /* =========================================================
        INPUT SYSTEM
     ========================================================= */
-
     --input-padding-y: 16px;
     --input-padding-x: 16px;
-
-
     /* =========================================================
        TRANSITIONS
     ========================================================= */
-
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
