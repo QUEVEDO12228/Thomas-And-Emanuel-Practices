@@ -1,587 +1,134 @@
 <section class="parkalia-settings-page">
-
-
-    <!-- GLOW -->
-
     <div class="parkalia-settings-page__glow parkalia-settings-page__glow--left"></div>
-
     <div class="parkalia-settings-page__glow parkalia-settings-page__glow--right"></div>
-
-
-
     <section class="parkalia-settings">
-
-
         <div class="parkalia-settings__container">
-
-
-
-            <!-- HEADER -->
-
             <header class="parkalia-settings__header">
-
-
-                <h1 class="parkalia-settings__title">
-
-                    Configuración
-
-                </h1>
-
-
-                <p class="parkalia-settings__subtitle">
-
-                    Personaliza las preferencias generales y administrativas de Parkalia.
-
-                </p>
-
-
+                <h1 class="parkalia-settings__title">Configuración</h1>
+                <p class="parkalia-settings__subtitle">Personaliza las preferencias generales y administrativas de Parkalia.</p>
             </header>
-
-
-
-
-
-
-
-            <!-- GENERAL -->
-
-
             <section class="parkalia-settings-card">
-
-
                 <div class="parkalia-settings-card__header">
-
-
-                    <h2 class="parkalia-settings-card__title">
-
-                        Configuración general
-
-                    </h2>
-
-
+                    <h2 class="parkalia-settings-card__title">Configuración general</h2>
                 </div>
-
-
-
-
                 <form class="parkalia-settings-form">
-
-
                     <div class="parkalia-settings-form__field">
-
-
-                        <label>
-
-                            Nombre del sistema
-
-                        </label>
-
-
-                        <input 
-                        class="parkalia-settings-form__input"
-                        value="Parkalia Management">
-
-
+                        <label>Nombre del sistema</label>
+                        <input class="parkalia-settings-form__input" value="Parkalia Management">
                     </div>
-
-
-
-
                     <div class="parkalia-settings-form__field">
-
-
-                        <label>
-
-                            Nombre comercial
-
-                        </label>
-
-
-                        <input 
-                        class="parkalia-settings-form__input"
-                        value="Gestión Digital de Parqueaderos">
-
-
+                        <label>Nombre comercial</label>
+                        <input class="parkalia-settings-form__input" value="Gestión Digital de Parqueaderos">
                     </div>
-
-
-
-
-
                     <div class="parkalia-settings-form__field">
-
-
-                        <label>
-
-                            Idioma principal
-
-                        </label>
-
-
+                        <label>Idioma principal</label>
                         <select class="parkalia-settings-form__select">
-
                             <option>Español</option>
-
                             <option>English</option>
-
                         </select>
-
-
                     </div>
-
-
-
-
-
                     <div class="parkalia-settings-form__field">
-
-
-                        <label>
-
-                            Zona horaria
-
-                        </label>
-
-
+                        <label>Zona horaria</label>
                         <select class="parkalia-settings-form__select">
-
                             <option>GMT-5 Colombia</option>
-
                             <option>GMT-6</option>
-
                         </select>
-
-
                     </div>
-
-
-
                 </form>
-
-
-
             </section>
-
-
-
-
-
-
-
-
-
-
-            <!-- PARKING SETTINGS -->
-
-
             <section class="parkalia-settings-card">
-
-
                 <div class="parkalia-settings-card__header">
-
-
-                    <h2 class="parkalia-settings-card__title">
-
-                        Preferencias del parqueadero
-
-                    </h2>
-
-
+                    <h2 class="parkalia-settings-card__title">Preferencias del parqueadero</h2>
                 </div>
-
-
-
-
-
                 <div class="parkalia-settings-options">
-
-
-
                     <div class="parkalia-settings-option">
-
-
-                        <span>
-
-                            Mostrar disponibilidad públicamente
-
-                        </span>
-
-
+                        <span>Mostrar disponibilidad públicamente</span>
                         <label class="parkalia-switch">
-
                             <input type="checkbox" checked>
-
                             <span class="parkalia-switch__slider"></span>
-
                         </label>
-
-
                     </div>
-
-
-
-
-
                     <div class="parkalia-settings-option">
-
-
-                        <span>
-
-                            Mostrar precios
-
-                        </span>
-
-
+                        <span>Mostrar precios</span>
                         <label class="parkalia-switch">
-
                             <input type="checkbox" checked>
-
                             <span class="parkalia-switch__slider"></span>
-
                         </label>
-
-
                     </div>
-
-
-
-
-
                     <div class="parkalia-settings-option">
-
-
-                        <span>
-
-                            Reservas automáticas
-
-                        </span>
-
-
+                        <span>Reservas automáticas</span>
                         <label class="parkalia-switch">
-
                             <input type="checkbox">
-
                             <span class="parkalia-switch__slider"></span>
-
                         </label>
-
-
                     </div>
-
-
-
-
-
                     <div class="parkalia-settings-option">
-
-
-                        <span>
-
-                            Alertas de ocupación
-
-                        </span>
-
-
+                        <span>Alertas de ocupación</span>
                         <label class="parkalia-switch">
-
                             <input type="checkbox" checked>
-
                             <span class="parkalia-switch__slider"></span>
-
                         </label>
-
-
                     </div>
-
-
-
-
                 </div>
-
-
-
             </section>
-
-
-
-
-
-
-
-
-
-            <!-- APPEARANCE -->
-
-
             <section class="parkalia-settings-card">
-
-
                 <div class="parkalia-settings-card__header">
-
-
-                    <h2 class="parkalia-settings-card__title">
-
-                        Apariencia
-
-                    </h2>
-
-
+                    <h2 class="parkalia-settings-card__title">Apariencia</h2>
                 </div>
-
-
-
-
-
                 <div class="parkalia-settings-form">
-
-
-
                     <div class="parkalia-settings-form__field">
-
-
-                        <label>
-
-                            Logo empresarial
-
-                        </label>
-
-
-                        <input 
-                        type="file"
-                        class="parkalia-settings-form__file">
-
-
+                        <label>Logo empresarial</label>
+                        <input type="file" class="parkalia-settings-form__file">
                     </div>
-
-
-
-
-
                     <div class="parkalia-settings-form__field">
-
-
-                        <label>
-
-                            Tema
-
-                        </label>
-
-
+                        <label>Tema</label>
                         <select class="parkalia-settings-form__select">
-
                             <option>Oscuro Premium</option>
-
                             <option>Claro</option>
-
-
                         </select>
-
-
                     </div>
-
-
-
                 </div>
-
-
-
             </section>
-
-
-
-
-
-
-
-
-
-            <!-- COMMUNICATION -->
-
-
             <section class="parkalia-settings-card">
-
-
                 <div class="parkalia-settings-card__header">
-
-
-                    <h2 class="parkalia-settings-card__title">
-
-                        Comunicación
-
-                    </h2>
-
-
+                    <h2 class="parkalia-settings-card__title">Comunicación</h2>
                 </div>
-
-
-
-
                 <div class="parkalia-settings-form">
-
-
                     <div class="parkalia-settings-form__field">
-
-
-                        <label>
-
-                            Correo empresarial
-
-                        </label>
-
-
-                        <input 
-                        class="parkalia-settings-form__input"
-                        placeholder="correo@empresa.com">
-
-
+                        <label>Correo empresarial</label>
+                        <input class="parkalia-settings-form__input" placeholder="correo@empresa.com">
                     </div>
-
-
-
-
                     <div class="parkalia-settings-form__field">
-
-
-                        <label>
-
-                            WhatsApp empresarial
-
-                        </label>
-
-
-                        <input 
-                        class="parkalia-settings-form__input"
-                        placeholder="+57 3000000000">
-
-
+                        <label>WhatsApp empresarial</label>
+                        <input class="parkalia-settings-form__input" placeholder="+57 3000000000">
                     </div>
-
-
-
                 </div>
-
-
-
             </section>
-
-
-
-
-
-
-
-
-            <!-- ADVANCED -->
-
-
             <section class="parkalia-settings-card">
-
-
                 <div class="parkalia-settings-card__header">
-
-
-                    <h2 class="parkalia-settings-card__title">
-
-                        Configuración avanzada
-
-                    </h2>
-
-
+                    <h2 class="parkalia-settings-card__title">Configuración avanzada</h2>
                 </div>
-
-
-
                 <div class="parkalia-settings-options">
-
-
                     <div class="parkalia-settings-option">
-
-                        <span>
-
-                            Cerrar sesión automáticamente
-
-                        </span>
-
-
+                        <span>Cerrar sesión automáticamente</span>
                         <label class="parkalia-switch">
-
                             <input type="checkbox" checked>
-
                             <span class="parkalia-switch__slider"></span>
-
                         </label>
-
-
                     </div>
-
-
-
-
                     <div class="parkalia-settings-option">
-
-                        <span>
-
-                            Registrar actividad del usuario
-
-                        </span>
-
-
+                        <span>Registrar actividad del usuario</span>
                         <label class="parkalia-switch">
-
                             <input type="checkbox" checked>
-
                             <span class="parkalia-switch__slider"></span>
-
                         </label>
-
-
                     </div>
-
-
-
                 </div>
-
-
-
             </section>
-
-
-
-
-
-
-
-
-            <!-- BUTTONS -->
-
-
             <div class="parkalia-settings__buttons">
-
-
-                <button class="parkalia-btn parkalia-btn--secondary">
-
-                    Restablecer
-
-                </button>
-
-
-                <button class="parkalia-btn parkalia-btn--primary">
-
-                    Guardar configuración
-
-                </button>
-
-
+                <button class="parkalia-btn parkalia-btn--secondary">Restablecer</button>
+                <button class="parkalia-btn parkalia-btn--primary">Guardar configuración</button>
             </div>
-
-
-
-
-
         </div>
-
-
     </section>
-
-
 </section>

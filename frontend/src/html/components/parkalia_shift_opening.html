@@ -1,525 +1,88 @@
-<!--=========================================================
-=              PARKALIA FINANZAS
-=              APERTURA DE TURNO
-==========================================================-->
-
 <section class="parkalia-shift-opening">
-
-
-
-<!--=========================================================
-= HEADER
-==========================================================-->
-
-<header class="parkalia-shift-opening__header">
-
-
-    <div class="parkalia-shift-opening__heading">
-
-
-        <span class="parkalia-shift-opening__breadcrumb">
-            Inicio / Finanzas / Apertura de Turno
-        </span>
-
-
-        <h1 class="parkalia-shift-opening__title">
-            Apertura de Turno
-        </h1>
-
-
-        <p class="parkalia-shift-opening__description">
-            Registra el inicio de operación de caja,
-            responsable y valor base inicial.
-        </p>
-
-
+    <header class="parkalia-shift-opening__header">
+        <div class="parkalia-shift-opening__heading">
+            <span class="parkalia-shift-opening__breadcrumb">Inicio / Finanzas / Apertura de Turno</span>
+            <h1 class="parkalia-shift-opening__title">Apertura de Turno</h1>
+            <p class="parkalia-shift-opening__description">Registra el inicio de operación de caja, responsable y valor base inicial.</p>
+        </div>
+        <div class="parkalia-shift-opening__status">
+            <span class="parkalia-shift-opening__badge parkalia-shift-opening__badge--available">Caja disponible</span>
+        </div>
+    </header>
+    <div class="parkalia-shift-opening__content">
+        <section class="parkalia-shift-opening__form">
+            <header class="parkalia-shift-opening__section-header">
+                <h2 class="parkalia-shift-opening__section-title">Datos del turno</h2>
+                <p class="parkalia-shift-opening__section-description">Completa la información necesaria para iniciar la caja.</p>
+            </header>
+            <div class="parkalia-shift-opening__fields">
+                <div class="parkalia-shift-opening__field">
+                    <label class="parkalia-shift-opening__label">Responsable de caja</label>
+                    <select class="parkalia-shift-opening__input">
+                        <option>Carlos Rodríguez</option>
+                        <option>Laura Martínez</option>
+                        <option>Administrador</option>
+                    </select>
+                </div>
+                <div class="parkalia-shift-opening__field">
+                    <label class="parkalia-shift-opening__label">Punto de caja</label>
+                    <select class="parkalia-shift-opening__input">
+                        <option>Caja Principal</option>
+                        <option>Caja Norte</option>
+                        <option>Caja Sur</option>
+                    </select>
+                </div>
+                <div class="parkalia-shift-opening__field">
+                    <label class="parkalia-shift-opening__label">Fecha de apertura</label>
+                    <input type="date" class="parkalia-shift-opening__input">
+                </div>
+                <div class="parkalia-shift-opening__field">
+                    <label class="parkalia-shift-opening__label">Hora de inicio</label>
+                    <input type="time" class="parkalia-shift-opening__input">
+                </div>
+                <div class="parkalia-shift-opening__field parkalia-shift-opening__field--full">
+                    <label class="parkalia-shift-opening__label">Base inicial de caja</label>
+                    <div class="parkalia-shift-opening__money">
+                        <span>COP</span>
+                        <input type="number" class="parkalia-shift-opening__input" placeholder="500000">
+                    </div>
+                </div>
+                <div class="parkalia-shift-opening__field parkalia-shift-opening__field--full">
+                    <label class="parkalia-shift-opening__label">Observaciones</label>
+                    <textarea class="parkalia-shift-opening__textarea" placeholder="Notas adicionales del turno"></textarea>
+                </div>
+            </div>
+            <footer class="parkalia-shift-opening__actions">
+                <button class="parkalia-shift-opening__button parkalia-shift-opening__button--cancel">Cancelar</button>
+                <button class="parkalia-shift-opening__button parkalia-shift-opening__button--primary">Abrir caja</button>
+            </footer>
+        </section>
+        <aside class="parkalia-shift-opening__summary">
+            <header class="parkalia-shift-opening__summary-header">
+                <h2 class="parkalia-shift-opening__summary-title">Resumen del turno</h2>
+            </header>
+            <div class="parkalia-shift-opening__summary-list">
+                <div class="parkalia-shift-opening__summary-item">
+                    <span>Responsable</span>
+                    <strong>Carlos Rodríguez</strong>
+                </div>
+                <div class="parkalia-shift-opening__summary-item">
+                    <span>Caja</span>
+                    <strong>Caja Principal</strong>
+                </div>
+                <div class="parkalia-shift-opening__summary-item">
+                    <span>Base inicial</span>
+                    <strong>$500.000 COP</strong>
+                </div>
+                <div class="parkalia-shift-opening__summary-item">
+                    <span>Estado</span>
+                    <strong class="parkalia-shift-opening__summary-status">Pendiente</strong>
+                </div>
+            </div>
+            <div class="parkalia-shift-opening__security">
+                <strong>Control de seguridad</strong>
+                <p>Al abrir el turno quedará registrado el usuario, fecha y hora de operación.</p>
+            </div>
+        </aside>
     </div>
-
-
-
-    <div class="parkalia-shift-opening__status">
-
-
-        <span class="
-        parkalia-shift-opening__badge
-        parkalia-shift-opening__badge--available">
-
-            Caja disponible
-
-        </span>
-
-
-    </div>
-
-
-
-</header>
-
-
-
-
-
-
-
-
-<!--=========================================================
-= CONTENIDO PRINCIPAL
-==========================================================-->
-
-<div class="parkalia-shift-opening__content">
-
-
-
-
-
-<!--=========================================================
-= FORMULARIO
-==========================================================-->
-
-<section class="parkalia-shift-opening__form">
-
-
-
-<header class="parkalia-shift-opening__section-header">
-
-
-<h2 class="parkalia-shift-opening__section-title">
-Datos del turno
-</h2>
-
-
-<p class="parkalia-shift-opening__section-description">
-
-Completa la información necesaria para iniciar la caja.
-
-</p>
-
-
-</header>
-
-
-
-
-
-<div class="parkalia-shift-opening__fields">
-
-
-
-
-
-
-<!-- CAJERO -->
-
-<div class="parkalia-shift-opening__field">
-
-
-<label class="parkalia-shift-opening__label">
-
-Responsable de caja
-
-</label>
-
-
-
-<select class="parkalia-shift-opening__input">
-
-
-<option>
-Carlos Rodríguez
-</option>
-
-
-<option>
-Laura Martínez
-</option>
-
-
-<option>
-Administrador
-</option>
-
-
-</select>
-
-
-
-</div>
-
-
-
-
-
-
-
-<!-- CAJA -->
-
-<div class="parkalia-shift-opening__field">
-
-
-<label class="parkalia-shift-opening__label">
-
-Punto de caja
-
-</label>
-
-
-
-<select class="parkalia-shift-opening__input">
-
-
-<option>
-Caja Principal
-</option>
-
-
-<option>
-Caja Norte
-</option>
-
-
-<option>
-Caja Sur
-</option>
-
-
-</select>
-
-
-
-</div>
-
-
-
-
-
-
-
-<!-- FECHA -->
-
-<div class="parkalia-shift-opening__field">
-
-
-<label class="parkalia-shift-opening__label">
-
-Fecha de apertura
-
-</label>
-
-
-
-<input 
-type="date"
-class="parkalia-shift-opening__input">
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<!-- HORA -->
-
-<div class="parkalia-shift-opening__field">
-
-
-<label class="parkalia-shift-opening__label">
-
-Hora de inicio
-
-</label>
-
-
-
-<input 
-type="time"
-class="parkalia-shift-opening__input">
-
-
-
-</div>
-
-
-
-
-
-
-
-<!-- BASE -->
-
-<div class="parkalia-shift-opening__field 
-            parkalia-shift-opening__field--full">
-
-
-<label class="parkalia-shift-opening__label">
-
-Base inicial de caja
-
-</label>
-
-
-
-<div class="parkalia-shift-opening__money">
-
-
-<span>
-COP
-</span>
-
-
-<input 
-type="number"
-class="parkalia-shift-opening__input"
-placeholder="500000">
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-<!-- OBSERVACIONES -->
-
-
-<div class="parkalia-shift-opening__field 
-            parkalia-shift-opening__field--full">
-
-
-<label class="parkalia-shift-opening__label">
-
-Observaciones
-
-</label>
-
-
-
-<textarea 
-class="parkalia-shift-opening__textarea"
-placeholder="Notas adicionales del turno">
-</textarea>
-
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-
-
-
-
-<footer class="parkalia-shift-opening__actions">
-
-
-<button class="
-parkalia-shift-opening__button
-parkalia-shift-opening__button--cancel">
-
-Cancelar
-
-</button>
-
-
-
-
-
-<button class="
-parkalia-shift-opening__button
-parkalia-shift-opening__button--primary">
-
-Abrir caja
-
-</button>
-
-
-</footer>
-
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!--=========================================================
-= RESUMEN
-==========================================================-->
-
-<aside class="parkalia-shift-opening__summary">
-
-
-
-<header class="parkalia-shift-opening__summary-header">
-
-
-<h2 class="parkalia-shift-opening__summary-title">
-
-Resumen del turno
-
-</h2>
-
-
-</header>
-
-
-
-
-
-
-<div class="parkalia-shift-opening__summary-list">
-
-
-
-
-
-<div class="parkalia-shift-opening__summary-item">
-
-
-<span>
-Responsable
-</span>
-
-
-<strong>
-Carlos Rodríguez
-</strong>
-
-
-</div>
-
-
-
-
-
-
-<div class="parkalia-shift-opening__summary-item">
-
-
-<span>
-Caja
-</span>
-
-
-<strong>
-Caja Principal
-</strong>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="parkalia-shift-opening__summary-item">
-
-
-<span>
-Base inicial
-</span>
-
-
-<strong>
-$500.000 COP
-</strong>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="parkalia-shift-opening__summary-item">
-
-
-<span>
-Estado
-</span>
-
-
-<strong class="
-parkalia-shift-opening__summary-status">
-
-Pendiente
-
-</strong>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-
-
-
-
-<div class="parkalia-shift-opening__security">
-
-
-<strong>
-Control de seguridad
-</strong>
-
-
-<p>
-
-Al abrir el turno quedará registrado
-el usuario, fecha y hora de operación.
-
-</p>
-
-
-</div>
-
-
-
-
-
-</aside>
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
 </section>
