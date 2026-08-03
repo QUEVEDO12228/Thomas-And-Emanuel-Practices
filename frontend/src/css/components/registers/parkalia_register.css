@@ -236,7 +236,7 @@
 }
 .parkalia-register-step1__label{
     color:var(--white);
-    font-size:.82rem;
+    font-size: 1rem;
     font-family:var(--font-primary-bold);
     letter-spacing:.2px;
 }

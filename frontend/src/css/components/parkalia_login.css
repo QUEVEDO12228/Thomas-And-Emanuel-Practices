@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     font-family: var(--font-primary);
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
 }
 .parkalia-login-page__glow {
     position: absolute;
@@ -129,7 +131,7 @@
     text-align: center;
 }
 .parkalia-login__title {
-    margin-bottom: var(--gap-lg);
+    margin-bottom: var(--gap-xs);
     color: var(--white);
     font-size: var(--fs-md);
     font-family: var(--font-primary-bold);
